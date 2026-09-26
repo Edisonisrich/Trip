@@ -58,3 +58,11 @@ details[open]>.chevron,details[open]>summary .chevron{transform:rotate(180deg)}
 .bookingdetail.dark .detailnote{color:#aeb5bd}
 .ticket-expand{padding:0;overflow:hidden}
 .ticket-expand summary{padding:15px}
+
+/* paged day mode */
+.daypill.active{background:#111;color:#fff;border-color:#111}
+.daypill.active .dow{color:#bfc5cc}
+.daypill.active .date{color:#fff}
+.nav.active{background:#eef2f5;border-radius:12px;color:#111}
+.single-day{padding-bottom:26px}
+.wallet{display:none}
