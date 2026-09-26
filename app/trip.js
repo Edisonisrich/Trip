@@ -15,7 +15,8 @@
   function render(data){
     document.title = data.title + '｜Trip';
     $('#trip-title').textContent = data.title;
-    $('#trip-subtitle').textContent = data.subtitle;
+    const metaLine = [data.dateLabel, data.durationLabel, data.partyLabel].filter(Boolean).join('｜');
+    $('#trip-subtitle').textContent = metaLine || data.subtitle || '';
     $('#trip-eyebrow').textContent = data.eyebrow || 'TRIP';
     $('#summary').innerHTML = (data.summary||[]).map(x=>'<div class="box"><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong></div>').join('');
 
@@ -37,7 +38,7 @@
       catch(e){window.prompt('請複製：',value)}
     }));
   }
-  fetch('./trip.json?ts=20260926')
+  fetch('./trip.json?ts=20260926b')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json()})
     .then(render)
     .catch(err=>{$('#loading').className='error';$('#loading').textContent='行程資料載入失敗，請重新整理頁面。 '+err.message});
