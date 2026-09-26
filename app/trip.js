@@ -36,21 +36,38 @@
       return '<details class="box info-card"><summary><div><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong><span class="tapmore">點開看完整資訊</span></div><span class="chevron">⌄</span></summary>'+bookingDetails(x)+'</details>';
     }).join('');
 
-    const nav = (data.days||[]).map((d,i)=>'<a class="daypill" href="#day-'+(i+1)+'"><div class="dow">'+esc(d.dow)+'</div><div class="date">'+esc(d.date)+'</div></a>').join('') + '<a class="daypill" href="#wallet"><div class="dow">INFO</div><div class="date">Tickets</div></a>';
+    const params = new URLSearchParams(location.search);
+    const view = params.get('view');
+    const requestedDay = Math.max(1, Math.min((data.days||[]).length, parseInt(params.get('day') || '1', 10) || 1));
+    const nav = (data.days||[]).map((d,i)=>'<a class="daypill '+(!view && requestedDay===i+1?'active':'')+'" href="?day='+(i+1)+'"><div class="dow">'+esc(d.dow)+'</div><div class="date">'+esc(d.date)+'</div></a>').join('') + '<a class="daypill '+(view==='info'?'active':'')+'" href="?view=info"><div class="dow">INFO</div><div class="date">Tickets</div></a>';
     $('#daynav').innerHTML = nav;
 
-    $('#days').innerHTML = (data.days||[]).map((d,i)=>{
-      const rows=(d.items||[]).map(x=>x.type==='move'?moveRow(x):eventRow(x)).join('');
-      const alerts=(d.alerts||[]).map(alertBox).join('');
-      return '<section class="day" id="day-'+(i+1)+'"><div class="dayhead"><div><div class="kicker">'+esc(d.dow)+' · '+esc(d.date)+'</div><h2>'+esc(d.title)+'</h2></div><div class="daynum">'+String(i+1).padStart(2,'0')+'</div></div>'+(d.intro?'<p class="intro">'+esc(d.intro)+'</p>':'')+'<div class="timeline">'+rows+'</div>'+alerts+'</section>';
-    }).join('');
+    if (view !== 'info') {
+      const i = requestedDay - 1;
+      const d = (data.days||[])[i];
+      if (d) {
+        const rows=(d.items||[]).map(x=>x.type==='move'?moveRow(x):eventRow(x)).join('');
+        const alerts=(d.alerts||[]).map(alertBox).join('');
+        $('#days').innerHTML = '<section class="day single-day" id="day-'+requestedDay+'"><div class="dayhead"><div><div class="kicker">'+esc(d.dow)+' · '+esc(d.date)+'</div><h2>'+esc(d.title)+'</h2></div><div class="daynum">'+String(requestedDay).padStart(2,'0')+'</div></div>'+(d.intro?'<p class="intro">'+esc(d.intro)+'</p>':'')+'<div class="timeline">'+rows+'</div>'+alerts+'</section>';
+      } else {
+        $('#days').innerHTML = '';
+      }
+    } else {
+      $('#days').innerHTML = '';
+    }
 
-    $('#wallet').innerHTML = '<h2>Tickets & Bookings</h2><div class="walletgrid">'+(data.wallet||[]).map(w=>{
-      const hasMore = (w.details&&w.details.length) || w.searchKeyword || w.note;
-      if(!hasMore) return '<div class="ticket"><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div></div>';
-      return '<details class="ticket ticket-expand"><summary><div><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div><span class="tapmore darktext">點開看完整資訊</span></div><span class="chevron light">⌄</span></summary>'+bookingDetails(w,true)+'</details>';
-    }).join('')+'</div>';
-    $('#bottom').innerHTML = (data.days||[]).slice(0,4).map((d,i)=>'<a class="nav" href="#day-'+(i+1)+'"><b>'+String(i+1).padStart(2,'0')+'</b>'+esc(d.short||d.dow)+'</a>').join('')+'<a class="nav" href="#wallet"><b>◎</b>資訊</a>';
+    if (view === 'info') {
+      $('#wallet').style.display = 'block';
+      $('#wallet').innerHTML = '<h2>Tickets & Bookings</h2><div class="walletgrid">'+(data.wallet||[]).map(w=>{
+        const hasMore = (w.details&&w.details.length) || w.searchKeyword || w.note;
+        if(!hasMore) return '<div class="ticket"><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div></div>';
+        return '<details class="ticket ticket-expand"><summary><div><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div><span class="tapmore darktext">點開看完整資訊</span></div><span class="chevron light">⌄</span></summary>'+bookingDetails(w,true)+'</details>';
+      }).join('')+'</div>';
+    } else {
+      $('#wallet').style.display = 'none';
+      $('#wallet').innerHTML = '';
+    }
+    $('#bottom').innerHTML = (data.days||[]).slice(0,4).map((d,i)=>'<a class="nav '+(!view && requestedDay===i+1?'active':'')+'" href="?day='+(i+1)+'"><b>'+String(i+1).padStart(2,'0')+'</b>'+esc(d.short||d.dow)+'</a>').join('')+'<a class="nav '+(view==='info'?'active':'')+'" href="?view=info"><b>◎</b>資訊</a>';
     $('#loading').remove();
     document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{
       const box=btn.closest('[data-copy]'); const value=box?box.getAttribute('data-copy'):'';
@@ -58,7 +75,7 @@
       catch(e){window.prompt('請複製：',value)}
     }));
   }
-  fetch('./trip.json?ts=20260926c')
+  fetch('./trip.json?ts=20260926d')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json()})
     .then(render)
     .catch(err=>{$('#loading').className='error';$('#loading').textContent='行程資料載入失敗，請重新整理頁面。 '+err.message});
