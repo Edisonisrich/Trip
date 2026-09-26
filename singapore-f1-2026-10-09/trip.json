@@ -4,16 +4,16 @@
   "eyebrow": "SINGAPORE GRAND PRIX · 2026",
   "summary": [
     {
-      "label": "Outbound",
-      "value": "TR867 · 10/9 16:15 → 20:45"
+      "label": "機票｜2人來回",
+      "value": "NT$38,755"
     },
     {
-      "label": "Hotel",
-      "value": "Copthorne King's · 3 nights"
+      "label": "旅館｜3晚",
+      "value": "S$1,560.49"
     },
     {
-      "label": "Race",
-      "value": "10/11 · Republic A1 · Row 12"
+      "label": "F1門票｜2張",
+      "value": "約 NT$34,800"
     }
   ],
   "days": [
@@ -472,5 +472,6 @@
   "dateLabel": "2026/10/09–10/12",
   "durationLabel": "4天3夜",
   "partyLabel": "2人",
-  "tripType": "multi_day"
+  "tripType": "multi_day",
+  "priceNote": "機票與旅館為訂單實際金額；F1 依購買時顯示 NT$17,400/張估算，實際刷卡總額待確認。"
 }
