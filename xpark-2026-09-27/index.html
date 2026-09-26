@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b2239" />
+  <title>9/27 青埔 Xpark 一日遊｜5大3小</title>
+  <style>
+    :root{
+      --bg:#f5f8fb;
+      --card:#ffffff;
+      --ink:#162333;
+      --muted:#64748b;
+      --line:#dde6ef;
+      --accent:#0b7fab;
+      --accent2:#00a0a0;
+      --soft:#e9f7fb;
+      --warm:#fff7e8;
+      --shadow:0 12px 32px rgba(15,35,55,.08);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Segoe UI",sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 85% -10%, #d9f5f5 0, transparent 30%),
+        radial-gradient(circle at -15% 8%, #ddebff 0, transparent 25%),
+        var(--bg);
+      line-height:1.55;
+    }
+    .wrap{max-width:920px;margin:0 auto;padding:20px 16px 64px}
+    .hero{
+      background:linear-gradient(135deg,#0a3556,#0b7fab 65%,#0aa0a0);
+      color:#fff;border-radius:30px;padding:28px 24px 24px;
+      box-shadow:var(--shadow);position:relative;overflow:hidden;
+    }
+    .hero:after{
+      content:"";position:absolute;width:230px;height:230px;border-radius:50%;
+      right:-90px;top:-100px;background:rgba(255,255,255,.10);
+    }
+    .kicker{font-size:13px;letter-spacing:.16em;opacity:.8;font-weight:700}
+    h1{font-size:32px;line-height:1.15;margin:10px 0 8px}
+    .hero p{margin:4px 0;color:rgba(255,255,255,.88)}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);padding:7px 10px;border-radius:999px;font-size:13px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      appearance:none;border:0;border-radius:14px;padding:11px 14px;font-weight:700;
+      text-decoration:none;display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+      background:#fff;color:#0b3555;
+    }
+    .btn.secondary{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:18px}
+    .card{background:var(--card);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);border:1px solid #edf2f6}
+    .card h2{font-size:18px;margin:0 0 14px}
+    .note{background:var(--warm);border:1px solid #f7dfaa;border-radius:16px;padding:13px 14px;font-size:14px}
+    .timeline{position:relative;margin-top:2px}
+    .event{display:grid;grid-template-columns:74px 18px 1fr;gap:10px;position:relative;padding:0 0 20px}
+    .event:last-child{padding-bottom:0}
+    .time{font-weight:800;color:#0b6688;font-variant-numeric:tabular-nums}
+    .dot{position:relative}
+    .dot:before{content:"";position:absolute;top:7px;left:5px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+    .dot:after{content:"";position:absolute;top:18px;left:9px;width:1px;bottom:-8px;background:var(--line)}
+    .event:last-child .dot:after{display:none}
+    .event h3{margin:0 0 4px;font-size:16px}
+    .event p{margin:0;color:var(--muted);font-size:14px}
+    .pill{display:inline-block;margin-top:7px;background:var(--soft);color:#0c6685;border-radius:999px;padding:4px 8px;font-size:12px;font-weight:700}
+    .place{padding:14px 0;border-top:1px solid var(--line)}
+    .place:first-of-type{border-top:0;padding-top:0}
+    .place strong{display:block;margin-bottom:3px}
+    .place small{color:var(--muted)}
+    .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+    .link{
+      text-decoration:none;color:#0a6d91;background:#edf8fb;border:1px solid #d6edf3;
+      border-radius:10px;padding:7px 9px;font-size:13px;font-weight:700;
+    }
+    .budget{display:grid;grid-template-columns:1fr auto;gap:8px 14px;font-size:14px}
+    .budget div:nth-child(even){font-weight:800;text-align:right}
+    .sum{margin-top:11px;padding-top:11px;border-top:1px solid var(--line);font-weight:800}
+    .tips{display:grid;gap:10px}
+    .tip{display:flex;gap:10px;align-items:flex-start}
+    .ico{width:32px;height:32px;border-radius:11px;background:var(--soft);display:grid;place-items:center;flex:0 0 auto}
+    .tip b{display:block;font-size:14px;margin-bottom:2px}
+    .tip span{font-size:13px;color:var(--muted)}
+    .footer{margin-top:18px;text-align:center;color:var(--muted);font-size:12px}
+    .mini{font-size:12px;color:var(--muted)}
+    details{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}
+    summary{font-weight:800;cursor:pointer}
+    ul{margin:8px 0 0 18px;padding:0}
+    li{margin:5px 0;color:var(--muted);font-size:14px}
+    @media(max-width:760px){
+      .grid{grid-template-columns:1fr}
+      h1{font-size:28px}
+      .hero{padding:24px 20px}
+      .wrap{padding:12px 12px 44px}
+      .event{grid-template-columns:64px 16px 1fr;gap:8px}
+    }
+    @media print{
+      body{background:#fff}
+      .wrap{max-width:none;padding:0}
+      .hero,.card{box-shadow:none}
+      .actions{display:none}
+      a{color:inherit;text-decoration:none}
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="kicker">SUNDAY · 2026/09/27</div>
+    <h1>青埔 Xpark 一日遊 🐠</h1>
+    <p>5 大 3 小｜早上水族館、平價午餐、下午逛華泰</p>
+    <p>主打：不要趕、少移車、小朋友有休息空間。</p>
+    <div class="badges">
+      <span class="badge">👨‍👩‍👧‍👦 5 大 3 小</span>
+      <span class="badge">🐧 Xpark 10:00 入場</span>
+      <span class="badge">🍽️ 午餐：BABY DONKEY 野驢兒</span>
+      <span class="badge">🛍️ 下午：華泰名品城</span>
+    </div>
+    <div class="actions">
+      <button class="btn" onclick="shareTrip()">↗ 分享行程</button>
+      <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Xpark+桃園" target="_blank">📍 Xpark 導航</a>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>🗓️ 明日行程</h2>
+      <div class="timeline">
+        <div class="event">
+          <div class="time">09:30</div><div class="dot"></div>
+          <div>
+            <h3>青埔集合・停車</h3>
+            <p>建議停桃園置地廣場停車場，提早到、上廁所、整理小孩用品。</p>
+            <span class="pill">不要壓 10:00 才到</span>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">10:00</div><div class="dot"></div>
+          <div>
+            <h3>Xpark 開館入場</h3>
+            <p>前段人潮通常較舒服，照自己的速度看，不用硬趕展區。</p>
+            <span class="pill">預留約 2～2.5 小時</span>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">11:30</div><div class="dot"></div>
+          <div>
+            <h3>可選：阿獺的扇貝尋寶</h3>
+            <p>9/27 官方節目表有 11:30 場；屬加購活動，有興趣再參加即可。</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">12:40</div><div class="dot"></div>
+          <div>
+            <h3>離開 Xpark・往華泰方向移動</h3>
+            <p>離館後不用急著吃飯，可以先上廁所、稍微休息，慢慢往華泰二期移動。</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">13:30</div><div class="dot"></div>
+          <div>
+            <h3>午餐｜BABY DONKEY 野驢兒（已訂位）</h3>
+            <p>已訂 13:30。餐廳就在華泰名品城二期 1F，Xpark 結束後有充裕緩衝，吃完直接開始下午的華泰行程。</p>
+            <span class="pill">週日營業 11:00～22:00｜用餐依實際訂位時間</span>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">15:00</div><div class="dot"></div>
+          <div>
+            <h3>華泰名品城散步＋逛街</h3>
+            <p>週日營業到 22:00，不用趕。小朋友累了就找飲料、甜點休息。</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">16:30</div><div class="dot"></div>
+          <div>
+            <h3>下午茶 / 小孩休息</h3>
+            <p>不安排硬景點，保留彈性。想繼續逛就逛；小孩累就提早收。</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">18:00</div><div class="dot"></div>
+          <div>
+            <h3>自由晚餐 or 解散</h3>
+            <p>午餐吃得晚的話可直接回家；想多待一點就在華泰吃簡單晚餐。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <section class="card">
+        <h2>📍 地點快速導航</h2>
+        <div class="place">
+          <strong>Xpark</strong>
+          <small>桃園市中壢區春德路 105 號</small>
+          <div class="links">
+            <a class="link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Xpark+桃園市中壢區春德路105號">Google Maps</a>
+            <a class="link" target="_blank" href="https://www.xpark.com.tw/">官網</a>
+          </div>
+        </div>
+        <div class="place">
+          <strong>BABY DONKEY 野驢兒</strong>
+          <small>桃園市中壢區春德路 169 號｜華泰名品城二期 532 櫃位</small>
+          <div class="links">
+            <a class="link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=BABY+DONKEY+野驢兒+華泰名品城">Google Maps</a>
+            <a class="link" target="_blank" href="https://www.babydonkey.tw/">餐廳官網</a>
+          </div>
+        </div>
+        <div class="place">
+          <strong>GLORIA OUTLETS 華泰名品城</strong>
+          <small>桃園市中壢區春德路 189 號</small>
+          <div class="links">
+            <a class="link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=華泰名品城">Google Maps</a>
+            <a class="link" target="_blank" href="https://www.gloriaoutlets.com/chi/">官網</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style="margin-top:16px">
+        <h2>💰 預算抓法</h2>
+        <div class="budget">
+          <div>Xpark 成人 × 5</div><div>NT$3,000</div>
+          <div>兒童票</div><div>依年齡</div>
+          <div>午餐｜野驢兒</div><div>依實際點餐</div>
+          <div>停車 / 點心</div><div>另計</div>
+        </div>
+        <div class="sum">Xpark：成人 NT$600；4–11 歲 NT$270；未滿 4 歲由家長陪同免費。</div>
+        <p class="mini">實際消費依點餐、兒童年齡及停車時間為準。</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>🚗 停車小提醒</h2>
+      <div class="tips">
+        <div class="tip"><div class="ico">🅿️</div><div><b>優先：桃園置地廣場停車場</b><span>與 Xpark、新光影城、COZZI Blu 共用，24 小時營業。</span></div></div>
+        <div class="tip"><div class="ico">🎟️</div><div><b>Xpark 成人票可折停車</b><span>一張成人票可折 2 小時，但一台車限抵一張、不可累計。</span></div></div>
+        <div class="tip"><div class="ico">⏰</div><div><b>09:30 前後到最好</b><span>週日 10:00 開館，8 人同行不要把集合時間壓太緊。</span></div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>🍽️ 已訂｜BABY DONKEY 野驢兒</h2>
+      <div class="tips">
+        <div class="tip"><div class="ico">✅</div><div><b>午餐已訂位</b><span>5 大 3 小，已訂 13:30 入座。</span></div></div>
+        <div class="tip"><div class="ico">📍</div><div><b>華泰名品城二期 1F</b><span>桃園市中壢區春德路 169 號，532 櫃位。</span></div></div>
+        <div class="tip"><div class="ico">🕚</div><div><b>週日 11:00～22:00</b><span>餐廳全天供應早午餐、義大利麵、沙拉、甜點與飲品。</span></div></div>
+        <div class="tip"><div class="ico">🛍️</div><div><b>吃完直接逛華泰</b><span>午餐和下午行程接在一起，整體動線比原方案更順。</span></div></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="card" style="margin-top:16px">
+    <h2>✅ 出門前 30 秒確認</h2>
+    <div class="tips">
+      <div class="tip"><div class="ico">🎫</div><div><b>Xpark 票券 / 入場時段</b><span>每個時段有人數限制，先把票券確認好。</span></div></div>
+      <div class="tip"><div class="ico">✅</div><div><b>午餐已完成訂位</b><span>BABY DONKEY 野驢兒；已訂 13:30。</span></div></div>
+      <div class="tip"><div class="ico">🧥</div><div><b>孩子薄外套＋水</b><span>室內外溫差、逛街時間長，帶一件最好處理。</span></div></div>
+    </div>
+  </section>
+
+  <div class="footer">
+    行程版本：2026/09/26 製作 · 明日 2026/09/27（日）<br>
+    Xpark 官方週日營業 10:00–18:00；華泰名品城週日 11:00–22:00。營業狀況仍以現場與官方當日公告為準。
+  </div>
+</div>
+
+<script>
+async function shareTrip(){
+  const data = {
+    title: '9/27 青埔 Xpark 一日遊',
+    text: '明天 5 大 3 小：10:00 Xpark → 13:30 BABY DONKEY 野驢兒 → 15:00 華泰名品城'
+  };
+  try{
+    if(navigator.share){
+      await navigator.share(data);
+    }else{
+      await navigator.clipboard.writeText(data.text);
+      alert('行程重點已複製，可以貼到 LINE！');
+    }
+  }catch(e){}
+}
+</script>
+</body>
+</html>
+<!-- pages-deploy-trigger -->
