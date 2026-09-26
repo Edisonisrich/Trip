@@ -219,7 +219,13 @@
           "title": "航班延誤時",
           "text": "優先保住 Jewel 22:00 → Hotel → Lau Pa Sat；抵達 U.First 可放棄。"
         }
-      ]
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rain_Vortex_Jewel_Changi_Airport.jpg?width=1200",
+        "alt": "Jewel Changi Airport Rain Vortex",
+        "credit": "Photo: kallerna / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:Rain_Vortex_Jewel_Changi_Airport.jpg"
+      }
     },
     {
       "dow": "SAT",
@@ -350,7 +356,13 @@
           "title": "訂位衝突",
           "text": "JUMBO 10/10 18:45 與 Colony 18:00 重複；正式行程以 Colony 為主。"
         }
-      ]
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Singapore_Gardens_by_the_Bay_Cloud_Forest_1.jpg?width=1200",
+        "alt": "Cloud Forest at Gardens by the Bay",
+        "credit": "Photo: Zairon / Wikimedia Commons · CC BY-SA",
+        "source": "https://commons.wikimedia.org/wiki/File:Singapore_Gardens_by_the_Bay_Cloud_Forest_1.jpg"
+      }
     },
     {
       "dow": "SUN",
@@ -481,7 +493,13 @@
           "title": "19:05 一定離開 Janet",
           "text": "不管唱到哪都走；目標 19:25–19:35 回到 Republic A1。"
         }
-      ]
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1_singapore_f1_night_race_2012_city_skyline.jpg?width=1200",
+        "alt": "Singapore Formula 1 night race at Marina Bay",
+        "credit": "Photo: chensiyuan / Wikimedia Commons",
+        "source": "https://commons.wikimedia.org/wiki/File:1_singapore_f1_night_race_2012_city_skyline.jpg"
+      }
     },
     {
       "dow": "MON",
@@ -564,7 +582,13 @@
           "title": "TR874 SIN → TPE",
           "desc": "14:15 抵達桃園 T1。"
         }
-      ]
+      ],
+      "image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Changi_airport_terminal_interior.jpg?width=1200",
+        "alt": "Singapore Changi Airport Terminal 1 interior",
+        "credit": "Photo: Velela / Wikimedia Commons · Public Domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Changi_airport_terminal_interior.jpg"
+      }
     }
   ],
   "wallet": [
@@ -744,5 +768,11 @@
   "durationLabel": "4天3夜",
   "partyLabel": "2人",
   "tripType": "multi_day",
-  "priceNote": "非台幣金額皆附目前匯率估算的新台幣參考值；實際刷卡金額仍以信用卡入帳匯率與海外手續費為準。"
+  "priceNote": "非台幣金額皆附目前匯率估算的新台幣參考值；實際刷卡金額仍以信用卡入帳匯率與海外手續費為準。",
+  "coverImage": {
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skyline_from_marina_Bay%2C_evening_%2816490072161%29.jpg?width=1400",
+    "alt": "Singapore Marina Bay skyline at evening",
+    "credit": "Photo: Nicolas Lannuzel / Wikimedia Commons · CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_from_marina_Bay,_evening_(16490072161).jpg"
+  }
 }
