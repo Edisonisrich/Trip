@@ -5,15 +5,135 @@
   "summary": [
     {
       "label": "機票｜2人來回",
-      "value": "NT$38,755"
+      "value": "NT$38,755",
+      "details": [
+        {
+          "label": "航空公司",
+          "value": "Scoot · ScootPlus"
+        },
+        {
+          "label": "訂位代碼",
+          "value": "UY6D7M"
+        },
+        {
+          "label": "去程",
+          "value": "TR867｜10/09 16:15 TPE T1 → 20:45 SIN T1"
+        },
+        {
+          "label": "回程",
+          "value": "TR874｜10/12 09:30 SIN T1 → 14:15 TPE T1"
+        },
+        {
+          "label": "行李",
+          "value": "每人 30kg 托運"
+        },
+        {
+          "label": "去程座位",
+          "value": "1H / 1K"
+        },
+        {
+          "label": "回程座位",
+          "value": "1D / 1E"
+        },
+        {
+          "label": "付款",
+          "value": "NT$38,755"
+        }
+      ],
+      "searchKeyword": "UY6D7M",
+      "note": "Gmail 搜尋 UY6D7M，可找到 Scoot 確認信；實際金額在附件 Receipt UY6D7M.pdf。"
     },
     {
       "label": "旅館｜3晚",
-      "value": "S$1,560.49（約 NT$38,700）"
+      "value": "S$1,560.49（約 NT$38,700）",
+      "details": [
+        {
+          "label": "飯店",
+          "value": "Copthorne King's Hotel Singapore"
+        },
+        {
+          "label": "確認碼",
+          "value": "4TY8LX3LT"
+        },
+        {
+          "label": "入住",
+          "value": "2026/10/09 15:00"
+        },
+        {
+          "label": "退房",
+          "value": "2026/10/12 11:00"
+        },
+        {
+          "label": "房型",
+          "value": "Executive Suite · Queen"
+        },
+        {
+          "label": "人數",
+          "value": "2 Adults"
+        },
+        {
+          "label": "房費",
+          "value": "S$1,301.50"
+        },
+        {
+          "label": "稅費",
+          "value": "S$258.99"
+        },
+        {
+          "label": "總額",
+          "value": "S$1,560.49"
+        },
+        {
+          "label": "方案",
+          "value": "Mastercard Stay 3 Pay 2"
+        },
+        {
+          "label": "地址",
+          "value": "403 Havelock Road, Singapore 169632"
+        }
+      ],
+      "searchKeyword": "4TY8LX3LT",
+      "note": "非退款、不可更改；台幣換算僅供參考，實際依信用卡入帳匯率與手續費。"
     },
     {
       "label": "F1門票｜2張",
-      "value": "約 NT$34,800"
+      "value": "約 NT$34,800",
+      "details": [
+        {
+          "label": "平台",
+          "value": "KKday"
+        },
+        {
+          "label": "訂單編號",
+          "value": "26KK214064580"
+        },
+        {
+          "label": "日期",
+          "value": "2026/10/11 Sunday"
+        },
+        {
+          "label": "票種",
+          "value": "Republic Grandstand｜一日所有區域通票"
+        },
+        {
+          "label": "區域",
+          "value": "Section A1"
+        },
+        {
+          "label": "排數",
+          "value": "Row 12"
+        },
+        {
+          "label": "座位",
+          "value": "Seats 5 & 6"
+        },
+        {
+          "label": "價格",
+          "value": "約 NT$17,400/張｜2張約 NT$34,800"
+        }
+      ],
+      "searchKeyword": "26KK214064580",
+      "note": "入場票以 Singapore GP App 為主；F1 金額目前依購買時顯示價格估算。"
     }
   ],
   "days": [
@@ -451,22 +571,173 @@
     {
       "type": "FLIGHT",
       "title": "Scoot · UY6D7M",
-      "meta": "TR867 10/09 16:15 · TR874 10/12 09:30"
+      "meta": "TR867 10/09 16:15 · TR874 10/12 09:30",
+      "details": [
+        {
+          "label": "航空公司",
+          "value": "Scoot · ScootPlus"
+        },
+        {
+          "label": "訂位代碼",
+          "value": "UY6D7M"
+        },
+        {
+          "label": "去程",
+          "value": "TR867｜10/09 16:15 TPE T1 → 20:45 SIN T1"
+        },
+        {
+          "label": "回程",
+          "value": "TR874｜10/12 09:30 SIN T1 → 14:15 TPE T1"
+        },
+        {
+          "label": "行李",
+          "value": "每人 30kg 托運"
+        },
+        {
+          "label": "去程座位",
+          "value": "1H / 1K"
+        },
+        {
+          "label": "回程座位",
+          "value": "1D / 1E"
+        },
+        {
+          "label": "付款",
+          "value": "NT$38,755"
+        }
+      ],
+      "searchKeyword": "UY6D7M",
+      "note": "Gmail 搜尋 UY6D7M，可找到 Scoot 確認信；實際金額在附件 Receipt UY6D7M.pdf。"
     },
     {
       "type": "HOTEL",
       "title": "Copthorne King's Hotel Singapore",
-      "meta": "Confirmation 4TY8LX3LT · 10/09–10/12"
+      "meta": "Confirmation 4TY8LX3LT · 10/09–10/12",
+      "details": [
+        {
+          "label": "飯店",
+          "value": "Copthorne King's Hotel Singapore"
+        },
+        {
+          "label": "確認碼",
+          "value": "4TY8LX3LT"
+        },
+        {
+          "label": "入住",
+          "value": "2026/10/09 15:00"
+        },
+        {
+          "label": "退房",
+          "value": "2026/10/12 11:00"
+        },
+        {
+          "label": "房型",
+          "value": "Executive Suite · Queen"
+        },
+        {
+          "label": "人數",
+          "value": "2 Adults"
+        },
+        {
+          "label": "房費",
+          "value": "S$1,301.50"
+        },
+        {
+          "label": "稅費",
+          "value": "S$258.99"
+        },
+        {
+          "label": "總額",
+          "value": "S$1,560.49"
+        },
+        {
+          "label": "方案",
+          "value": "Mastercard Stay 3 Pay 2"
+        },
+        {
+          "label": "地址",
+          "value": "403 Havelock Road, Singapore 169632"
+        }
+      ],
+      "searchKeyword": "4TY8LX3LT",
+      "note": "非退款、不可更改；台幣換算僅供參考，實際依信用卡入帳匯率與手續費。"
     },
     {
       "type": "F1",
       "title": "Republic Grandstand A1",
-      "meta": "Row 12 · Seats 5 / 6 · Sunday 10/11"
+      "meta": "Row 12 · Seats 5 / 6 · Sunday 10/11",
+      "details": [
+        {
+          "label": "平台",
+          "value": "KKday"
+        },
+        {
+          "label": "訂單編號",
+          "value": "26KK214064580"
+        },
+        {
+          "label": "日期",
+          "value": "2026/10/11 Sunday"
+        },
+        {
+          "label": "票種",
+          "value": "Republic Grandstand｜一日所有區域通票"
+        },
+        {
+          "label": "區域",
+          "value": "Section A1"
+        },
+        {
+          "label": "排數",
+          "value": "Row 12"
+        },
+        {
+          "label": "座位",
+          "value": "Seats 5 & 6"
+        },
+        {
+          "label": "價格",
+          "value": "約 NT$17,400/張｜2張約 NT$34,800"
+        }
+      ],
+      "searchKeyword": "26KK214064580",
+      "note": "入場票以 Singapore GP App 為主；F1 金額目前依購買時顯示價格估算。"
     },
     {
       "type": "DINNER",
       "title": "Colony · 10/10 18:00",
-      "meta": "2 adults · Ritz-Carlton"
+      "meta": "2 adults · Ritz-Carlton",
+      "details": [
+        {
+          "label": "餐廳",
+          "value": "Colony · The Ritz-Carlton"
+        },
+        {
+          "label": "日期",
+          "value": "2026/10/10"
+        },
+        {
+          "label": "時間",
+          "value": "18:00"
+        },
+        {
+          "label": "人數",
+          "value": "2人"
+        },
+        {
+          "label": "方案",
+          "value": "Seafood Dinner"
+        },
+        {
+          "label": "價格",
+          "value": "S$128++ / 人"
+        },
+        {
+          "label": "地址",
+          "value": "7 Raffles Avenue, Singapore 039799"
+        }
+      ],
+      "note": "此訂位與 JUMBO 10/10 18:45 重複；正式行程目前以 Colony 為主。"
     }
   ],
   "dateLabel": "2026/10/09–10/12",
