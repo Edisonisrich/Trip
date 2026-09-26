@@ -149,11 +149,54 @@ Singapore Changi Airport Terminal 1"><div class="qcat">AIRPORT</div><div class="
 </main>
 <nav class="bottom"><div class="bottomin"><a class="nav active" data-show="day1" href="#day1"><b>01</b>抵達</a><a class="nav" data-show="day2" href="#day2"><b>02</b>MBS</a><a class="nav" data-show="day3" href="#day3"><b>03</b>F1</a><a class="nav" data-show="day4" href="#day4"><b>04</b>回程</a><a class="nav" data-show="grab" href="#grab"><b>◎</b>Grab</a></div></nav>
 <script>
-const pages=[...document.querySelectorAll('.page')];
-function show(id){pages.forEach(p=>p.classList.toggle('hide',p.id!==id));document.querySelectorAll('[data-show]').forEach(x=>x.classList.toggle('active',x.dataset.show===id));window.scrollTo({top:document.querySelector('.tabs').offsetTop,behavior:'instant'});history.replaceState(null,'','#'+id)}
-document.querySelectorAll('[data-show]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();show(x.dataset.show)}));
-document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const b=btn.closest('[data-copy]');if(!b)return;const t=b.dataset.copy.replaceAll('\n','
-');try{await navigator.clipboard.writeText(t);const old=btn.textContent;btn.textContent='已複製 ✓';setTimeout(()=>btn.textContent=old,1200)}catch(e){prompt('請複製：',t)}}));
-const h=location.hash.slice(1);if(['day1','day2','day3','day4','grab'].includes(h))show(h);
+const pages = Array.from(document.querySelectorAll('.page'));
+
+function showPage(id) {
+  pages.forEach(function(page) {
+    page.classList.toggle('hide', page.id !== id);
+  });
+
+  document.querySelectorAll('[data-show]').forEach(function(el) {
+    el.classList.toggle('active', el.dataset.show === id);
+  });
+
+  if (history.replaceState) {
+    history.replaceState(null, '', '#' + id);
+  }
+
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+}
+
+document.querySelectorAll('[data-show]').forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    showPage(el.dataset.show);
+  });
+});
+
+document.querySelectorAll('.copy').forEach(function(btn) {
+  btn.addEventListener('click', async function() {
+    const box = btn.closest('[data-copy]');
+    if (!box) return;
+
+    const value = box.dataset.copy || '';
+
+    try {
+      await navigator.clipboard.writeText(value);
+      const original = btn.textContent;
+      btn.textContent = '已複製 ✓';
+      setTimeout(function() {
+        btn.textContent = original;
+      }, 1200);
+    } catch (err) {
+      window.prompt('請複製：', value);
+    }
+  });
+});
+
+const initial = location.hash.replace('#', '');
+if (['day1','day2','day3','day4','grab'].includes(initial)) {
+  showPage(initial);
+}
 </script>
 </body></html>
