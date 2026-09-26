@@ -1,0 +1,472 @@
+{
+  "title": "新加坡 F1",
+  "subtitle": "2026/10/09 Fri – 10/12 Mon · 4 Days / 3 Nights · 2 Adults",
+  "eyebrow": "SINGAPORE GRAND PRIX · 2026",
+  "summary": [
+    {
+      "label": "Outbound",
+      "value": "TR867 · 10/9 16:15 → 20:45"
+    },
+    {
+      "label": "Hotel",
+      "value": "Copthorne King's · 3 nights"
+    },
+    {
+      "label": "Race",
+      "value": "10/11 · Republic A1 · Row 12"
+    }
+  ],
+  "days": [
+    {
+      "dow": "FRI",
+      "date": "10/09",
+      "short": "抵達",
+      "title": "抵達・Jewel・Satay",
+      "intro": "今晚第一優先是 Jewel 22:00 Rain Vortex。",
+      "items": [
+        {
+          "type": "event",
+          "time": "16:15",
+          "title": "TR867 桃園 T1 → 新加坡 T1",
+          "desc": "ScootPlus / B787-9，20:45 抵達。",
+          "chips": [
+            "Flight",
+            "T1 → T1"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "20:45",
+          "title": "入境＋領行李",
+          "desc": "完成後直接跟 JEWEL 指標走。"
+        },
+        {
+          "type": "move",
+          "time": "21:30",
+          "from": "SIN T1",
+          "to": "Jewel Rain Vortex",
+          "mode": "WALK",
+          "desc": "跟 JEWEL 指標步行。"
+        },
+        {
+          "type": "event",
+          "time": "22:00",
+          "title": "Rain Vortex 聲光秀",
+          "desc": "第一晚必看。"
+        },
+        {
+          "type": "move",
+          "time": "22:10",
+          "from": "Jewel",
+          "to": "Hotel",
+          "mode": "GRAB",
+          "destination": "Copthorne King's Hotel Singapore",
+          "address": "403 Havelock Road, Singapore 169632"
+        },
+        {
+          "type": "event",
+          "time": "22:35",
+          "title": "Hotel Check-in",
+          "desc": "放行李後再出門。"
+        },
+        {
+          "type": "move",
+          "time": "23:00",
+          "from": "Hotel",
+          "to": "Lau Pa Sat",
+          "mode": "GRAB",
+          "destination": "Lau Pa Sat",
+          "address": "18 Raffles Quay, Singapore 048582"
+        },
+        {
+          "type": "event",
+          "time": "23:15",
+          "title": "Lau Pa Sat · Satay Street",
+          "desc": "Satay、烤蝦，預計吃到 00:30。"
+        },
+        {
+          "type": "move",
+          "time": "00:30",
+          "from": "Lau Pa Sat",
+          "to": "Hotel",
+          "mode": "GRAB",
+          "destination": "Copthorne King's Hotel Singapore",
+          "address": "403 Havelock Road, Singapore 169632"
+        }
+      ],
+      "alerts": [
+        {
+          "title": "航班延誤時",
+          "text": "優先保住 Jewel 22:00 → Hotel → Lau Pa Sat；抵達 U.First 可放棄。"
+        }
+      ]
+    },
+    {
+      "dow": "SAT",
+      "date": "10/10",
+      "short": "MBS",
+      "title": "Cloud Forest・MBS・Colony",
+      "intro": "上午 Cloud Forest，中午松發，下午集中完成 MBS 行程。",
+      "items": [
+        {
+          "type": "event",
+          "time": "08:00",
+          "title": "起床＋輕早餐",
+          "desc": "留胃給松發與 Colony。"
+        },
+        {
+          "type": "move",
+          "time": "08:45",
+          "from": "Hotel",
+          "to": "Cloud Forest",
+          "mode": "GRAB",
+          "destination": "Cloud Forest, Gardens by the Bay",
+          "address": "18 Marina Gardens Drive, Singapore 018953"
+        },
+        {
+          "type": "event",
+          "time": "09:10",
+          "title": "Cloud Forest / Jurassic World",
+          "desc": "約 1 小時；不排 Flower Dome。"
+        },
+        {
+          "type": "move",
+          "time": "10:10",
+          "from": "Cloud Forest",
+          "to": "Marina Bay Sands",
+          "mode": "WALK",
+          "desc": "步行到 The Shoppes at Marina Bay Sands。"
+        },
+        {
+          "type": "event",
+          "time": "10:20",
+          "title": "Sands LifeStyle Elite",
+          "desc": "World Elite Mastercard 相關權益依現場／App 最終顯示。"
+        },
+        {
+          "type": "event",
+          "time": "10:45",
+          "title": "ArtScience Museum / teamLab",
+          "desc": "預計到 12:15。"
+        },
+        {
+          "type": "move",
+          "time": "12:15",
+          "from": "Bayfront DT16",
+          "to": "Promenade DT15",
+          "mode": "MRT",
+          "desc": "1 站，前往 Suntec City。"
+        },
+        {
+          "type": "event",
+          "time": "12:30",
+          "title": "松發肉骨茶 · Suntec City",
+          "desc": "排骨湯＋油條＋滷味，約 6 分飽。"
+        },
+        {
+          "type": "move",
+          "time": "13:20",
+          "from": "Promenade DT15",
+          "to": "Bayfront DT16",
+          "mode": "MRT",
+          "desc": "回 Marina Bay Sands。"
+        },
+        {
+          "type": "event",
+          "time": "13:40",
+          "title": "Sampan Ride"
+        },
+        {
+          "type": "event",
+          "time": "14:20",
+          "title": "Digital Light Canvas"
+        },
+        {
+          "type": "event",
+          "time": "15:00",
+          "title": "SkyPark Observation Deck",
+          "desc": "約 1 小時。"
+        },
+        {
+          "type": "move",
+          "time": "16:45",
+          "from": "MBS",
+          "to": "The Ritz-Carlton",
+          "mode": "WALK",
+          "destination": "The Ritz-Carlton, Millenia Singapore",
+          "address": "7 Raffles Avenue, Singapore 039799"
+        },
+        {
+          "type": "event",
+          "time": "18:00",
+          "title": "Colony Seafood Dinner",
+          "desc": "2 人已訂位。"
+        },
+        {
+          "type": "move",
+          "time": "20:00+",
+          "from": "Ritz-Carlton",
+          "to": "Marina Bay / Spectra",
+          "mode": "WALK"
+        },
+        {
+          "type": "event",
+          "time": "21/22",
+          "title": "Spectra 水舞秀",
+          "desc": "依 Colony 結束時間選場次。"
+        },
+        {
+          "type": "move",
+          "time": "After",
+          "from": "MBS",
+          "to": "Hotel",
+          "mode": "GRAB",
+          "destination": "Copthorne King's Hotel Singapore",
+          "address": "403 Havelock Road, Singapore 169632"
+        }
+      ],
+      "alerts": [
+        {
+          "title": "訂位衝突",
+          "text": "JUMBO 10/10 18:45 與 Colony 18:00 重複；正式行程以 Colony 為主。"
+        }
+      ]
+    },
+    {
+      "dow": "SUN",
+      "date": "10/11",
+      "short": "F1",
+      "title": "Garibaldi・F1・Janet・Lana",
+      "intro": "Drivers’ Parade → Janet Jackson → F1 正賽 → Lana Del Rey。",
+      "items": [
+        {
+          "type": "event",
+          "time": "09:00",
+          "title": "起床＋超輕早餐"
+        },
+        {
+          "type": "event",
+          "time": "10:00",
+          "title": "休息＋先收隔天行李",
+          "desc": "今晚回飯店會很晚。"
+        },
+        {
+          "type": "move",
+          "time": "11:20",
+          "from": "Hotel",
+          "to": "Garibaldi",
+          "mode": "GRAB",
+          "destination": "Garibaldi Italian Restaurant & Bar",
+          "address": "36 Purvis Street #01-02, Singapore 188613"
+        },
+        {
+          "type": "event",
+          "time": "12:00",
+          "title": "Garibaldi 午餐",
+          "desc": "規劃使用 Mastercard S$120 優惠，依最終條款。"
+        },
+        {
+          "type": "move",
+          "time": "13:30",
+          "from": "Garibaldi",
+          "to": "F1 Gate 2 附近",
+          "mode": "GRAB",
+          "destination": "Suntec City",
+          "address": "3 Temasek Boulevard, Singapore 038983",
+          "chips": [
+            "下車後步行 Gate 2"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "14:00+",
+          "title": "Singapore GP 場區",
+          "desc": "先熟悉 Republic → Wharf → Padang 路線。"
+        },
+        {
+          "type": "event",
+          "time": "18:00",
+          "title": "Drivers’ Parade",
+          "desc": "優先活動；車手經過 Republic 一帶後開始往 Wharf 移動。"
+        },
+        {
+          "type": "move",
+          "time": "18:15+",
+          "from": "Republic Grandstand",
+          "to": "Wharf Stage",
+          "mode": "FAST WALK",
+          "desc": "依 Singapore GP App 場內地圖。"
+        },
+        {
+          "type": "event",
+          "time": "18:35",
+          "title": "Janet Jackson · Wharf Stage",
+          "desc": "看後半段。"
+        },
+        {
+          "type": "move",
+          "time": "19:05",
+          "from": "Wharf Stage",
+          "to": "Republic Grandstand A1",
+          "mode": "FAST WALK",
+          "desc": "回 Row 12 · Seat 5 / 6。"
+        },
+        {
+          "type": "event",
+          "time": "20:00",
+          "title": "Singapore GP 正賽",
+          "desc": "Republic A1 · Row 12 · Seats 5 / 6。",
+          "chips": [
+            "F1",
+            "Republic A1"
+          ]
+        },
+        {
+          "type": "move",
+          "time": "22:00",
+          "from": "Republic Grandstand",
+          "to": "Padang Stage",
+          "mode": "FAST WALK",
+          "desc": "正賽結束立刻走。"
+        },
+        {
+          "type": "event",
+          "time": "22:25",
+          "title": "Lana Del Rey · Padang Stage",
+          "desc": "預計到 23:55。"
+        },
+        {
+          "type": "move",
+          "time": "23:55",
+          "from": "Padang",
+          "to": "Raffles City",
+          "mode": "WALK",
+          "desc": "先離開封路與散場人潮核心。"
+        },
+        {
+          "type": "move",
+          "time": "00:10",
+          "from": "Raffles City",
+          "to": "Hotel",
+          "mode": "GRAB",
+          "destination": "Copthorne King's Hotel Singapore",
+          "address": "403 Havelock Road, Singapore 169632",
+          "chips": [
+            "Pickup: 252 North Bridge Road"
+          ]
+        }
+      ],
+      "alerts": [
+        {
+          "title": "19:05 一定離開 Janet",
+          "text": "不管唱到哪都走；目標 19:25–19:35 回到 Republic A1。"
+        }
+      ]
+    },
+    {
+      "dow": "MON",
+      "date": "10/12",
+      "short": "回程",
+      "title": "Changi T1・U.First・回台灣",
+      "intro": "不繞 T3，睡眠優先；T1 裡面順路逛。",
+      "items": [
+        {
+          "type": "event",
+          "time": "05:45",
+          "title": "起床＋最後整理",
+          "desc": "06:10 Check-out。"
+        },
+        {
+          "type": "move",
+          "time": "06:10",
+          "from": "Hotel",
+          "to": "Changi Airport T1",
+          "mode": "GRAB",
+          "destination": "Changi Airport Terminal 1 - Departure",
+          "address": "Singapore Changi Airport Terminal 1"
+        },
+        {
+          "type": "event",
+          "time": "06:45",
+          "title": "Scoot 報到＋托運＋出境"
+        },
+        {
+          "type": "move",
+          "time": "07:10",
+          "from": "出境後",
+          "to": "SATS Premier Lounge",
+          "mode": "WALK",
+          "desc": "Terminal 1 Transit Level 3。"
+        },
+        {
+          "type": "event",
+          "time": "07:15",
+          "title": "U.First / SATS Premier Lounge",
+          "desc": "早餐、咖啡、休息；適用資格以當日顯示為準。"
+        },
+        {
+          "type": "move",
+          "time": "08:00",
+          "from": "SATS",
+          "to": "Discovery Garden",
+          "mode": "WALK",
+          "desc": "T1 Transit Level 2。"
+        },
+        {
+          "type": "event",
+          "time": "08:00",
+          "title": "Discovery Garden",
+          "desc": "約 15 分鐘。"
+        },
+        {
+          "type": "move",
+          "time": "08:15",
+          "from": "Discovery Garden",
+          "to": "Cactus Garden",
+          "mode": "WALK",
+          "desc": "T1 Transit Level 3。"
+        },
+        {
+          "type": "event",
+          "time": "08:15",
+          "title": "Cactus Garden",
+          "desc": "約 15 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "08:30",
+          "title": "免稅店／伴手禮",
+          "desc": "08:45 左右開始往登機門。"
+        },
+        {
+          "type": "event",
+          "time": "09:30",
+          "title": "TR874 SIN → TPE",
+          "desc": "14:15 抵達桃園 T1。"
+        }
+      ]
+    }
+  ],
+  "wallet": [
+    {
+      "type": "FLIGHT",
+      "title": "Scoot · UY6D7M",
+      "meta": "TR867 10/09 16:15 · TR874 10/12 09:30"
+    },
+    {
+      "type": "HOTEL",
+      "title": "Copthorne King's Hotel Singapore",
+      "meta": "Confirmation 4TY8LX3LT · 10/09–10/12"
+    },
+    {
+      "type": "F1",
+      "title": "Republic Grandstand A1",
+      "meta": "Row 12 · Seats 5 / 6 · Sunday 10/11"
+    },
+    {
+      "type": "DINNER",
+      "title": "Colony · 10/10 18:00",
+      "meta": "2 adults · Ritz-Carlton"
+    }
+  ]
+}
