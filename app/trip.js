@@ -30,6 +30,22 @@
     const metaLine = [data.dateLabel, data.durationLabel, data.partyLabel].filter(Boolean).join('｜');
     $('#trip-subtitle').textContent = metaLine || data.subtitle || '';
     $('#trip-eyebrow').textContent = data.eyebrow || 'TRIP';
+    const hero = document.querySelector('.hero');
+    if (data.coverImage && data.coverImage.url) {
+      hero.classList.add('has-photo');
+      hero.style.setProperty('--hero-image', 'url("' + data.coverImage.url.replace(/"/g, '%22') + '")');
+      let credit = document.getElementById('hero-credit');
+      if (!credit) {
+        credit = document.createElement('a');
+        credit.id = 'hero-credit';
+        credit.className = 'photo-credit hero-credit';
+        credit.target = '_blank';
+        credit.rel = 'noopener';
+        document.querySelector('.hero .shell').appendChild(credit);
+      }
+      credit.href = data.coverImage.source || '#';
+      credit.textContent = data.coverImage.credit || 'Photo';
+    }
     $('#summary').innerHTML = (data.summary||[]).map(x=>{
       const hasMore = (x.details&&x.details.length) || x.searchKeyword || x.note;
       if(!hasMore) return '<div class="box"><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong></div>';
@@ -48,7 +64,8 @@
       if (d) {
         const rows=(d.items||[]).map(x=>x.type==='move'?moveRow(x):eventRow(x)).join('');
         const alerts=(d.alerts||[]).map(alertBox).join('');
-        $('#days').innerHTML = '<section class="day single-day" id="day-'+requestedDay+'"><div class="dayhead"><div><div class="kicker">'+esc(d.dow)+' · '+esc(d.date)+'</div><h2>'+esc(d.title)+'</h2></div><div class="daynum">'+String(requestedDay).padStart(2,'0')+'</div></div>'+(d.intro?'<p class="intro">'+esc(d.intro)+'</p>':'')+'<div class="timeline">'+rows+'</div>'+alerts+'</section>';
+        const dayPhoto = d.image && d.image.url ? '<figure class="dayphoto"><img src="'+esc(d.image.url)+'" alt="'+esc(d.image.alt||d.title)+'" loading="eager"><figcaption><a target="_blank" rel="noopener" href="'+esc(d.image.source||'#')+'">'+esc(d.image.credit||'Photo')+'</a></figcaption></figure>' : '';
+        $('#days').innerHTML = '<section class="day single-day" id="day-'+requestedDay+'"><div class="dayhead"><div><div class="kicker">'+esc(d.dow)+' · '+esc(d.date)+'</div><h2>'+esc(d.title)+'</h2></div><div class="daynum">'+String(requestedDay).padStart(2,'0')+'</div></div>'+(d.intro?'<p class="intro">'+esc(d.intro)+'</p>':'')+dayPhoto+'<div class="timeline">'+rows+'</div>'+alerts+'</section>';
       } else {
         $('#days').innerHTML = '';
       }
@@ -75,7 +92,7 @@
       catch(e){window.prompt('請複製：',value)}
     }));
   }
-  fetch('./trip.json?ts=20260926d')
+  fetch('./trip.json?ts=20260926e')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json()})
     .then(render)
     .catch(err=>{$('#loading').className='error';$('#loading').textContent='行程資料載入失敗，請重新整理頁面。 '+err.message});
