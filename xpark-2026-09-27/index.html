@@ -112,10 +112,10 @@
   <section class="hero">
     <div class="kicker">SUNDAY · 2026/09/27</div>
     <h1>青埔 Xpark 一日遊 🐠</h1>
-    <p>5 大 3 小｜早上水族館、平價午餐、下午逛華泰</p>
+    <p>共 8 人｜早上水族館、13:30 野驢兒、下午逛華泰</p>
     <p>主打：不要趕、少移車、小朋友有休息空間。</p>
     <div class="badges">
-      <span class="badge">👨‍👩‍👧‍👦 5 大 3 小</span>
+      <span class="badge">👥 8 人同行</span>
       <span class="badge">🐧 Xpark 10:00 入場</span>
       <span class="badge">🍽️ 午餐：BABY DONKEY 野驢兒</span>
       <span class="badge">🛍️ 下午：華泰名品城</span>
@@ -123,6 +123,19 @@
     <div class="actions">
       <button class="btn" onclick="shareTrip()">↗ 分享行程</button>
       <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Xpark+桃園" target="_blank">📍 Xpark 導航</a>
+    </div>
+  </section>
+  <section class="card" style="margin-top:18px">
+    <h2>👥 明日成員</h2>
+    <div class="badges" style="margin-top:0">
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">繼元</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">小冷</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">熹熹</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">瑞瑞</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">蕭</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">阿瀚</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">小薇</span>
+      <span class="badge" style="background:#edf8fb;color:#0b6688;border-color:#d6edf3">齊寶</span>
     </div>
   </section>
 
@@ -280,7 +293,7 @@
 async function shareTrip(){
   const data = {
     title: '9/27 青埔 Xpark 一日遊',
-    text: '明天 5 大 3 小：10:00 Xpark 售票處集合 → 13:30 BABY DONKEY 野驢兒 → 15:00 華泰名品城'
+    text: '明天 8 人：10:00 Xpark 售票處集合 → 13:30 BABY DONKEY 野驢兒 → 15:00 華泰名品城'
   };
   try{
     if(navigator.share){
