@@ -1,6 +1,6 @@
 {
   "title": "新加坡 F1",
-  "subtitle": "2026/10/09 Fri – 10/12 Mon · 4 Days / 3 Nights · 2 Adults",
+  "subtitle": "2026/10/09–10/12｜4天3夜｜2人",
   "eyebrow": "SINGAPORE GRAND PRIX · 2026",
   "summary": [
     {
@@ -468,5 +468,9 @@
       "title": "Colony · 10/10 18:00",
       "meta": "2 adults · Ritz-Carlton"
     }
-  ]
+  ],
+  "dateLabel": "2026/10/09–10/12",
+  "durationLabel": "4天3夜",
+  "partyLabel": "2人",
+  "tripType": "multi_day"
 }
