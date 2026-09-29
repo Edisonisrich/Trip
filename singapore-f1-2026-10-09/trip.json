@@ -146,6 +146,17 @@
       "items": [
         {
           "type": "event",
+          "time": "到機場後",
+          "title": "先換 S$50 新幣",
+          "desc": "到桃園機場後先換 S$50 現金，主要備用於 Lau Pa Sat／Satay Street。建議在安檢、出境前完成，不要等進管制區後才換。",
+          "chips": [
+            "現金",
+            "S$50",
+            "出境前完成"
+          ]
+        },
+        {
+          "type": "event",
           "time": "出發前",
           "title": "確認 Singtel eSIM 已完成註冊＋安裝",
           "desc": "Klook 訂單 GRU718050。5天方案會在成功註冊後開始計算，因此建議 10/9 出發當天再完成 Singtel 註冊、eKYC 與安裝；抵達新加坡後把行動數據切到 eSIM。",
