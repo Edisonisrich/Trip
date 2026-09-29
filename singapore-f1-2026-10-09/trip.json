@@ -849,5 +849,74 @@
     "alt": "Singapore Marina Bay skyline at evening",
     "credit": "Photo: Nicolas Lannuzel / Wikimedia Commons · CC BY-SA 2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Skyline_from_marina_Bay,_evening_(16490072161).jpg"
+  },
+  "budget": {
+    "people": 2,
+    "fxNote": "SGD 換算暫以 2026/09/29 參考匯率 1 SGD ≈ NT$24.89；信用卡實際入帳與海外手續費可能不同。",
+    "items": [
+      {
+        "label": "Scoot ScootPlus 來回機票｜2人",
+        "status": "confirmed",
+        "twd": 38755,
+        "note": "訂位 UY6D7M，實際付款"
+      },
+      {
+        "label": "Copthorne King's Hotel｜3晚",
+        "status": "confirmed",
+        "twd": 38844,
+        "foreign": "S$1,560.49",
+        "note": "已確認；台幣依目前匯率換算"
+      },
+      {
+        "label": "Singtel eSIM｜2張",
+        "status": "confirmed",
+        "twd": 284,
+        "note": "5天 / 500GB / 張"
+      },
+      {
+        "label": "F1 Republic Grandstand｜2張",
+        "status": "estimated",
+        "twd": 34800,
+        "note": "約 NT$17,400 / 張；依購買時顯示價格估算"
+      },
+      {
+        "label": "Colony Seafood Dinner｜2人",
+        "status": "estimated",
+        "twd": 7641,
+        "foreign": "約 S$306.94 nett",
+        "note": "S$128++ / 人估算"
+      },
+      {
+        "label": "Garibaldi 4-course｜2人",
+        "status": "estimated",
+        "twd": 5847,
+        "foreign": "約 S$234.90 nett",
+        "note": "以 S$148++ ×2，並使用 Mastercard S$120 dining credit 估算"
+      },
+      {
+        "label": "備用新幣現金",
+        "status": "pending",
+        "twd": 1245,
+        "foreign": "S$50",
+        "includeInTotal": false,
+        "note": "只是換現金備用，不代表會全部花掉"
+      },
+      {
+        "label": "Grab / MRT",
+        "status": "pending",
+        "note": "依實際搭乘次數與 F1 期間 surge 計價"
+      },
+      {
+        "label": "景點門票與其他餐飲",
+        "status": "pending",
+        "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
+      }
+    ],
+    "notes": [
+      "Grab / MRT 實際交通費",
+      "Cloud Forest、ArtScience Museum、SkyPark 等景點票券（若尚未付款）",
+      "松發肉骨茶、Lau Pa Sat、飲料與其他零食",
+      "購物、伴手禮與信用卡海外交易手續費"
+    ]
   }
 }
