@@ -146,6 +146,17 @@
       "items": [
         {
           "type": "event",
+          "time": "出發前",
+          "title": "確認 Singtel eSIM 已完成註冊＋安裝",
+          "desc": "Klook 訂單 GRU718050。5天方案會在成功註冊後開始計算，因此建議 10/9 出發當天再完成 Singtel 註冊、eKYC 與安裝；抵達新加坡後把行動數據切到 eSIM。",
+          "chips": [
+            "eSIM",
+            "2張",
+            "5天 500GB"
+          ]
+        },
+        {
+          "type": "event",
           "time": "16:15",
           "title": "TR867 桃園 T1 → 新加坡 T1",
           "desc": "ScootPlus / B787-9，20:45 抵達。",
@@ -762,6 +773,59 @@
         }
       ],
       "note": "此訂位與 JUMBO 10/10 18:45 重複；正式行程目前以 Colony 為主。"
+    },
+    {
+      "type": "ESIM",
+      "title": "Singtel 4G/5G 新加坡 eSIM × 2",
+      "meta": "5天 · 500GB/張 · Data only · Klook GRU718050",
+      "details": [
+        {
+          "label": "平台",
+          "value": "Klook"
+        },
+        {
+          "label": "訂單編號",
+          "value": "GRU718050"
+        },
+        {
+          "label": "方案",
+          "value": "hi!Tourist 4G 上網 eSIM × 2"
+        },
+        {
+          "label": "有效期",
+          "value": "5天"
+        },
+        {
+          "label": "流量",
+          "value": "500GB / 張"
+        },
+        {
+          "label": "服務",
+          "value": "Data only"
+        },
+        {
+          "label": "使用日期",
+          "value": "2026/10/09"
+        },
+        {
+          "label": "總價",
+          "value": "NT$284（約 NT$142 / 張）"
+        },
+        {
+          "label": "憑證 1",
+          "value": "NPNE1175••••••••9334"
+        },
+        {
+          "label": "憑證 2",
+          "value": "NPNE1175••••••••c1f7"
+        },
+        {
+          "label": "啟用",
+          "value": "Singtel 註冊 → Email/抵達日 → 護照 eKYC＋人臉驗證 → 安裝 eSIM"
+        }
+      ],
+      "searchKeyword": "GRU718050",
+      "note": "完整憑證碼請直接開 Klook 訂單或 Gmail 搜尋 GRU718050。憑證須於訂單確認日起 60 天內兌換；Singtel eSIM 成功註冊後，有效期會立即開始計算。"
     }
   ],
   "dateLabel": "2026/10/09–10/12",
