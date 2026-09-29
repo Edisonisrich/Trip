@@ -845,10 +845,10 @@
   "tripType": "multi_day",
   "priceNote": "非台幣金額皆附目前匯率估算的新台幣參考值；實際刷卡金額仍以信用卡入帳匯率與海外手續費為準。",
   "coverImage": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skyline_from_marina_Bay%2C_evening_%2816490072161%29.jpg?width=1400",
-    "alt": "Singapore Marina Bay skyline at evening",
-    "credit": "Photo: Nicolas Lannuzel / Wikimedia Commons · CC BY-SA 2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Skyline_from_marina_Bay,_evening_(16490072161).jpg"
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marina_Bay_Sands_Singapore_2026_1.jpg?width=1600",
+    "alt": "Marina Bay Sands Singapore",
+    "credit": "Photo: kallerna / Wikimedia Commons · CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_Singapore_2026_1.jpg"
   },
   "budget": {
     "people": 2,
