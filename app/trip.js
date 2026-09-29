@@ -150,7 +150,7 @@
     }));
   }
 
-  fetch('./trip.json?ts=20260929c')
+  fetch('./trip.json?ts=20260929d')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
