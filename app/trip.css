@@ -94,3 +94,30 @@ details[open]>.chevron,details[open]>summary .chevron{transform:rotate(180deg)}
   .hero.has-photo{min-height:470px}
   .dayphoto img{height:220px}
 }
+
+/* total cost page */
+.budgetpage{padding:28px 0 14px}
+.budgethero{background:#111;color:#fff;border-radius:24px;padding:22px;margin-bottom:18px}
+.budgethero small{display:block;color:#aeb5bd;font-size:11px;font-weight:800;letter-spacing:.05em}
+.budgethero strong{display:block;font-size:42px;line-height:1.05;letter-spacing:-.045em;margin-top:5px}
+.budgethero div{margin-top:7px;color:#d5d9de;font-size:13px}
+.budgetgroup{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:12px 0}
+.budgetgroup h3{margin:0;padding:14px 15px 9px;font-size:13px;color:var(--muted);background:#fafbfc}
+.budgetrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 15px;border-top:1px solid var(--line)}
+.budgetrow b{display:block;font-size:15px}
+.budgetrow small{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.4}
+.budgetprice{text-align:right}
+.budgetprice strong{display:block;font-size:16px}
+.foreign{display:block;color:var(--muted);font-size:10px;margin-bottom:2px}
+.notcounted{display:inline-block;margin-top:4px;font-size:9px;color:#7b838c;background:#eef1f3;border-radius:999px;padding:3px 6px}
+.budgetnotes{background:#fff8e8;border:1px solid #f1dfae;border-radius:18px;padding:14px 16px;margin-top:14px}
+.budgetnotes b{font-size:13px}
+.budgetnotes ul{margin:7px 0 0;padding-left:18px;color:#685d43;font-size:12px;line-height:1.65}
+.fxnote{color:var(--muted);font-size:10px;line-height:1.5;padding:10px 3px 0}
+.bottomin{grid-template-columns:repeat(6,1fr)}
+@media(max-width:520px){
+  .budgethero strong{font-size:36px}
+  .budgetrow{grid-template-columns:minmax(0,1fr) 118px;gap:8px}
+  .bottomin{gap:1px}
+  .nav{font-size:9px}
+}
