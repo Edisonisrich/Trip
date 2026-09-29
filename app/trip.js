@@ -92,7 +92,7 @@
       catch(e){window.prompt('請複製：',value)}
     }));
   }
-  fetch('./trip.json?ts=20260926e')
+  fetch('./trip.json?ts=20260929a')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json()})
     .then(render)
     .catch(err=>{$('#loading').className='error';$('#loading').textContent='行程資料載入失敗，請重新整理頁面。 '+err.message});
