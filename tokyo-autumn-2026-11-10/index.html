@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f6f8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Trip</title>
+<link rel="stylesheet" href="../app/trip.css?v=19">
+</head>
+<body>
+<header class="hero hero-redesign">
+  <div class="shell">
+    <div class="hero-topbar"><a class="back" href="../">← Trip 首頁</a></div>
+    <div class="hero-card"><div class="hero-copy">
+      <div class="eyebrow" id="trip-eyebrow">TRIP</div>
+      <h1 id="trip-title">旅程</h1>
+      <p id="trip-subtitle"></p>
+    </div></div>
+  </div>
+</header>
+<section class="summary-wrap"><div class="shell"><div class="summary" id="summary"></div></div></section>
+<nav class="daynav"><div class="inner" id="daynav"></div></nav>
+<main class="shell">
+  <div id="loading" class="loading">正在載入行程…</div>
+  <div id="days"></div>
+  <section id="budget" style="display:none"></section>
+  <section class="wallet" id="wallet"></section>
+  <div class="footer">Trip Planner · GitHub Pages</div>
+</main>
+<nav class="bottom"><div class="bottomin" id="bottom"></div></nav>
+<script src="../app/trip.js?v=20"></script>
+</body>
+</html>
