@@ -1,0 +1,377 @@
+{
+  "title": "東京賞楓孝親之旅",
+  "subtitle": "2026/11/10–11/14｜5天4夜｜5人",
+  "eyebrow": "TOKYO · KAWAGUCHIKO AUTUMN 2026",
+  "dateLabel": "2026/11/10–11/14",
+  "durationLabel": "5天4夜",
+  "partyLabel": "4大1小",
+  "tripType": "multi_day",
+  "summary": [
+    {
+      "label": "機票｜5人",
+      "value": "STARLUX JX804 / JX805",
+      "details": [
+        {
+          "label": "去程",
+          "value": "11/10 15:00 TPE T1 → 19:00 NRT T2"
+        },
+        {
+          "label": "回程",
+          "value": "11/14 20:10 NRT T2 → 23:20 TPE T1"
+        },
+        {
+          "label": "訂位代碼",
+          "value": "ESG75P / ESCKFL"
+        },
+        {
+          "label": "艙等",
+          "value": "經濟艙"
+        }
+      ],
+      "searchKeyword": "ESG75P OR ESCKFL",
+      "note": "信箱共找到 5 位旅客的星宇確認信。"
+    },
+    {
+      "label": "河口湖｜2晚",
+      "value": "La Vista Fuji Kawaguchiko",
+      "details": [
+        {
+          "label": "入住",
+          "value": "11/11 15:00 後"
+        },
+        {
+          "label": "退房",
+          "value": "11/13 11:00 前"
+        },
+        {
+          "label": "房型",
+          "value": "LaVista Fourth × 2"
+        },
+        {
+          "label": "人數",
+          "value": "4位大人 + 1位兒童（4歲）"
+        },
+        {
+          "label": "總額",
+          "value": "¥321,462"
+        },
+        {
+          "label": "餐食",
+          "value": "Room Only｜不含餐"
+        },
+        {
+          "label": "備註",
+          "value": "Fourth 房型看不到富士山；館內有免費私人溫泉與夜鳴拉麵"
+        }
+      ],
+      "searchKeyword": "1746972017",
+      "note": "Agoda 訂單 1746972017；11/4 起不可退款。"
+    },
+    {
+      "label": "上野｜1晚",
+      "value": "Paul House 7F 家庭房",
+      "details": [
+        {
+          "label": "入住",
+          "value": "11/13"
+        },
+        {
+          "label": "退房",
+          "value": "11/14"
+        },
+        {
+          "label": "區域",
+          "value": "台東區／上野・御徒町"
+        },
+        {
+          "label": "交通",
+          "value": "上野站步行約5分、御徒町約4分、可直達成田"
+        }
+      ],
+      "searchKeyword": "Paul House 11月13日至14日",
+      "note": "Airbnb 已確認；信件顯示 4 adults + 1 child。"
+    },
+    {
+      "label": "11/14 包車",
+      "value": "東京市區／周邊 → 成田",
+      "details": [
+        {
+          "label": "平台",
+          "value": "KKday"
+        },
+        {
+          "label": "訂單",
+          "value": "26KK268324612"
+        },
+        {
+          "label": "使用日期",
+          "value": "2026/11/14"
+        },
+        {
+          "label": "方案",
+          "value": "東京市區/周邊包車一日游"
+        },
+        {
+          "label": "成田下車",
+          "value": "需另付 ¥5,000 超區費"
+        },
+        {
+          "label": "司機資訊",
+          "value": "服務前一晚 18:00 前提供"
+        }
+      ],
+      "searchKeyword": "26KK268324612",
+      "note": "已確認；當天可直接一路玩到機場。"
+    }
+  ],
+  "days": [
+    {
+      "dow": "TUE",
+      "date": "11/10",
+      "short": "抵達",
+      "title": "桃園 → 成田・東京",
+      "intro": "第一天以順利抵達、吃飯與休息為主；孝親行程不硬塞景點。",
+      "items": [
+        {
+          "type": "event",
+          "time": "15:00",
+          "title": "JX804 桃園 T1 → 成田 T2",
+          "desc": "19:00 抵達。"
+        },
+        {
+          "type": "event",
+          "time": "19:00+",
+          "title": "入境・領行李",
+          "desc": "預留約 60–90 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "晚間",
+          "title": "前往東京住宿",
+          "desc": "信箱目前沒有找到 11/10 當晚仍有效的住宿確認；先保留待補。"
+        }
+      ],
+      "alerts": [
+        {
+          "title": "住宿待補",
+          "text": "先前 MIMARU 東京上野 EAST 的 Airpaz 訂單 1037053729 已取消，不列入有效住宿。"
+        }
+      ]
+    },
+    {
+      "dow": "WED",
+      "date": "11/11",
+      "short": "河口湖",
+      "title": "東京 → 河口湖・La Vista",
+      "intro": "轉移日降低步行量，下午進飯店泡湯休息。",
+      "items": [
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "東京早餐・退房",
+          "desc": "避免排過多市區景點。"
+        },
+        {
+          "type": "move",
+          "time": "中午前",
+          "from": "東京",
+          "to": "河口湖",
+          "mode": "MOVE",
+          "desc": "交通方式待確認；以長輩舒適與行李便利優先。"
+        },
+        {
+          "type": "event",
+          "time": "15:00",
+          "title": "La Vista Fuji Kawaguchiko Check-in",
+          "desc": "2間 LaVista Fourth；Room Only。"
+        },
+        {
+          "type": "event",
+          "time": "傍晚",
+          "title": "私人溫泉・館內休息",
+          "desc": "免費私人天然溫泉，不需預約；適合孝親行程。"
+        },
+        {
+          "type": "event",
+          "time": "22:30",
+          "title": "夜鳴拉麵",
+          "desc": "飯店免費宵夜，實際時間以當日公告為準。"
+        }
+      ]
+    },
+    {
+      "dow": "THU",
+      "date": "11/12",
+      "short": "賞楓",
+      "title": "河口湖・富士山賞楓",
+      "intro": "整天留在富士河口湖，主軸是紅葉、富士山與低強度散步。",
+      "items": [
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "河口湖賞楓",
+          "desc": "景點與移動方式待後續依紅葉實況、天氣與長輩體力細排。"
+        },
+        {
+          "type": "event",
+          "time": "中午",
+          "title": "河口湖午餐",
+          "desc": "優先安排有座位、少排隊、好停車的餐廳。"
+        },
+        {
+          "type": "event",
+          "time": "下午",
+          "title": "富士山景觀＋咖啡休息",
+          "desc": "避免連續長距離步行。"
+        },
+        {
+          "type": "event",
+          "time": "晚上",
+          "title": "回 La Vista 泡湯休息"
+        }
+      ]
+    },
+    {
+      "dow": "FRI",
+      "date": "11/13",
+      "short": "上野",
+      "title": "河口湖 → 東京・上野",
+      "intro": "11:00 前退房，返回東京；今晚住 Paul House。",
+      "items": [
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "La Vista 退房",
+          "desc": "11:00 前完成。"
+        },
+        {
+          "type": "move",
+          "time": "中午",
+          "from": "河口湖",
+          "to": "東京／上野",
+          "mode": "MOVE",
+          "desc": "交通待確認。"
+        },
+        {
+          "type": "event",
+          "time": "下午",
+          "title": "Paul House 7F Check-in",
+          "desc": "上野站步行約5分、御徒町約4分。"
+        },
+        {
+          "type": "event",
+          "time": "傍晚",
+          "title": "上野・阿美橫町",
+          "desc": "依長輩體力彈性安排，可隨時回住宿。"
+        }
+      ]
+    },
+    {
+      "dow": "SAT",
+      "date": "11/14",
+      "short": "回程",
+      "title": "包車賞楓・成田回台",
+      "intro": "最後一天已訂包車，最適合把行李放車上一路玩到成田。",
+      "items": [
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "Paul House 退房・包車集合",
+          "desc": "司機及車輛資訊將於前一晚18:00前提供。"
+        },
+        {
+          "type": "event",
+          "time": "白天",
+          "title": "東京市區／周邊孝親賞楓",
+          "desc": "路線待後續確認；以少走路、可停車、接成田順路為原則。"
+        },
+        {
+          "type": "move",
+          "time": "傍晚",
+          "from": "最後景點",
+          "to": "成田機場 T2",
+          "mode": "CHARTER",
+          "desc": "KKday 已確認；成田下車另付 ¥5,000 超區費。"
+        },
+        {
+          "type": "event",
+          "time": "20:10",
+          "title": "JX805 成田 T2 → 桃園 T1",
+          "desc": "23:20 抵達。"
+        }
+      ],
+      "alerts": [
+        {
+          "title": "機場時間",
+          "text": "建議最晚 17:00–17:30 左右抵達成田 T2，包車路線之後會依實際景點與交通再倒推。"
+        }
+      ]
+    }
+  ],
+  "wallet": [
+    {
+      "type": "FLIGHT",
+      "title": "STARLUX JX804 / JX805",
+      "meta": "11/10–11/14 · 5人 · ESG75P / ESCKFL",
+      "searchKeyword": "ESG75P OR ESCKFL"
+    },
+    {
+      "type": "HOTEL",
+      "title": "La Vista Fuji Kawaguchiko",
+      "meta": "11/11–11/13 · Agoda 1746972017",
+      "searchKeyword": "1746972017"
+    },
+    {
+      "type": "AIRBNB",
+      "title": "Paul House 7F 家庭房",
+      "meta": "11/13–11/14 · 上野／御徒町",
+      "searchKeyword": "Paul House 11月13日至14日"
+    },
+    {
+      "type": "CHARTER",
+      "title": "KKday 東京包車",
+      "meta": "11/14 · 26KK268324612 · 成田下車 +¥5,000",
+      "searchKeyword": "26KK268324612"
+    }
+  ],
+  "budget": {
+    "people": 5,
+    "items": [
+      {
+        "label": "星宇機票｜ESG75P",
+        "status": "confirmed",
+        "twd": 42474,
+        "note": "3位旅客；信用卡付款"
+      },
+      {
+        "label": "星宇機票｜ESCKFL",
+        "status": "confirmed",
+        "twd": 11498,
+        "note": "2位旅客；信用卡付款"
+      },
+      {
+        "label": "La Vista Fuji Kawaguchiko｜2間×2晚",
+        "status": "confirmed",
+        "foreign": "¥321,462",
+        "includeInTotal": false,
+        "note": "Agoda 延後扣款；日圓金額不併入台幣總額"
+      },
+      {
+        "label": "Paul House｜1晚",
+        "status": "pending",
+        "twd": null,
+        "note": "已確認住宿；本次信箱摘錄未完整抓到總價"
+      },
+      {
+        "label": "KKday 包車｜11/14",
+        "status": "pending",
+        "twd": null,
+        "note": "已確認；成田超區費另付 ¥5,000"
+      }
+    ],
+    "notes": [
+      "11/10 第一晚住宿尚未找到有效確認信。",
+      "河口湖交通、賞楓景點與餐廳尚待細排。"
+    ]
+  }
+}
