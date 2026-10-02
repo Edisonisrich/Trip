@@ -1,0 +1,412 @@
+/* Singapore F1 2026 — night race editorial layout */
+:root{
+  --tokyo-ink:#171717;
+  --tokyo-deep:#090909;
+  --tokyo-maple:#e10600;
+  --tokyo-gold:#ffb000;
+  --tokyo-paper:#f5f4f1;
+  --tokyo-line:#dedbd4;
+}
+body{
+  background:var(--tokyo-paper);
+  color:var(--tokyo-ink);
+  font-family:"Noto Sans TC","PingFang TC",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.shell{max-width:1120px;padding-left:28px;padding-right:28px}
+
+/* Hero */
+.hero.hero-redesign{
+  padding:0!important;
+  background:var(--tokyo-deep)!important;
+  color:#fff!important;
+}
+.hero.hero-redesign .shell{
+  max-width:none!important;
+  padding:0!important;
+}
+.hero-topbar{
+  position:absolute;
+  top:22px;left:28px;z-index:5;
+  margin:0;
+}
+.hero.hero-redesign .back{
+  background:rgba(9,9,9,.68)!important;
+  color:#fff!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  padding:9px 14px!important;
+  letter-spacing:.03em;
+}
+.hero-card{
+  height:min(72vh,720px)!important;
+  min-height:520px;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:
+    linear-gradient(90deg,rgba(7,20,15,.70) 0%,rgba(7,20,15,.34) 43%,rgba(7,20,15,.08) 70%),
+    linear-gradient(180deg,rgba(0,0,0,.06) 35%,rgba(7,20,15,.70) 100%),
+    var(--hero-image) center 48%/cover no-repeat!important;
+}
+.hero-copy{
+  left:max(6vw,40px)!important;
+  right:40px!important;
+  bottom:64px!important;
+  max-width:850px;
+}
+.hero.hero-redesign .eyebrow{
+  color:#ffca4d!important;
+  font-size:12px!important;
+  letter-spacing:.34em!important;
+  font-weight:800;
+}
+.hero.hero-redesign .eyebrow:before{
+  content:"";
+  display:inline-block;
+  width:42px;height:1px;
+  margin-right:12px;
+  vertical-align:middle;
+  background:#ffca4d;
+}
+.hero.hero-redesign h1{
+  margin:12px 0 14px!important;
+  font-size:clamp(54px,7.5vw,104px)!important;
+  line-height:.93!important;
+  letter-spacing:-.055em!important;
+  font-weight:900;
+  max-width:900px;
+}
+.hero.hero-redesign #trip-subtitle{
+  font-size:16px!important;
+  letter-spacing:.13em;
+  color:rgba(255,255,255,.82)!important;
+}
+.hero.hero-redesign .hero-credit{
+  position:absolute;
+  right:20px;
+  bottom:14px;
+  color:rgba(255,255,255,.62)!important;
+}
+
+/* Booking overview */
+.summary-wrap{
+  background:var(--tokyo-deep);
+  padding:0 0 26px;
+}
+.summary-wrap .shell{max-width:1120px}
+.summary-wrap .summary{
+  transform:translateY(-20px);
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+.summary-wrap .summary .box{
+  border-radius:4px!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  background:rgba(255,255,255,.96)!important;
+  padding:16px 17px!important;
+  min-height:92px!important;
+  box-shadow:0 12px 28px rgba(0,0,0,.12)!important;
+}
+.summary-wrap .summary small{
+  color:#7b817b!important;
+  letter-spacing:.14em;
+}
+.summary-wrap .summary strong{
+  margin-top:5px;
+  font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:16px!important;
+  line-height:1.35!important;
+}
+
+/* Sticky section nav */
+.daynav{
+  top:0;
+  background:rgba(9,9,9,.96);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.daynav .inner{
+  max-width:1120px;
+  padding:0 28px;
+  gap:0;
+}
+.daypill{
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#99aaa2;
+  padding:15px 22px 13px;
+  border-bottom:2px solid transparent;
+}
+.daypill .dow{
+  color:#82958c;
+  letter-spacing:.16em;
+}
+.daypill .date{font-size:13px}
+.daypill.active{
+  background:transparent;
+  color:#fff;
+  border-bottom-color:#ffb000;
+}
+.daypill.active .dow{color:#ffb000}
+.daypill.active .date{color:#fff}
+
+/* Main */
+main.shell{
+  max-width:1120px;
+  padding-top:44px;
+}
+.day.single-day{padding:0 0 42px}
+.dayhead{
+  align-items:flex-start;
+  border-bottom:1px solid var(--tokyo-line);
+  padding-bottom:20px;
+  margin-bottom:22px;
+}
+.kicker{
+  color:var(--tokyo-maple);
+  font-size:11px;
+  letter-spacing:.26em;
+}
+.day h2{
+  font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:clamp(34px,4.5vw,56px);
+  line-height:1.05;
+  margin-top:7px;
+  letter-spacing:-.035em;
+}
+.daynum{
+  font-size:78px;
+  color:#d9d4c9;
+  line-height:.8;
+  font-weight:800;
+}
+.intro{
+  max-width:760px;
+  font-size:15px;
+  color:#6d746f;
+  margin-bottom:24px;
+}
+
+/* Timeline */
+.timeline{max-width:900px}
+.row{
+  grid-template-columns:88px 24px minmax(0,1fr);
+  gap:10px;
+}
+.row + .row{margin-top:14px}
+.time{
+  font-size:15px;
+  letter-spacing:.01em;
+  color:#39453f;
+  padding-top:18px;
+}
+.rail:before{
+  left:11px;
+  width:1px;
+  background:#cfc9bd;
+}
+.dot{
+  margin-top:21px;
+  width:14px;height:14px;
+  background:var(--tokyo-maple);
+  border:3px solid var(--tokyo-paper);
+}
+.move .dot{background:#e10600}
+.card{
+  border-radius:4px;
+  border:1px solid var(--tokyo-line);
+  box-shadow:none;
+  background:#fff;
+}
+.cardbody{padding:18px 20px}
+.title{
+  font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:19px;
+  font-weight:700;
+}
+.desc{
+  font-size:14px;
+  color:#707872;
+  margin-top:7px;
+  line-height:1.7;
+}
+.move .card{
+  background:#fff5f4;
+  border-color:#f0d0cd;
+}
+.mode{
+  border-radius:2px;
+  background:#b91c16;
+  letter-spacing:.08em;
+}
+.dest{
+  border-radius:2px;
+  border-left:3px solid #e10600;
+}
+
+/* Cost / tickets */
+.budgethero{
+  border-radius:4px;
+  background:linear-gradient(135deg,#090909,#2b0b0b);
+  padding:28px;
+}
+.budgethero strong{font-size:52px}
+.budgetgroup,.budgetnotes{
+  border-radius:4px;
+  box-shadow:none;
+}
+.ticket{
+  border-radius:4px;
+  background:#14231d;
+}
+.wallet h2{
+  font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:36px;
+}
+.footer{
+  border-top:1px solid var(--tokyo-line);
+  margin-top:38px;
+  padding-top:24px;
+}
+
+/* Desktop: keep the bottom bar discreet */
+.bottom{
+  background:rgba(246,244,238,.96);
+  border-top:1px solid var(--tokyo-line);
+}
+.nav.active{background:#e8e4da;border-radius:4px}
+
+@media(max-width:760px){
+  .shell{padding-left:16px;padding-right:16px}
+  .hero-card{
+    height:58vh!important;
+    min-height:430px;
+  }
+  .hero-topbar{top:14px;left:14px}
+  .hero-copy{
+    left:18px!important;
+    right:18px!important;
+    bottom:34px!important;
+  }
+  .hero.hero-redesign h1{
+    font-size:44px!important;
+    max-width:340px;
+  }
+  .hero.hero-redesign #trip-subtitle{
+    font-size:12px!important;
+    letter-spacing:.06em;
+  }
+  .summary-wrap{padding-bottom:10px}
+  .summary-wrap .shell{padding:0 14px}
+  .summary-wrap .summary{
+    transform:translateY(-12px);
+    display:flex!important;
+    overflow-x:auto!important;
+    padding-bottom:3px;
+  }
+  .summary-wrap .summary .box{
+    flex:0 0 218px!important;
+    min-width:218px!important;
+    min-height:86px!important;
+  }
+  .daynav .inner{padding:0 8px}
+  .daypill{padding:12px 14px 10px}
+  main.shell{padding-top:30px}
+  .daynum{font-size:52px}
+  .day h2{font-size:34px}
+  .row{grid-template-columns:58px 16px minmax(0,1fr)}
+  .time{font-size:13px;padding-top:17px}
+  .rail:before{left:7px}
+  .dot{width:12px;height:12px;margin-top:20px}
+  .cardbody{padding:15px 16px}
+  .title{font-size:17px}
+}
+
+
+/* itinerary overview — timetable x tab hybrid */
+.trip-overview{padding:0 0 54px}
+.overview-heading{
+  display:flex;justify-content:space-between;gap:28px;align-items:flex-end;
+  border-bottom:1px solid var(--tokyo-line);padding-bottom:20px;margin-bottom:24px;
+}
+.overview-heading h2{
+  margin:6px 0 0;font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:clamp(36px,5vw,58px);line-height:1;letter-spacing:-.045em;
+}
+.overview-heading p{margin:0;max-width:390px;color:#707872;font-size:14px;line-height:1.7}
+.overview-grid{
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  border:1px solid var(--tokyo-line);background:#fff;
+}
+.overview-day{
+  min-width:0;display:flex;flex-direction:column;color:var(--tokyo-ink);
+  border-right:1px solid var(--tokyo-line);transition:background .2s ease,transform .2s ease;
+}
+.overview-day:last-child{border-right:0}
+.overview-day:hover{background:#fff8f5}
+.overview-dayhead{
+  padding:17px 16px 15px;min-height:130px;background:#111111;color:#fff;
+  border-bottom:3px solid var(--tokyo-gold);
+}
+.overview-day:nth-child(2) .overview-dayhead,
+.overview-day:nth-child(3) .overview-dayhead{background:#241010}
+.overview-day:nth-child(4) .overview-dayhead{background:#33200a}
+.overview-day:nth-child(5) .overview-dayhead{background:#4a0b08}
+.overview-dayhead small{
+  display:block;color:#ffca4d;font-size:9px;letter-spacing:.16em;font-weight:800;
+}
+.overview-dayhead strong{
+  display:block;margin-top:8px;font-size:24px;line-height:1;letter-spacing:-.03em;
+}
+.overview-dayhead h3{
+  margin:12px 0 0;font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:15px;line-height:1.45;font-weight:700;
+}
+.overview-events{flex:1;padding:4px 14px 8px}
+.overview-event{
+  position:relative;padding:14px 0 14px 16px;border-bottom:1px solid #eee9df;
+}
+.overview-event:last-child{border-bottom:0}
+.overview-event:before{
+  content:"";position:absolute;left:0;top:19px;width:6px;height:6px;border-radius:50%;
+  background:var(--tokyo-maple);
+}
+.overview-event span{
+  display:block;color:#8b8174;font-size:9px;font-weight:800;letter-spacing:.08em;
+}
+.overview-event b{
+  display:block;margin-top:4px;font-size:13px;line-height:1.5;font-weight:700;
+}
+.overview-event em{
+  display:inline-block;margin-top:5px;padding:2px 5px;background:#fff0e6;color:#8f1d17;
+  font-size:8px;font-style:normal;font-weight:800;letter-spacing:.08em;
+}
+.overview-open{
+  margin-top:auto;padding:12px 14px;border-top:1px solid var(--tokyo-line);
+  color:#c51a14;font-size:10px;font-weight:800;letter-spacing:.03em;
+}
+.bottomin{
+  display:flex!important;grid-template-columns:none!important;overflow-x:auto;scrollbar-width:none;
+  max-width:780px;
+}
+.bottomin::-webkit-scrollbar{display:none}
+.bottom .nav{flex:0 0 82px}
+
+@media(max-width:900px){
+  .overview-grid{
+    grid-template-columns:repeat(5,210px);overflow-x:auto;scroll-snap-type:x proximity;
+  }
+  .overview-day{scroll-snap-align:start}
+}
+@media(max-width:620px){
+  .overview-heading{display:block}
+  .overview-heading p{margin-top:12px}
+  .overview-grid{
+    margin-left:-16px;margin-right:-16px;
+    grid-template-columns:repeat(5,78vw);
+    border-left:0;border-right:0;
+  }
+  .overview-dayhead{min-height:116px}
+}
