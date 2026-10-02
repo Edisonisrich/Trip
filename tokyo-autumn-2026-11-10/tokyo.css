@@ -587,3 +587,61 @@ main.shell{
   }
   .mrow .cal-b{flex:1;margin:0;min-height:42px}
 }
+
+
+/* v6 larger readable calendar */
+.cal{
+  grid-template-columns:92px repeat(5,minmax(220px,1fr))!important;
+  grid-auto-rows:72px!important;
+  min-width:1220px!important;
+}
+.cal-h b{font-size:18px!important}
+.cal-h small{font-size:12px!important;margin-top:5px!important}
+.cal-t{
+  font-size:13px!important;
+  padding:7px 12px 0 0!important;
+}
+.cal-b{
+  margin:4px 5px!important;
+  padding:10px 12px 10px 13px!important;
+  min-height:62px!important;
+  overflow:visible!important;
+  white-space:normal!important;
+}
+.cal-b b{
+  font-size:14px!important;
+  line-height:1.45!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+  word-break:break-word!important;
+}
+.cal-b span{
+  font-size:11.5px!important;
+  line-height:1.35!important;
+  margin-top:4px!important;
+}
+.cal-wrap{
+  border-radius:10px!important;
+}
+@media(max-width:900px){
+  .mcal-day{border-radius:10px!important}
+  .mcal-dh{padding:13px 15px!important}
+  .mcal-dh b{font-size:19px!important}
+  .mcal-dh span{font-size:12px!important}
+  .mrow{gap:11px!important;padding:10px 12px 0!important}
+  .mrow:last-child{padding-bottom:12px!important}
+  .mtime{
+    flex:0 0 62px!important;
+    font-size:12.5px!important;
+    padding-top:9px!important;
+  }
+  .mrow .cal-b{
+    min-height:56px!important;
+    padding:10px 12px!important;
+  }
+  .mrow .cal-b b{
+    font-size:14px!important;
+    line-height:1.45!important;
+  }
+}
