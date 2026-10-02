@@ -323,3 +323,90 @@ main.shell{
   .cardbody{padding:15px 16px}
   .title{font-size:17px}
 }
+
+
+/* itinerary overview — timetable x tab hybrid */
+.trip-overview{padding:0 0 54px}
+.overview-heading{
+  display:flex;justify-content:space-between;gap:28px;align-items:flex-end;
+  border-bottom:1px solid var(--tokyo-line);padding-bottom:20px;margin-bottom:24px;
+}
+.overview-heading h2{
+  margin:6px 0 0;font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:clamp(36px,5vw,58px);line-height:1;letter-spacing:-.045em;
+}
+.overview-heading p{margin:0;max-width:390px;color:#707872;font-size:14px;line-height:1.7}
+.overview-grid{
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  border:1px solid var(--tokyo-line);background:#fff;
+}
+.overview-day{
+  min-width:0;display:flex;flex-direction:column;color:var(--tokyo-ink);
+  border-right:1px solid var(--tokyo-line);transition:background .2s ease,transform .2s ease;
+}
+.overview-day:last-child{border-right:0}
+.overview-day:hover{background:#fbf8f1}
+.overview-dayhead{
+  padding:17px 16px 15px;min-height:130px;background:#152a22;color:#fff;
+  border-bottom:3px solid var(--tokyo-gold);
+}
+.overview-day:nth-child(2) .overview-dayhead,
+.overview-day:nth-child(3) .overview-dayhead{background:#213c30}
+.overview-day:nth-child(4) .overview-dayhead{background:#3c3428}
+.overview-day:nth-child(5) .overview-dayhead{background:#522f29}
+.overview-dayhead small{
+  display:block;color:#d3b66d;font-size:9px;letter-spacing:.16em;font-weight:800;
+}
+.overview-dayhead strong{
+  display:block;margin-top:8px;font-size:24px;line-height:1;letter-spacing:-.03em;
+}
+.overview-dayhead h3{
+  margin:12px 0 0;font-family:"Noto Serif TC","Noto Sans TC",sans-serif;
+  font-size:15px;line-height:1.45;font-weight:700;
+}
+.overview-events{flex:1;padding:4px 14px 8px}
+.overview-event{
+  position:relative;padding:14px 0 14px 16px;border-bottom:1px solid #eee9df;
+}
+.overview-event:last-child{border-bottom:0}
+.overview-event:before{
+  content:"";position:absolute;left:0;top:19px;width:6px;height:6px;border-radius:50%;
+  background:var(--tokyo-maple);
+}
+.overview-event span{
+  display:block;color:#8b8174;font-size:9px;font-weight:800;letter-spacing:.08em;
+}
+.overview-event b{
+  display:block;margin-top:4px;font-size:13px;line-height:1.5;font-weight:700;
+}
+.overview-event em{
+  display:inline-block;margin-top:5px;padding:2px 5px;background:#e7eee9;color:#355746;
+  font-size:8px;font-style:normal;font-weight:800;letter-spacing:.08em;
+}
+.overview-open{
+  margin-top:auto;padding:12px 14px;border-top:1px solid var(--tokyo-line);
+  color:#8e3b31;font-size:10px;font-weight:800;letter-spacing:.03em;
+}
+.bottomin{
+  display:flex!important;grid-template-columns:none!important;overflow-x:auto;scrollbar-width:none;
+  max-width:780px;
+}
+.bottomin::-webkit-scrollbar{display:none}
+.bottom .nav{flex:0 0 82px}
+
+@media(max-width:900px){
+  .overview-grid{
+    grid-template-columns:repeat(5,210px);overflow-x:auto;scroll-snap-type:x proximity;
+  }
+  .overview-day{scroll-snap-align:start}
+}
+@media(max-width:620px){
+  .overview-heading{display:block}
+  .overview-heading p{margin-top:12px}
+  .overview-grid{
+    margin-left:-16px;margin-right:-16px;
+    grid-template-columns:repeat(5,78vw);
+    border-left:0;border-right:0;
+  }
+  .overview-dayhead{min-height:116px}
+}
