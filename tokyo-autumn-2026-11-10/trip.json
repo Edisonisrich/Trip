@@ -8,6 +8,42 @@
   "tripType": "multi_day",
   "summary": [
     {
+      "label": "東京首晚｜1晚",
+      "value": "Asakusa Tobu Hotel",
+      "details": [
+        {
+          "label": "入住",
+          "value": "2026/11/10 14:00 後"
+        },
+        {
+          "label": "退房",
+          "value": "2026/11/11 11:00 前"
+        },
+        {
+          "label": "房型",
+          "value": "Comfort Twin Room, Non Smoking × 2"
+        },
+        {
+          "label": "人數",
+          "value": "4 Adults"
+        },
+        {
+          "label": "地址",
+          "value": "1-1-15 Asakusa, Tokyo 111-0032"
+        },
+        {
+          "label": "早餐",
+          "value": "不含早餐"
+        },
+        {
+          "label": "Airpaz 訂單",
+          "value": "1037054158"
+        }
+      ],
+      "searchKeyword": "1037054158",
+      "note": "Airpaz 已確認；11/8 14:59 後取消會收取每房 TWD 8,190。"
+    },
+    {
       "label": "機票｜5人",
       "value": "STARLUX JX804 / JX805",
       "details": [
@@ -145,18 +181,23 @@
           "desc": "預留約 60–90 分鐘。"
         },
         {
-          "type": "event",
+          "type": "move",
           "time": "晚間",
-          "title": "前往東京住宿",
-          "desc": "信箱目前沒有找到 11/10 當晚仍有效的住宿確認；先保留待補。"
+          "from": "成田機場 T2",
+          "to": "Asakusa Tobu Hotel",
+          "mode": "MOVE",
+          "destination": "Asakusa Tobu Hotel",
+          "address": "1-1-15 Asakusa, Tokyo 111-0032",
+          "desc": "抵達後直接前往淺草住宿，孝親行程以休息優先。"
+        },
+        {
+          "type": "event",
+          "time": "到店後",
+          "title": "Asakusa Tobu Hotel Check-in",
+          "desc": "Comfort Twin Room × 2；不含早餐。"
         }
       ],
-      "alerts": [
-        {
-          "title": "住宿待補",
-          "text": "先前 MIMARU 東京上野 EAST 的 Airpaz 訂單 1037053729 已取消，不列入有效住宿。"
-        }
-      ]
+      "alerts": []
     },
     {
       "dow": "WED",
@@ -317,6 +358,30 @@
     },
     {
       "type": "HOTEL",
+      "title": "Asakusa Tobu Hotel",
+      "meta": "11/10–11/11 · Airpaz 1037054158",
+      "details": [
+        {
+          "label": "入住",
+          "value": "11/10 14:00"
+        },
+        {
+          "label": "退房",
+          "value": "11/11 11:00"
+        },
+        {
+          "label": "房型",
+          "value": "Comfort Twin Room, Non Smoking × 2"
+        },
+        {
+          "label": "地址",
+          "value": "1-1-15 Asakusa, Tokyo 111-0032"
+        }
+      ],
+      "searchKeyword": "1037054158"
+    },
+    {
+      "type": "HOTEL",
       "title": "La Vista Fuji Kawaguchiko",
       "meta": "11/11–11/13 · Agoda 1746972017",
       "searchKeyword": "1746972017"
@@ -367,10 +432,15 @@
         "status": "pending",
         "twd": null,
         "note": "已確認；成田超區費另付 ¥5,000"
+      },
+      {
+        "label": "Asakusa Tobu Hotel｜2間×1晚",
+        "status": "confirmed",
+        "twd": null,
+        "note": "Airpaz 1037054158；確認信中的總價欄位未正常顯示"
       }
     ],
     "notes": [
-      "11/10 第一晚住宿尚未找到有效確認信。",
       "河口湖交通、賞楓景點與餐廳尚待細排。"
     ]
   }
