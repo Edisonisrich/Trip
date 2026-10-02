@@ -198,9 +198,15 @@
       "dow": "WED",
       "date": "11/11",
       "short": "河口湖",
-      "title": "La Vista Fuji Kawaguchiko",
-      "intro": "信箱已確認河口湖住宿。",
+      "title": "租車自駕・La Vista Fuji Kawaguchiko",
+      "intro": "第 2 天租車自駕；目前先只記錄已確認的移動方式與住宿。",
       "items": [
+        {
+          "type": "event",
+          "time": "白天",
+          "title": "租車自駕",
+          "desc": "租車公司、取車地點與取車時間待補。"
+        },
         {
           "type": "event",
           "time": "15:00 後",
@@ -213,9 +219,15 @@
       "dow": "THU",
       "date": "11/12",
       "short": "住宿",
-      "title": "La Vista Fuji Kawaguchiko",
-      "intro": "目前信箱中只有住宿確認，沒有其他已確認行程。",
+      "title": "租車自駕・La Vista Fuji Kawaguchiko",
+      "intro": "第 3 天租車自駕；目前信箱中沒有其他已確認行程。",
       "items": [
+        {
+          "type": "event",
+          "time": "白天",
+          "title": "租車自駕",
+          "desc": "租車公司、行程與還車時間待補。"
+        },
         {
           "type": "event",
           "time": "住宿",
