@@ -390,8 +390,8 @@
       "dow": "SUN",
       "date": "10/11",
       "short": "F1",
-      "title": "Garibaldi・F1・Janet・Lana",
-      "intro": "Drivers’ Parade → Janet Jackson → F1 正賽 → Lana Del Rey。",
+      "title": "Po・F1・Janet・Lana",
+      "intro": "12:00 Po 午餐 → Drivers’ Parade → Janet Jackson → F1 正賽 → Lana Del Rey。",
       "items": [
         {
           "type": "event",
@@ -406,30 +406,37 @@
         },
         {
           "type": "move",
-          "time": "11:20",
+          "time": "11:40",
           "from": "Hotel",
-          "to": "Garibaldi",
-          "mode": "GRAB",
-          "destination": "Garibaldi Italian Restaurant & Bar",
-          "address": "36 Purvis Street #01-02, Singapore 188613"
+          "to": "Po",
+          "mode": "WALK",
+          "destination": "Po · The Warehouse Hotel",
+          "address": "320 Havelock Road, Singapore 169628",
+          "desc": "同在 Havelock Road；預留時間提早到餐廳報到。"
         },
         {
           "type": "event",
           "time": "12:00",
-          "title": "Garibaldi 午餐",
-          "desc": "規劃使用 Mastercard S$120 優惠，依最終條款。"
+          "title": "Po 午餐｜已訂位",
+          "desc": "2 人已訂位。主打 Modern Singapore Classics；可出示 F1 門票詢問單點餐飲 15% off，實際以餐廳當日條款為準。",
+          "chips": [
+            "已訂位",
+            "2人",
+            "Modern Singaporean"
+          ]
         },
         {
           "type": "move",
-          "time": "13:30",
-          "from": "Garibaldi",
+          "time": "13:20",
+          "from": "Po",
           "to": "F1 Gate 2 附近",
           "mode": "GRAB",
           "destination": "Suntec City",
           "address": "3 Temasek Boulevard, Singapore 038983",
           "chips": [
             "下車後步行 Gate 2"
-          ]
+          ],
+          "desc": "午餐後直接進 F1 區域，避開賽場周邊用餐排隊。"
         },
         {
           "type": "event",
@@ -786,6 +793,38 @@
       "note": "此訂位與 JUMBO 10/10 18:45 重複；正式行程目前以 Colony 為主。"
     },
     {
+      "type": "LUNCH",
+      "title": "Po · 10/11 12:00",
+      "meta": "2 adults · The Warehouse Hotel",
+      "details": [
+        {
+          "label": "餐廳",
+          "value": "Po · The Warehouse Hotel"
+        },
+        {
+          "label": "日期",
+          "value": "2026/10/11 Sunday"
+        },
+        {
+          "label": "時間",
+          "value": "12:00"
+        },
+        {
+          "label": "人數",
+          "value": "2人"
+        },
+        {
+          "label": "料理",
+          "value": "Modern Singapore Classics"
+        },
+        {
+          "label": "地址",
+          "value": "320 Havelock Road, Singapore 169628"
+        }
+      ],
+      "note": "已訂位。F1 期間單點餐飲優惠以餐廳現場與當日條款為準。"
+    },
+    {
       "type": "ESIM",
       "title": "Singtel 4G/5G 新加坡 eSIM × 2",
       "meta": "5天 · 500GB/張 · Data only · Klook GRU718050",
@@ -887,11 +926,11 @@
         "note": "S$128++ / 人估算"
       },
       {
-        "label": "Garibaldi 4-course｜2人",
+        "label": "Po 午餐｜2人",
         "status": "estimated",
-        "twd": 5847,
-        "foreign": "約 S$234.90 nett",
-        "note": "以 S$148++ ×2，並使用 Mastercard S$120 dining credit 估算"
+        "twd": 3432,
+        "foreign": "約 S$137.62 nett",
+        "note": "依目前建議點法與 F1 門票單點 15% off 粗估；實際依當日點餐與餐廳條款"
       },
       {
         "label": "備用新幣現金",
