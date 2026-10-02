@@ -52,23 +52,69 @@
   }
 
   function renderOverview(data){
-    const slotLabel = t => {
-      const s=String(t||'');
-      if (/出發前|通關後|白天|上午|09:30|11:00/.test(s)) return '上午';
-      if (/15:00|16:00|下午/.test(s)) return '下午';
-      if (/19:00|20:10|住宿|晚上|當日/.test(s)) return '晚上';
-      return '行程';
+    const parseHour = (s) => {
+      const m=String(s||'').match(/(\d{1,2}):(\d{2})/);
+      if(!m) return null;
+      return Number(m[1]) + Number(m[2])/60;
     };
-    const dayCols=(data.days||[]).map((d,i)=>{
-      const items=(d.items||[]).map(x=>{
-        const title=x.type==='move' ? (esc(x.from)+' → '+esc(x.to)) : esc(x.title||'');
-        return '<div class="overview-event"><span>'+esc(x.time||slotLabel(x.time))+'</span><b>'+title+'</b>'+(x.mode?'<em>'+esc(x.mode)+'</em>':'')+'</div>';
-      }).join('');
-      return '<a class="overview-day" href="?day='+(i+1)+'"><div class="overview-dayhead"><small>DAY '+String(i+1).padStart(2,'0')+' · '+esc(d.dow)+'</small><strong>'+esc(d.date)+'</strong><h3>'+esc(d.short||d.title)+'</h3></div><div class="overview-events">'+items+'</div><div class="overview-open">查看完整行程 →</div></a>';
-    }).join('');
-    return '<section class="trip-overview"><div class="overview-heading"><div><div class="kicker">TRIP AT A GLANCE</div><h2>五日行程總覽</h2></div><p>先看全程，再用上方日期 Tab 進入每天的詳細時間軸。</p></div><div class="overview-grid">'+dayCols+'</div></section>';
-  }
+    const classify = (x) => {
+      const t=(x.title||'')+' '+(x.desc||'')+' '+(x.mode||'');
+      if(/JX|STARLUX|航空|班機/.test(t)) return 'flight';
+      if(/住宿|Hotel|House|La Vista|Check-in|Check-out/.test(t)) return 'hotel';
+      if(/Bistro|用餐|餐/.test(t)) return 'meal';
+      if(/租車|自駕|CHARTER|包車|→/.test(t) || x.type==='move') return 'move';
+      return 'play';
+    };
+    const days=data.days||[];
+    const hours=[9,10,11,12,13,14,15,16,17,18,19,20,21,22];
+    const cols=days.length;
+    const headers=days.map((d,i)=>
+      '<a class="cal-h" href="?day='+(i+1)+'" style="grid-column:'+(i+2)+';grid-row:1"><b>'+esc(d.date)+'</b><small>'+esc(d.dow)+' · '+esc(d.short||'')+'</small></a>'
+    ).join('');
+    let slots='';
+    hours.forEach((h,ri)=>{
+      const row=ri+2;
+      slots+='<div class="cal-t" style="grid-row:'+row+'">'+String(h).padStart(2,'0')+':00</div>';
+      for(let c=0;c<cols;c++) slots+='<div class="cal-slot" style="grid-column:'+(c+2)+';grid-row:'+row+'"></div>';
+    });
 
+    const blocks=[];
+    const untimed=[];
+    days.forEach((d,di)=>{
+      (d.items||[]).forEach(x=>{
+        const h=parseHour(x.time);
+        const cls=classify(x);
+        const title=x.type==='move' ? esc(x.from)+' → '+esc(x.to) : esc(x.title||'');
+        if(h==null){
+          untimed.push('<a href="?day='+(di+1)+'" class="cal-pending cp-'+cls+'"><small>'+esc(d.date)+'</small><b>'+title+'</b><span>'+esc(x.time||'時間待補')+'</span></a>');
+          return;
+        }
+        const startHour=Math.max(9,Math.min(22,h));
+        const row=Math.floor(startHour-9)+2;
+        const nextKnown = cls==='flight' ? 2 : 1;
+        const span = Math.min(nextKnown, hours.length-(row-2));
+        blocks.push('<a href="?day='+(di+1)+'" class="cal-b cb-'+cls+'" style="grid-column:'+(di+2)+';grid-row:'+row+' / span '+span+'"><b>'+title+'</b><span>'+esc(x.time||'')+'</span></a>');
+      });
+    });
+
+    const mobile=days.map((d,di)=>{
+      const rows=(d.items||[]).map(x=>{
+        const cls=classify(x);
+        const title=x.type==='move' ? esc(x.from)+' → '+esc(x.to) : esc(x.title||'');
+        return '<a class="mrow" href="?day='+(di+1)+'"><div class="mtime">'+esc(x.time||'待補')+'</div><div class="cal-b cb-'+cls+'"><b>'+title+'</b>'+(x.desc?'<span>'+esc(x.desc)+'</span>':'')+'</div></a>';
+      }).join('');
+      return '<section class="mcal-day"><a class="mcal-dh" href="?day='+(di+1)+'"><b>'+esc(d.date)+'</b><span>'+esc(d.dow)+' · '+esc(d.short||'')+'</span></a>'+rows+'</section>';
+    }).join('');
+
+    return '<section class="trip-overview">'+
+      '<div class="overview-heading"><div><div class="kicker">TRIP AT A GLANCE</div><h2>五日行程總表</h2></div><p>色塊只放已確認時間；沒有時間的項目獨立列在下方，不自行猜測。</p></div>'+
+      '<div class="sched-title"><h3>🗓 行程總表</h3><div class="line"></div></div>'+
+      '<div class="cal-wrap"><div class="cal" style="--day-count:'+cols+'"><div class="cal-corner"></div>'+headers+slots+blocks.join('')+'</div></div>'+
+      '<div class="mcal">'+mobile+'</div>'+
+      (untimed.length?'<div class="pending-wrap"><div class="pending-title">時間待補</div><div class="pending-grid">'+untimed.join('')+'</div></div>':'')+
+      '<div class="cal-legend"><span><i class="cb-flight"></i>班機</span><span><i class="cb-move"></i>交通／自駕</span><span><i class="cb-meal"></i>餐飲</span><span><i class="cb-hotel"></i>住宿</span></div>'+
+    '</section>';
+  }
   function render(data){
     document.title = data.title + '｜Trip';
     $('#trip-title').textContent = data.title;
@@ -174,7 +220,7 @@
     }));
   }
 
-  fetch('./trip.json?ts=20261002c')
+  fetch('./trip.json?ts=20261002d')
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
