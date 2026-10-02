@@ -164,111 +164,51 @@
     {
       "dow": "TUE",
       "date": "11/10",
-      "short": "抵達",
-      "title": "桃園 → 成田・東京",
-      "intro": "第一天以順利抵達、吃飯與休息為主；孝親行程不硬塞景點。",
+      "short": "出發",
+      "title": "桃園 → 成田・淺草住宿",
+      "intro": "以下僅保留信箱中已有確認資料。",
       "items": [
         {
           "type": "event",
           "time": "15:00",
           "title": "JX804 桃園 T1 → 成田 T2",
-          "desc": "19:00 抵達。"
+          "desc": "星宇航空；19:00 抵達。"
         },
         {
           "type": "event",
-          "time": "19:00+",
-          "title": "入境・領行李",
-          "desc": "預留約 60–90 分鐘。"
-        },
-        {
-          "type": "move",
-          "time": "晚間",
-          "from": "成田機場 T2",
-          "to": "Asakusa Tobu Hotel",
-          "mode": "MOVE",
-          "destination": "Asakusa Tobu Hotel",
-          "address": "1-1-15 Asakusa, Tokyo 111-0032",
-          "desc": "抵達後直接前往淺草住宿，孝親行程以休息優先。"
-        },
-        {
-          "type": "event",
-          "time": "到店後",
-          "title": "Asakusa Tobu Hotel Check-in",
-          "desc": "Comfort Twin Room × 2；不含早餐。"
+          "time": "住宿",
+          "title": "Asakusa Tobu Hotel",
+          "desc": "11/10 入住、11/11 退房；Comfort Twin Room, Non Smoking × 2。"
         }
-      ],
-      "alerts": []
+      ]
     },
     {
       "dow": "WED",
       "date": "11/11",
       "short": "河口湖",
-      "title": "東京 → 河口湖・La Vista",
-      "intro": "轉移日降低步行量，下午進飯店泡湯休息。",
+      "title": "La Vista Fuji Kawaguchiko",
+      "intro": "信箱已確認河口湖住宿。",
       "items": [
         {
           "type": "event",
-          "time": "上午",
-          "title": "東京早餐・退房",
-          "desc": "避免排過多市區景點。"
-        },
-        {
-          "type": "move",
-          "time": "中午前",
-          "from": "東京",
-          "to": "河口湖",
-          "mode": "MOVE",
-          "desc": "交通方式待確認；以長輩舒適與行李便利優先。"
-        },
-        {
-          "type": "event",
-          "time": "15:00",
+          "time": "15:00 後",
           "title": "La Vista Fuji Kawaguchiko Check-in",
-          "desc": "2間 LaVista Fourth；Room Only。"
-        },
-        {
-          "type": "event",
-          "time": "傍晚",
-          "title": "私人溫泉・館內休息",
-          "desc": "免費私人天然溫泉，不需預約；適合孝親行程。"
-        },
-        {
-          "type": "event",
-          "time": "22:30",
-          "title": "夜鳴拉麵",
-          "desc": "飯店免費宵夜，實際時間以當日公告為準。"
+          "desc": "11/11 入住；2間 LaVista Fourth。"
         }
       ]
     },
     {
       "dow": "THU",
       "date": "11/12",
-      "short": "賞楓",
-      "title": "河口湖・富士山賞楓",
-      "intro": "整天留在富士河口湖，主軸是紅葉、富士山與低強度散步。",
+      "short": "住宿",
+      "title": "La Vista Fuji Kawaguchiko",
+      "intro": "目前信箱中只有住宿確認，沒有其他已確認行程。",
       "items": [
         {
           "type": "event",
-          "time": "上午",
-          "title": "河口湖賞楓",
-          "desc": "景點與移動方式待後續依紅葉實況、天氣與長輩體力細排。"
-        },
-        {
-          "type": "event",
-          "time": "中午",
-          "title": "河口湖午餐",
-          "desc": "優先安排有座位、少排隊、好停車的餐廳。"
-        },
-        {
-          "type": "event",
-          "time": "下午",
-          "title": "富士山景觀＋咖啡休息",
-          "desc": "避免連續長距離步行。"
-        },
-        {
-          "type": "event",
-          "time": "晚上",
-          "title": "回 La Vista 泡湯休息"
+          "time": "住宿",
+          "title": "La Vista Fuji Kawaguchiko",
+          "desc": "住宿第 2 晚。"
         }
       ]
     },
@@ -276,34 +216,20 @@
       "dow": "FRI",
       "date": "11/13",
       "short": "上野",
-      "title": "河口湖 → 東京・上野",
-      "intro": "11:00 前退房，返回東京；今晚住 Paul House。",
+      "title": "Paul House 7F",
+      "intro": "以下僅保留信箱中已有確認資料。",
       "items": [
         {
           "type": "event",
-          "time": "上午",
-          "title": "La Vista 退房",
-          "desc": "11:00 前完成。"
-        },
-        {
-          "type": "move",
-          "time": "中午",
-          "from": "河口湖",
-          "to": "東京／上野",
-          "mode": "MOVE",
-          "desc": "交通待確認。"
+          "time": "11:00 前",
+          "title": "La Vista Fuji Kawaguchiko Check-out",
+          "desc": "Agoda 訂單確認。"
         },
         {
           "type": "event",
-          "time": "下午",
+          "time": "16:00 後",
           "title": "Paul House 7F Check-in",
-          "desc": "上野站步行約5分、御徒町約4分。"
-        },
-        {
-          "type": "event",
-          "time": "傍晚",
-          "title": "上野・阿美橫町",
-          "desc": "依長輩體力彈性安排，可隨時回住宿。"
+          "desc": "Airbnb；11/13 入住、11/14 退房。"
         }
       ]
     },
@@ -311,40 +237,28 @@
       "dow": "SAT",
       "date": "11/14",
       "short": "回程",
-      "title": "包車賞楓・成田回台",
-      "intro": "最後一天已訂包車，最適合把行李放車上一路玩到成田。",
+      "title": "KKday 包車・成田・回台灣",
+      "intro": "以下僅保留信箱中已有確認資料。",
       "items": [
         {
           "type": "event",
-          "time": "上午",
-          "title": "Paul House 退房・包車集合",
-          "desc": "司機及車輛資訊將於前一晚18:00前提供。"
-        },
-        {
-          "type": "event",
-          "time": "白天",
-          "title": "東京市區／周邊孝親賞楓",
-          "desc": "路線待後續確認；以少走路、可停車、接成田順路為原則。"
+          "time": "09:30",
+          "title": "KKday 東京包車集合",
+          "desc": "豪華7座；集合地點為 PAUL HOUSE-上野館；訂單 26KK268324612。"
         },
         {
           "type": "move",
-          "time": "傍晚",
-          "from": "最後景點",
-          "to": "成田機場 T2",
+          "time": "當日",
+          "from": "PAUL HOUSE-上野館",
+          "to": "成田機場第二航廈",
           "mode": "CHARTER",
-          "desc": "KKday 已確認；成田下車另付 ¥5,000 超區費。"
+          "desc": "下車地點已在 KKday 憑證確認；另有 ¥5,000 超區費。"
         },
         {
           "type": "event",
           "time": "20:10",
           "title": "JX805 成田 T2 → 桃園 T1",
           "desc": "23:20 抵達。"
-        }
-      ],
-      "alerts": [
-        {
-          "title": "機場時間",
-          "text": "建議最晚 17:00–17:30 左右抵達成田 T2，包車路線之後會依實際景點與交通再倒推。"
         }
       ]
     }
@@ -440,9 +354,7 @@
         "note": "Airpaz 1037054158；確認信中的總價欄位未正常顯示"
       }
     ],
-    "notes": [
-      "河口湖交通、賞楓景點與餐廳尚待細排。"
-    ]
+    "notes": []
   },
   "coverImage": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg?width=1800",
