@@ -1,5 +1,5 @@
 {
-  "title": "新加坡 F1",
+  "title": "新加坡 F1 之旅",
   "subtitle": "2026/10/09–10/12｜4天3夜｜2人",
   "eyebrow": "SINGAPORE GRAND PRIX · 2026",
   "summary": [
@@ -892,10 +892,10 @@
   "tripType": "multi_day",
   "priceNote": "非台幣金額皆附目前匯率估算的新台幣參考值；實際刷卡金額仍以信用卡入帳匯率與海外手續費為準。",
   "coverImage": {
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marina_Bay_Sands_Singapore_2026_1.jpg?width=1600",
-    "alt": "Marina Bay Sands Singapore",
-    "credit": "Photo: kallerna / Wikimedia Commons · CC BY-SA 4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_Singapore_2026_1.jpg"
+    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1_singapore_f1_night_race_2012_city_skyline.jpg?width=1800",
+    "alt": "Singapore Formula 1 night race at Marina Bay",
+    "credit": "Singapore F1 night race · Wikimedia Commons",
+    "source": "https://commons.wikimedia.org/wiki/File:1_singapore_f1_night_race_2012_city_skyline.jpg"
   },
   "budget": {
     "people": 2,
@@ -966,4 +966,4 @@
       "購物、伴手禮與信用卡海外交易手續費"
     ]
   }
-}
+}\n
