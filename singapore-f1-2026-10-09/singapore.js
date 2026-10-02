@@ -174,7 +174,7 @@
     }));
   }
 
-  fetch('./trip.json?ts=20261002c')
+  fetch('./trip.json?v=20261002-1330',{cache:'no-store'})
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
