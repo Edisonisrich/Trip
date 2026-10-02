@@ -165,9 +165,21 @@
       "dow": "TUE",
       "date": "11/10",
       "short": "出發",
-      "title": "桃園 → 成田・淺草住宿",
-      "intro": "以下僅保留信箱中已有確認資料。",
+      "title": "商務通關・Bistro:D・桃園 → 成田・淺草住宿",
+      "intro": "台灣端先使用商務／禮遇通關，再到 Bistro:D 使用 U.First 用餐；之後搭乘 JX804 前往成田。",
       "items": [
+        {
+          "type": "event",
+          "time": "出發前",
+          "title": "桃園機場商務／禮遇通關",
+          "desc": "依已安排的商務通關流程完成出境。"
+        },
+        {
+          "type": "event",
+          "time": "通關後",
+          "title": "Bistro:D｜U.First 用餐",
+          "desc": "桃園機場第一航廈出境後使用 U.First 餐廳權益。"
+        },
         {
           "type": "event",
           "time": "15:00",
