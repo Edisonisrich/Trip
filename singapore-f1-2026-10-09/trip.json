@@ -418,7 +418,7 @@
           "type": "event",
           "time": "12:00",
           "title": "Po 午餐｜已訂位",
-          "desc": "2 人已訂位。主打 Modern Singapore Classics；可出示 F1 門票詢問單點餐飲 15% off，實際以餐廳當日條款為準。",
+          "desc": "2 人已訂位。建議點：Classic Popiah、Charcoal-Grilled Iberico Satay、Wagyu Short Rib Rendang、Carabinero Prawns & Konbu Mee、XO Crab Carrot Cake（花蟹肉 XO 蘿蔔糕）。可出示 F1 門票詢問單點餐飲 15% off，實際以餐廳當日條款為準。",
           "chips": [
             "已訂位",
             "2人",
@@ -824,6 +824,10 @@
         {
           "label": "訂位電話",
           "value": "尾號 937227"
+        },
+        {
+          "label": "建議點餐",
+          "value": "Classic Popiah、Iberico Satay、Wagyu Short Rib Rendang、Carabinero Prawns & Konbu Mee、XO Crab Carrot Cake"
         }
       ],
       "note": "已訂位。訂位使用電話尾號 937227；F1 期間單點餐飲優惠以餐廳現場與當日條款為準。"
@@ -932,9 +936,9 @@
       {
         "label": "Po 午餐｜2人",
         "status": "estimated",
-        "twd": 3432,
-        "foreign": "約 S$137.62 nett",
-        "note": "依目前建議點法與 F1 門票單點 15% off 粗估；實際依當日點餐與餐廳條款"
+        "twd": 3989,
+        "foreign": "約 S$159.93 nett",
+        "note": "建議點法共 S$157++；以 F1 門票單點 15% off 粗估後，再加服務費與 GST；實際依當日點餐與餐廳條款"
       },
       {
         "label": "備用新幣現金",
