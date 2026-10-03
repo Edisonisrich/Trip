@@ -8,42 +8,6 @@
   "tripType": "multi_day",
   "summary": [
     {
-      "label": "東京首晚｜1晚",
-      "value": "Asakusa Tobu Hotel",
-      "details": [
-        {
-          "label": "入住",
-          "value": "2026/11/10 14:00 後"
-        },
-        {
-          "label": "退房",
-          "value": "2026/11/11 11:00 前"
-        },
-        {
-          "label": "房型",
-          "value": "Comfort Twin Room, Non Smoking × 2"
-        },
-        {
-          "label": "人數",
-          "value": "4 Adults"
-        },
-        {
-          "label": "地址",
-          "value": "1-1-15 Asakusa, Tokyo 111-0032"
-        },
-        {
-          "label": "早餐",
-          "value": "不含早餐"
-        },
-        {
-          "label": "Airpaz 訂單",
-          "value": "1037054158"
-        }
-      ],
-      "searchKeyword": "1037054158",
-      "note": "Airpaz 已確認；11/8 14:59 後取消會收取每房 TWD 8,190。"
-    },
-    {
       "label": "機票｜5人",
       "value": "STARLUX JX804 / JX805",
       "details": [
@@ -65,99 +29,129 @@
         }
       ],
       "searchKeyword": "ESG75P OR ESCKFL",
-      "note": "信箱共找到 5 位旅客的星宇確認信。"
+      "note": "已確認。"
     },
     {
-      "label": "河口湖｜2晚",
-      "value": "La Vista Fuji Kawaguchiko",
+      "label": "東京首晚｜1晚",
+      "value": "Asakusa Tobu Hotel",
       "details": [
         {
           "label": "入住",
-          "value": "11/11 15:00 後"
+          "value": "11/10"
         },
         {
           "label": "退房",
-          "value": "11/13 11:00 前"
+          "value": "11/11"
         },
         {
           "label": "房型",
-          "value": "LaVista Fourth × 2"
+          "value": "Comfort Twin Room, Non Smoking × 2"
         },
         {
-          "label": "人數",
-          "value": "4位大人 + 1位兒童（4歲）"
+          "label": "地址",
+          "value": "1-1-15 Asakusa, Tokyo 111-0032"
         },
         {
-          "label": "總額",
-          "value": "¥321,462"
-        },
-        {
-          "label": "餐食",
-          "value": "Room Only｜不含餐"
-        },
-        {
-          "label": "備註",
-          "value": "Fourth 房型看不到富士山；館內有免費私人溫泉與夜鳴拉麵"
+          "label": "Airpaz",
+          "value": "1037054158"
         }
       ],
-      "searchKeyword": "1746972017",
-      "note": "Agoda 訂單 1746972017；11/4 起不可退款。"
+      "searchKeyword": "1037054158",
+      "note": "已確認。"
     },
     {
-      "label": "上野｜1晚",
-      "value": "Paul House 7F 家庭房",
+      "label": "河口湖｜2晚",
+      "value": "湖山亭產屋",
       "details": [
         {
           "label": "入住",
-          "value": "11/13"
+          "value": "11/11"
         },
         {
           "label": "退房",
-          "value": "11/14"
+          "value": "11/13"
         },
         {
-          "label": "區域",
-          "value": "台東區／上野・御徒町"
-        },
-        {
-          "label": "交通",
-          "value": "上野站步行約5分、御徒町約4分、可直達成田"
+          "label": "晚數",
+          "value": "2晚"
         }
       ],
-      "searchKeyword": "Paul House 11月13日至14日",
-      "note": "Airbnb 已確認；信件顯示 4 adults + 1 child。"
+      "note": "依你最新行程清單更新。"
     },
     {
-      "label": "11/14 包車",
-      "value": "東京市區／周邊 → 成田",
+      "label": "租車｜11/11–11/13",
+      "value": "Relax Car Rental Tokyo",
       "details": [
         {
-          "label": "平台",
-          "value": "KKday"
+          "label": "取車",
+          "value": "11/11 11:30"
+        },
+        {
+          "label": "取車地址",
+          "value": "2-4-8 Kaminarimon, Taito-ku, Tokyo 111-0034"
+        },
+        {
+          "label": "還車",
+          "value": "11/13 19:30"
+        },
+        {
+          "label": "還車地址",
+          "value": "〒110-0005 Ueno Station 7-1 Ueno, Taito-ku, Tokyo"
         },
         {
           "label": "訂單",
-          "value": "26KK268324612"
+          "value": "USX936311"
+        }
+      ],
+      "note": "已確認。"
+    },
+    {
+      "label": "上野｜1晚",
+      "value": "PAUL HOUSE-上野館",
+      "details": [
+        {
+          "label": "入住",
+          "value": "11/13 16:00"
         },
         {
-          "label": "使用日期",
-          "value": "2026/11/14"
+          "label": "退房",
+          "value": "11/14 11:00"
         },
         {
-          "label": "方案",
-          "value": "東京市區/周邊包車一日游"
+          "label": "寄放行李",
+          "value": "09:00–18:00，可提前告知抵達時間"
         },
         {
-          "label": "成田下車",
-          "value": "需另付 ¥5,000 超區費"
+          "label": "18:00後",
+          "value": "自助入住，電子鎖密碼入住當天通知"
         },
         {
-          "label": "司機資訊",
-          "value": "服務前一晚 18:00 前提供"
+          "label": "費用",
+          "value": "NT$9,389"
+        }
+      ],
+      "searchKeyword": "Paul House 11月13日至14日",
+      "note": "已確認。"
+    },
+    {
+      "label": "11/14 包車",
+      "value": "10小時・7人座",
+      "details": [
+        {
+          "label": "費用",
+          "value": "NT$8,365"
+        },
+        {
+          "label": "路線",
+          "value": "上野 → 築地 → 麻布台之丘 → 成田 T2"
+        },
+        {
+          "label": "成田",
+          "value": "另有 ¥5,000 超區費（先前訂單資訊）"
         }
       ],
       "searchKeyword": "26KK268324612",
-      "note": "已確認；當天可直接一路玩到機場。"
+      "note": "已確認。"
     }
   ],
   "days": [
@@ -165,32 +159,101 @@
       "dow": "TUE",
       "date": "11/10",
       "short": "出發",
-      "title": "商務通關・Bistro:D・桃園 → 成田・淺草住宿",
-      "intro": "台灣端先使用商務／禮遇通關，再到 Bistro:D 使用 U.First 用餐；之後搭乘 JX804 前往成田。",
+      "title": "桃園商務通關・JX804・淺草夜遊",
+      "intro": "出發日以機場流程、JX804 與淺草夜間行程為主。",
       "items": [
         {
           "type": "event",
           "time": "出發前",
-          "title": "桃園機場商務／禮遇通關",
-          "desc": "依已安排的商務通關流程完成出境。"
+          "title": "eSIM｜Klook・Google 帳號",
+          "desc": "✅ 已準備。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "出發前",
+          "title": "實體 SIM 卡",
+          "desc": "✅ 已準備。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "12:30",
+          "title": "機場接送 → 桃園機場",
+          "desc": "✅ 已確認。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "出境前",
+          "title": "商務通關",
+          "desc": "✅ 已確認。",
+          "chips": [
+            "已確認"
+          ]
         },
         {
           "type": "event",
           "time": "通關後",
           "title": "Bistro:D｜U.First 用餐",
-          "desc": "桃園機場第一航廈出境後使用 U.First 餐廳權益。"
+          "desc": "桃園機場第一航廈出境後使用 U.First。",
+          "chips": [
+            "已安排"
+          ]
         },
         {
           "type": "event",
           "time": "15:00",
           "title": "JX804 桃園 T1 → 成田 T2",
-          "desc": "星宇航空；19:00 抵達。"
+          "desc": "✅ 15:00 起飛，19:00 抵達。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "抵達後",
+          "title": "包車前往淺草",
+          "desc": "✅ 車程約 1 小時；免費等候至 20:30。",
+          "chips": [
+            "已確認"
+          ]
         },
         {
           "type": "event",
           "time": "住宿",
           "title": "Asakusa Tobu Hotel",
-          "desc": "11/10 入住、11/11 退房；Comfort Twin Room, Non Smoking × 2。"
+          "desc": "✅ 淺草東武飯店。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "22:00 前",
+          "title": "淺草文化觀光中心 8F 展望台",
+          "desc": "雷門對面；免費展望台，依你資料開放至 22:00。"
+        },
+        {
+          "type": "event",
+          "time": "22:00",
+          "title": "晚餐備選｜一蘭",
+          "desc": "或鳥貴族（你提供營業 16:00–04:00）。",
+          "chips": [
+            "備選"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "23:00",
+          "title": "雷門夜遊",
+          "desc": "夜間散步。"
         }
       ]
     },
@@ -198,41 +261,120 @@
       "dow": "WED",
       "date": "11/11",
       "short": "河口湖",
-      "title": "租車自駕・La Vista Fuji Kawaguchiko",
-      "intro": "第 2 天租車自駕；目前先只記錄已確認的移動方式與住宿。",
+      "title": "淺草・租車自駕・河口湖紅葉祭",
+      "intro": "上午淺草，11:30 取車後前往富士山／河口湖。",
       "items": [
         {
           "type": "event",
-          "time": "白天",
-          "title": "租車自駕",
-          "desc": "租車公司、取車地點與取車時間待補。"
+          "time": "上午",
+          "title": "雷門・仲見世大道・淺草寺",
+          "desc": "上午淺草散步。"
         },
         {
           "type": "event",
-          "time": "15:00 後",
-          "title": "La Vista Fuji Kawaguchiko Check-in",
-          "desc": "11/11 入住；2間 LaVista Fourth。"
+          "time": "11:30",
+          "title": "Relax Car Rental Tokyo 取車",
+          "desc": "✅ 2-4-8 Kaminarimon, Taito-ku, Tokyo 111-0034｜訂單 USX936311。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "move",
+          "time": "11:30 後",
+          "from": "淺草",
+          "to": "富士山／河口湖",
+          "mode": "SELF DRIVE",
+          "desc": "自駕約 2–2.5 小時。"
+        },
+        {
+          "type": "event",
+          "time": "抵達後",
+          "title": "大型超市採買",
+          "desc": "Ogino 或美思佰樂 富士河口湖店；水果、零食。",
+          "chips": [
+            "備選"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "住宿",
+          "title": "湖山亭產屋",
+          "desc": "✅ 第 1 晚。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "晚間",
+          "title": "河口湖紅葉祭",
+          "desc": "依你資料至 21:30。停車備選：紅葉祭第一停車場（步行約10分）；河口湖美術館前停車場（步行約12分）。"
         }
       ]
     },
     {
       "dow": "THU",
       "date": "11/12",
-      "short": "住宿",
-      "title": "租車自駕・La Vista Fuji Kawaguchiko",
-      "intro": "第 3 天租車自駕；目前信箱中沒有其他已確認行程。",
+      "short": "富士山",
+      "title": "天上山公園・餺飥小作・音樂森林美術館",
+      "intro": "全天河口湖自駕行程。",
       "items": [
         {
           "type": "event",
-          "time": "白天",
-          "title": "租車自駕",
-          "desc": "租車公司、行程與還車時間待補。"
+          "time": "08:30",
+          "title": "天上山公園／富士山全景纜車",
+          "desc": "08:30–17:00；📍你註記 10/12 才能訂票。"
+        },
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "喀擦喀擦山・狸貓茶屋・兔子神社",
+          "desc": "兔子神社、透明御守、天上的鐘、絕景高塔展望台、絕景鞦韆、陶器投擲。"
+        },
+        {
+          "type": "move",
+          "time": "中午",
+          "from": "天上山公園",
+          "to": "甲州ほうとう小作 河口湖店",
+          "mode": "SELF DRIVE",
+          "desc": "車程約 8 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "午餐",
+          "title": "甲州ほうとう小作 河口湖店",
+          "desc": "只能現場排隊。"
+        },
+        {
+          "type": "event",
+          "time": "下午",
+          "title": "河口湖音樂森林美術館",
+          "desc": "✅ KKday；10:00–17:30；你註記每週二、三公休，表演時間待確認。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "11:00–16:00",
+          "title": "音樂時鐘廣場",
+          "desc": "整點胡桃鉗木偶指揮噴水秀。"
+        },
+        {
+          "type": "event",
+          "time": "館內",
+          "title": "風琴禮堂・音樂廳",
+          "desc": "世界大型自動風琴／沙畫音樂會；音樂廳有原預計裝在鐵達尼號上的自動演奏樂器。"
         },
         {
           "type": "event",
           "time": "住宿",
-          "title": "La Vista Fuji Kawaguchiko",
-          "desc": "住宿第 2 晚。"
+          "title": "湖山亭產屋",
+          "desc": "✅ 第 2 晚。",
+          "chips": [
+            "已確認"
+          ]
         }
       ]
     },
@@ -240,20 +382,93 @@
       "dow": "FRI",
       "date": "11/13",
       "short": "上野",
-      "title": "Paul House 7F",
-      "intro": "以下僅保留信箱中已有確認資料。",
+      "title": "紅葉祭・富士吉田・上野還車・PAUL HOUSE",
+      "intro": "白天再看紅葉，經富士吉田後自駕回東京。",
       "items": [
         {
           "type": "event",
-          "time": "11:00 前",
-          "title": "La Vista Fuji Kawaguchiko Check-out",
-          "desc": "Agoda 訂單確認。"
+          "time": "上午",
+          "title": "河口湖紅葉祭｜白天",
+          "desc": "白天賞楓。"
+        },
+        {
+          "type": "move",
+          "time": "之後",
+          "from": "河口湖紅葉祭",
+          "to": "富士山博物館（富士吉田）",
+          "mode": "SELF DRIVE",
+          "desc": "車程約 30 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "白天",
+          "title": "富士山博物館（富士吉田）",
+          "desc": "你提供票價：成人 ¥400。"
+        },
+        {
+          "type": "event",
+          "time": "午餐",
+          "title": "道之驛富士吉田・吉田烏龍麵",
+          "desc": "午餐。"
+        },
+        {
+          "type": "move",
+          "time": "下午",
+          "from": "富士吉田",
+          "to": "上野",
+          "mode": "SELF DRIVE",
+          "desc": "車程約 3 小時。"
+        },
+        {
+          "type": "event",
+          "time": "19:30",
+          "title": "Relax Car Rental Tokyo 還車",
+          "desc": "✅ 〒110-0005 Ueno Station 7-1 Ueno, Taito-ku, Tokyo。",
+          "chips": [
+            "已確認"
+          ]
         },
         {
           "type": "event",
           "time": "16:00 後",
-          "title": "Paul House 7F Check-in",
-          "desc": "Airbnb；11/13 入住、11/14 退房。"
+          "title": "PAUL HOUSE-上野館",
+          "desc": "✅ NT$9,389；入住 16:00、退房 11:00。09:00–18:00 可寄放行李；18:00 後自助入住。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "晚餐",
+          "title": "晚餐備選｜三浦三崎港／Negishi 根岸牛舌",
+          "desc": "二選一。",
+          "chips": [
+            "備選"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "晚間",
+          "title": "上野採買・甜點",
+          "desc": "Domremy Outlet、HARBS（你提供 10:00–20:00）、阿美橫丁、百果園水果、藥妝。",
+          "chips": [
+            "備選"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "宵夜",
+          "title": "鴨to蔥",
+          "desc": "你提供 24 小時營業。",
+          "chips": [
+            "備選"
+          ]
+        }
+      ],
+      "alerts": [
+        {
+          "title": "PAUL HOUSE 使用重點",
+          "text": "1F 24hr 咖啡機／飲水機／備品。18:00–翌日09:00 入口需密碼；房門密碼入住當日通知。垃圾請分類：可燃紙類／塑膠盒／寶特瓶／鐵鋁罐／玻璃瓶；垃圾可丟 1F 大垃圾桶。燈光快速按2次為夜燈；室內拖鞋僅室內使用；鞋子與私人物品勿放走廊。"
         }
       ]
     },
@@ -261,28 +476,92 @@
       "dow": "SAT",
       "date": "11/14",
       "short": "回程",
-      "title": "KKday 包車・成田・回台灣",
-      "intro": "以下僅保留信箱中已有確認資料。",
+      "title": "築地・TeamLab Borderless・成田・JX805",
+      "intro": "10 小時 7 人座包車，最後前往成田第二航廈。",
       "items": [
         {
           "type": "event",
-          "time": "09:30",
-          "title": "KKday 東京包車集合",
-          "desc": "豪華7座；集合地點為 PAUL HOUSE-上野館；訂單 26KK268324612。"
+          "time": "09:00 後",
+          "title": "包車出發",
+          "desc": "✅ NT$8,365｜10小時｜7人座。",
+          "chips": [
+            "已確認"
+          ]
         },
         {
           "type": "move",
-          "time": "當日",
+          "time": "09:00 後",
           "from": "PAUL HOUSE-上野館",
-          "to": "成田機場第二航廈",
+          "to": "築地市場",
           "mode": "CHARTER",
-          "desc": "下車地點已在 KKday 憑證確認；另有 ¥5,000 超區費。"
+          "desc": "車程約 20 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "上午",
+          "title": "築地市場",
+          "desc": "築地虎杖魚河岸千兩、黑銀築地本店、丸武玉子燒、Sanokiya 鯛魚燒、Wagyu jyujyu、本種 motodane。",
+          "chips": [
+            "餐飲清單"
+          ]
+        },
+        {
+          "type": "move",
+          "time": "中午",
+          "from": "築地市場",
+          "to": "麻布台之丘",
+          "mode": "CHARTER",
+          "desc": "車程約 15 分鐘。"
+        },
+        {
+          "type": "event",
+          "time": "12:30",
+          "title": "teamLab Borderless",
+          "desc": "✅ Klook・Google 帳號；穿淺色。Garden Plaza B B1。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "下午",
+          "title": "麻布台之丘",
+          "desc": "中村藤吉、% Arabica、1F 艾許奶油；Garden Plaza C 有 HARBS。33F：B1 搭 S1；34F：1F 搭 S2；依你備註需消費才能進觀景台。"
+        },
+        {
+          "type": "move",
+          "time": "之後",
+          "from": "麻布台之丘",
+          "to": "成田機場 T2",
+          "mode": "CHARTER",
+          "desc": "車程約 1 小時。"
+        },
+        {
+          "type": "event",
+          "time": "機場",
+          "title": "NRT T2｜JAPAN FOOD HALL",
+          "desc": "出境後本館2樓；備選：銀座篝、四代目菊川。",
+          "chips": [
+            "備選"
+          ]
         },
         {
           "type": "event",
           "time": "20:10",
           "title": "JX805 成田 T2 → 桃園 T1",
-          "desc": "23:20 抵達。"
+          "desc": "✅ 23:20 抵達。",
+          "chips": [
+            "已確認"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "抵台後",
+          "title": "機場接送回家",
+          "desc": "✅ 已確認。",
+          "chips": [
+            "已確認"
+          ]
         }
       ]
     }
@@ -298,42 +577,48 @@
       "type": "HOTEL",
       "title": "Asakusa Tobu Hotel",
       "meta": "11/10–11/11 · Airpaz 1037054158",
-      "details": [
-        {
-          "label": "入住",
-          "value": "11/10 14:00"
-        },
-        {
-          "label": "退房",
-          "value": "11/11 11:00"
-        },
-        {
-          "label": "房型",
-          "value": "Comfort Twin Room, Non Smoking × 2"
-        },
-        {
-          "label": "地址",
-          "value": "1-1-15 Asakusa, Tokyo 111-0032"
-        }
-      ],
       "searchKeyword": "1037054158"
     },
     {
+      "type": "RENTAL CAR",
+      "title": "Relax Car Rental Tokyo",
+      "meta": "11/11 11:30 → 11/13 19:30 · USX936311",
+      "details": [
+        {
+          "label": "取車",
+          "value": "2-4-8 Kaminarimon, Taito-ku, Tokyo 111-0034"
+        },
+        {
+          "label": "還車",
+          "value": "〒110-0005 Ueno Station 7-1 Ueno, Taito-ku, Tokyo"
+        }
+      ]
+    },
+    {
       "type": "HOTEL",
-      "title": "La Vista Fuji Kawaguchiko",
-      "meta": "11/11–11/13 · Agoda 1746972017",
-      "searchKeyword": "1746972017"
+      "title": "湖山亭產屋",
+      "meta": "11/11–11/13 · 2晚"
     },
     {
       "type": "AIRBNB",
-      "title": "Paul House 7F 家庭房",
-      "meta": "11/13–11/14 · 上野／御徒町",
+      "title": "PAUL HOUSE-上野館",
+      "meta": "11/13–11/14 · NT$9,389",
       "searchKeyword": "Paul House 11月13日至14日"
     },
     {
+      "type": "TICKET",
+      "title": "河口湖音樂森林美術館",
+      "meta": "11/12 · KKday"
+    },
+    {
+      "type": "TICKET",
+      "title": "teamLab Borderless",
+      "meta": "11/14 12:30 · Klook · Google 帳號"
+    },
+    {
       "type": "CHARTER",
-      "title": "KKday 東京包車",
-      "meta": "11/14 · 26KK268324612 · 成田下車 +¥5,000",
+      "title": "11/14 東京包車",
+      "meta": "10小時 · 7人座 · NT$8,365",
       "searchKeyword": "26KK268324612"
     }
   ],
@@ -353,32 +638,58 @@
         "note": "2位旅客；信用卡付款"
       },
       {
-        "label": "La Vista Fuji Kawaguchiko｜2間×2晚",
-        "status": "confirmed",
-        "foreign": "¥321,462",
-        "includeInTotal": false,
-        "note": "Agoda 延後扣款；日圓金額不併入台幣總額"
-      },
-      {
-        "label": "Paul House｜1晚",
-        "status": "pending",
-        "twd": null,
-        "note": "已確認住宿；本次信箱摘錄未完整抓到總價"
-      },
-      {
-        "label": "KKday 包車｜11/14",
-        "status": "pending",
-        "twd": null,
-        "note": "已確認；成田超區費另付 ¥5,000"
-      },
-      {
         "label": "Asakusa Tobu Hotel｜2間×1晚",
         "status": "confirmed",
+        "twd": 10884,
+        "note": "Airpaz 1037054158；收據實付"
+      },
+      {
+        "label": "PAUL HOUSE-上野館｜1晚",
+        "status": "confirmed",
+        "twd": 9389,
+        "note": "依你最新行程清單"
+      },
+      {
+        "label": "11/14 包車｜10小時7人座",
+        "status": "confirmed",
+        "twd": 8365,
+        "note": "依你最新行程清單；成田超區費另有 ¥5,000"
+      },
+      {
+        "label": "湖山亭產屋｜2晚",
+        "status": "pending",
         "twd": null,
-        "note": "Airpaz 1037054158；確認信中的總價欄位未正常顯示"
+        "note": "已確認住宿；金額尚未提供"
+      },
+      {
+        "label": "Relax Car Rental Tokyo｜11/11–11/13",
+        "status": "pending",
+        "twd": null,
+        "note": "訂單 USX936311；金額尚未提供"
+      },
+      {
+        "label": "河口湖音樂森林美術館｜KKday",
+        "status": "pending",
+        "twd": null,
+        "note": "已確認；金額尚未提供"
+      },
+      {
+        "label": "teamLab Borderless｜Klook",
+        "status": "pending",
+        "twd": null,
+        "note": "已確認 11/14 12:30；金額尚未提供"
+      },
+      {
+        "label": "舊 La Vista Fuji Kawaguchiko 訂單",
+        "status": "pending",
+        "foreign": "¥321,462",
+        "includeInTotal": false,
+        "note": "先前信箱曾確認；你最新行程已改為湖山亭產屋，取消／退款狀態待確認"
       }
     ],
-    "notes": []
+    "notes": [
+      "eSIM、實體 SIM、機場接送、餐飲、購物與其他門票尚未提供金額。"
+    ]
   },
   "coverImage": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg?width=1800",
