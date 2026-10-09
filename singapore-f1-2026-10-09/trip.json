@@ -1033,6 +1033,13 @@
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
       },
       {
+        "label": "Shake Shack｜奶昔＋薯條",
+        "status": "confirmed",
+        "twd": 395,
+        "foreign": "S$14.80",
+        "note": "10/09 Jewel Changi；實際消費 S$14.80。台幣僅按本次現金換匯成本 26.67 TWD/SGD 估算，付款方式未註記。"
+      },
+      {
         "label": "景點門票與其他餐飲",
         "status": "pending",
         "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
