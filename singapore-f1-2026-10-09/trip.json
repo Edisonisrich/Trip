@@ -1046,6 +1046,13 @@
         "note": "10/09 Jewel Changi；實際消費 S$14.80。台幣僅按本次現金換匯成本 26.67 TWD/SGD 估算，付款方式未註記。"
       },
       {
+        "label": "Lau Pa Sat｜沙嗲",
+        "status": "confirmed",
+        "twd": 832,
+        "foreign": "S$31.20",
+        "note": "10/09 Lau Pa Sat / Satay Street 實際消費；台幣以 26.67 TWD/SGD 估算。"
+      },
+      {
         "label": "景點門票與其他餐飲",
         "status": "pending",
         "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
