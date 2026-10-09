@@ -302,6 +302,17 @@
         },
         {
           "type": "event",
+          "time": "10:30",
+          "title": "Lewis Hamilton · +44 Pop-up",
+          "desc": "Marina Bay Sands The Shoppes B1-148；Lewis Hamilton +44 東南亞限定 Pop-up。抓 15–20 分鐘逛店、看限定商品與 F1 期間展示。",
+          "chips": [
+            "Hamilton",
+            "+44",
+            "MBS B1-148"
+          ]
+        },
+        {
+          "type": "event",
           "time": "10:45",
           "title": "ArtScience Museum / teamLab",
           "desc": "預計到 12:15。"
