@@ -1028,6 +1028,12 @@
         "note": "實際換匯：NT$2,000（含 NT$100 手續費）→ S$75；換匯本金 NT$1,900，未含手續費匯率約 25.33；含手續費實際成本約 26.67 TWD/SGD。現金換匯不直接計入旅費總額，實際消費時再計。"
       },
       {
+        "label": "計程車｜Jewel／機場 → 飯店",
+        "status": "confirmed",
+        "twd": 760,
+        "note": "10/09 晚間實際車資；由機場／Jewel 前往 Copthorne King's Hotel。"
+      },
+      {
         "label": "Grab / MRT",
         "status": "pending",
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
