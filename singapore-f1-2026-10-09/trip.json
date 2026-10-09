@@ -978,7 +978,7 @@
   },
   "budget": {
     "people": 2,
-    "fxNote": "SGD 換算暫以 2026/09/29 參考匯率 1 SGD ≈ NT$24.89；信用卡實際入帳與海外手續費可能不同。",
+    "fxNote": "實際現金換匯：NT$2,000（含 NT$100 手續費）換得 S$75；含手續費實際成本約 1 SGD = NT$26.67。",
     "items": [
       {
         "label": "Scoot ScootPlus 來回機票｜2人",
@@ -1021,11 +1021,11 @@
       },
       {
         "label": "備用新幣現金",
-        "status": "pending",
-        "twd": 1245,
-        "foreign": "S$50",
+        "status": "confirmed",
+        "twd": 2000,
+        "foreign": "S$75",
         "includeInTotal": false,
-        "note": "只是換現金備用，不代表會全部花掉"
+        "note": "實際換匯：NT$2,000（含 NT$100 手續費）→ S$75；換匯本金 NT$1,900，未含手續費匯率約 25.33；含手續費實際成本約 26.67 TWD/SGD。現金換匯不直接計入旅費總額，實際消費時再計。"
       },
       {
         "label": "Grab / MRT",
