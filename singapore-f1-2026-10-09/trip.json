@@ -1053,6 +1053,12 @@
         "note": "10/09 Lau Pa Sat / Satay Street 實際消費；台幣以 26.67 TWD/SGD 估算。"
       },
       {
+        "label": "綠茶",
+        "status": "confirmed",
+        "twd": 80,
+        "note": "10/09 實際消費。"
+      },
+      {
         "label": "景點門票與其他餐飲",
         "status": "pending",
         "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
