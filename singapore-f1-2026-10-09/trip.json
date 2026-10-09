@@ -1036,6 +1036,12 @@
         "label": "景點門票與其他餐飲",
         "status": "pending",
         "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
+      },
+      {
+        "label": "旅遊保險｜2人",
+        "status": "confirmed",
+        "twd": 3018,
+        "note": "每人 NT$1,509（NT$1,266 + NT$243），共 2 人。"
       }
     ],
     "notes": [
