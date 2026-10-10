@@ -1059,6 +1059,13 @@
         "note": "10/10 上午實際車資；Copthorne King's Hotel → Gardens by the Bay / Cloud Forest。"
       },
       {
+        "label": "捷運卡｜2張",
+        "status": "confirmed",
+        "twd": 533,
+        "foreign": "S$20.00",
+        "note": "10/10 購買；2 張，每張 S$10。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
+      },
+      {
         "label": "Grab / MRT",
         "status": "pending",
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
