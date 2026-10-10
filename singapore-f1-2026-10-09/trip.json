@@ -1066,6 +1066,13 @@
         "note": "10/10 購買；2 張，每張 S$10。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
       },
       {
+        "label": "Grab｜MBS → Ritz-Carlton",
+        "status": "confirmed",
+        "twd": 507,
+        "foreign": "S$19.00",
+        "note": "10/10 Marina Bay Sands → The Ritz-Carlton, Millenia Singapore；實際 Grab 車資。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
+      },
+      {
         "label": "Grab / MRT",
         "status": "pending",
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
