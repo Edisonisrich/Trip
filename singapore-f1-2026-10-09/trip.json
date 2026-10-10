@@ -514,33 +514,43 @@
           "type": "event",
           "time": "22:25",
           "title": "Lana Del Rey · Padang Stage",
-          "desc": "預計到 23:55。"
+          "desc": "官方 22:25–23:55。想最順撤場可 23:40–23:45 提早離開；若要看完全場，23:55 結束後立即往 Gate 4。"
         },
         {
           "type": "move",
-          "time": "23:55",
-          "from": "Padang",
-          "to": "Raffles City",
-          "mode": "WALK",
-          "desc": "先離開封路與散場人潮核心。"
+          "time": "23:45",
+          "from": "Padang Stage",
+          "to": "Gate 4 (Empress) / Clarke Quay MRT",
+          "mode": "FAST WALK",
+          "desc": "首選撤場路線：Lana 最後 10–15 分鐘可提早離開，避開演唱會結束後第二波人潮；不要往 City Hall 主人流擠。"
         },
         {
           "type": "move",
-          "time": "00:10",
-          "from": "Raffles City",
-          "to": "Hotel",
-          "mode": "GRAB",
+          "time": "00:00+",
+          "from": "Clarke Quay MRT (NE5)",
+          "to": "Havelock MRT (TE16)",
+          "mode": "MRT",
+          "desc": "Clarke Quay → Outram Park（NEL）→ 轉 Thomson-East Coast Line 1 站到 Havelock，再步行回 Copthorne King's Hotel。F1 週日公共運輸延長營運。"
+        },
+        {
+          "type": "move",
+          "time": "BACKUP",
+          "from": "Gate 3A / 3B",
+          "to": "Raffles City / Funan / South Beach",
+          "mode": "WALK + GRAB",
           "destination": "Copthorne King's Hotel Singapore",
           "address": "403 Havelock Road, Singapore 169632",
-          "chips": [
-            "Pickup: 252 North Bridge Road"
-          ]
+          "desc": "若 MRT 排隊過長，先走離賽道核心再叫 Grab。官方指定 private-hire pick-up 包含 Raffles City、Funan、South Beach；不要在 Padang 或場館門口直接叫車。"
         }
       ],
       "alerts": [
         {
           "title": "19:05 一定離開 Janet",
           "text": "不管唱到哪都走；目標 19:25–19:35 回到 Republic A1。"
+        },
+        {
+          "title": "散場策略",
+          "text": "正賽結束不要跟第一波人潮出場：立刻從 Republic 前往 Padang 看 Lana。回程優先 Gate 4 → Clarke Quay MRT → Outram Park → Havelock；若要更順，23:40–23:45 提早離開 Lana。"
         }
       ],
       "image": {
