@@ -1045,6 +1045,13 @@
         "note": "10/09 晚間實際車資；由機場／Jewel 前往 Copthorne King's Hotel。"
       },
       {
+        "label": "Grab Singapore Travel Pass",
+        "status": "confirmed",
+        "twd": 27,
+        "foreign": "S$1.00",
+        "note": "10/10 購買；Grab Singapore Travel Pass。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
+      },
+      {
         "label": "Grab / MRT",
         "status": "pending",
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
