@@ -1047,9 +1047,9 @@
       {
         "label": "Grab Singapore Travel Pass",
         "status": "confirmed",
-        "twd": 27,
-        "foreign": "S$1.00",
-        "note": "10/10 購買；Grab Singapore Travel Pass。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
+        "twd": 0,
+        "foreign": "免費",
+        "note": "10/10 Klook 訂單贈送的新加坡 Grab Travel Pass；實際付款 NT$0。"
       },
       {
         "label": "Grab / MRT",
@@ -1094,6 +1094,12 @@
         "status": "confirmed",
         "twd": 360,
         "note": "10/10 早餐實際消費。"
+      },
+      {
+        "label": "Gardens by the Bay 三館套票｜2人",
+        "status": "confirmed",
+        "twd": 2080,
+        "note": "10/10 Klook 實際付款；花穹 + 雲霧林（Jurassic World）+ 奇幻花園（Disney Garden of Wonder）+ 接駁服務，成人 ×2。"
       },
       {
         "label": "景點門票與其他餐飲",
