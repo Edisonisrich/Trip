@@ -1052,6 +1052,12 @@
         "note": "10/10 Klook 訂單贈送的新加坡 Grab Travel Pass；實際付款 NT$0。"
       },
       {
+        "label": "Grab｜飯店 → Gardens by the Bay",
+        "status": "confirmed",
+        "twd": 395,
+        "note": "10/10 上午實際車資；Copthorne King's Hotel → Gardens by the Bay / Cloud Forest。"
+      },
+      {
         "label": "Grab / MRT",
         "status": "pending",
         "note": "依實際搭乘次數與 F1 期間 surge 計價"
