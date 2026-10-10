@@ -809,14 +809,14 @@
         },
         {
           "label": "價格",
-          "value": "S$128++ / 人"
+          "value": "實際支出 NT$8,044（2 人）"
         },
         {
           "label": "地址",
           "value": "7 Raffles Avenue, Singapore 039799"
         }
       ],
-      "note": "此訂位與 JUMBO 10/10 18:45 重複；正式行程目前以 Colony 為主。"
+      "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。"
     },
     {
       "type": "LUNCH",
@@ -1019,10 +1019,10 @@
       },
       {
         "label": "Colony Seafood Dinner｜2人",
-        "status": "estimated",
-        "twd": 7641,
+        "status": "confirmed",
+        "twd": 8044,
         "foreign": "約 S$306.94 nett",
-        "note": "S$128++ / 人估算"
+        "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。"
       },
       {
         "label": "Po 午餐｜2人",
