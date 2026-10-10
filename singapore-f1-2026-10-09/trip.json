@@ -97,7 +97,7 @@
     },
     {
       "label": "F1門票｜2張",
-      "value": "約 NT$34,800",
+      "value": "US$1,064.56",
       "details": [
         {
           "label": "平台",
@@ -129,11 +129,11 @@
         },
         {
           "label": "價格",
-          "value": "約 NT$17,400/張｜2張約 NT$34,800"
+          "value": "US$1,064.56｜2張實際付款"
         }
       ],
       "searchKeyword": "26KK214064580",
-      "note": "入場票以 Singapore GP App 為主；F1 金額目前依購買時顯示價格估算。"
+      "note": "入場票以 Singapore GP App 為主；門票 2 張實際付款 US$1,064.56。"
     }
   ],
   "days": [
@@ -776,11 +776,11 @@
         },
         {
           "label": "價格",
-          "value": "約 NT$17,400/張｜2張約 NT$34,800"
+          "value": "US$1,064.56｜2張實際付款"
         }
       ],
       "searchKeyword": "26KK214064580",
-      "note": "入場票以 Singapore GP App 為主；F1 金額目前依購買時顯示價格估算。"
+      "note": "入場票以 Singapore GP App 為主；門票 2 張實際付款 US$1,064.56。"
     },
     {
       "type": "DINNER",
@@ -1012,9 +1012,9 @@
       },
       {
         "label": "F1 Republic Grandstand｜2張",
-        "status": "estimated",
-        "twd": 34800,
-        "note": "約 NT$17,400 / 張；依購買時顯示價格估算"
+        "status": "confirmed",
+        "note": "Republic Grandstand 2 張，實際付款 US$1,064.56；台幣金額依信用卡實際入帳為準。",
+        "foreign": "US$1,064.56"
       },
       {
         "label": "Colony Seafood Dinner｜2人",
