@@ -411,18 +411,19 @@
       "date": "10/11",
       "short": "F1",
       "title": "Po・F1・Janet・Lana",
-      "intro": "12:00 Po 午餐 → Drivers’ Parade → Janet Jackson → F1 正賽 → Lana Del Rey。",
+      "intro": "12:00 Po 午餐 → 15:00 入場＋Singapore Flyer → Porsche → Mark Ronson（選）→ Drivers’ Parade → Janet → F1 正賽 → Lana。",
       "items": [
         {
           "type": "event",
           "time": "09:00",
-          "title": "起床＋超輕早餐"
+          "title": "起床＋超輕早餐",
+          "desc": "今天場內會待很久，補水比吃很飽重要。"
         },
         {
           "type": "event",
           "time": "10:00",
           "title": "休息＋先收隔天行李",
-          "desc": "今晚回飯店會很晚。"
+          "desc": "今晚回飯店會很晚，回程 10/12 又是早班機。"
         },
         {
           "type": "move",
@@ -438,37 +439,72 @@
           "type": "event",
           "time": "12:00",
           "title": "Po 午餐｜已訂位",
-          "desc": "2 人已訂位。建議點：Classic Popiah、Charcoal-Grilled Iberico Satay、Wagyu Short Rib Rendang、Carabinero Prawns & Konbu Mee、XO Crab Carrot Cake（花蟹肉 XO 蘿蔔糕）。可出示 F1 門票詢問單點餐飲 15% off，實際以餐廳當日條款為準。",
+          "desc": "2 人。單點可出示 F1 門票使用 15% off；控制在 7 分飽，13:15 左右結束。",
           "chips": [
             "已訂位",
             "2人",
-            "Modern Singaporean"
+            "F1 15% off"
           ]
         },
         {
           "type": "move",
-          "time": "13:20",
+          "time": "13:30",
           "from": "Po",
-          "to": "F1 Gate 2 附近",
+          "to": "Gate 2 / Singapore GP Zone 1",
           "mode": "GRAB",
           "destination": "Suntec City",
           "address": "3 Temasek Boulevard, Singapore 038983",
-          "chips": [
-            "下車後步行 Gate 2"
-          ],
-          "desc": "午餐後直接進 F1 區域，避開賽場周邊用餐排隊。"
+          "desc": "Sunday Circuit Park 15:00 開門；提早到附近、14:30 左右往 Gate 2 排隊即可。"
         },
         {
           "type": "event",
-          "time": "14:00+",
-          "title": "Singapore GP 場區",
-          "desc": "先熟悉 Republic → Wharf → Padang 路線。"
+          "time": "15:00",
+          "title": "入場 → Singapore Flyer 免費搭乘",
+          "desc": "Republic / Zone 1–2 持票人可免費搭；先到先搭，最後 22:30。開門後第一個去，避開晚間排隊。",
+          "chips": [
+            "FREE",
+            "Zone 1–2",
+            "優先"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "15:40",
+          "title": "Porsche Carrera Cup Asia · Race 2",
+          "desc": "15:40–16:15。去 Republic A1 坐一次，熟悉視野、廁所與回座路線；也能先感受正式賽車速度。"
+        },
+        {
+          "type": "event",
+          "time": "16:20",
+          "title": "補水＋小點＋場區逛",
+          "desc": "現在就買水／小點，不要拖到 19:00；順便拍照、逛 F1 merchandise / activations。"
+        },
+        {
+          "type": "event",
+          "time": "17:00",
+          "title": "Mark Ronson · Barge Stage｜選配",
+          "desc": "17:00–18:00。最多看到 17:30～17:35 就走；如果累，直接跳過，在 Republic 附近休息更值得。",
+          "chips": [
+            "OPTIONAL"
+          ]
+        },
+        {
+          "type": "move",
+          "time": "17:35",
+          "from": "Barge Stage / Zone 1",
+          "to": "Republic Grandstand A1",
+          "mode": "FAST WALK",
+          "desc": "最晚這時間開始回座位，目標 17:50 前到。"
         },
         {
           "type": "event",
           "time": "18:00",
-          "title": "Drivers’ Parade",
-          "desc": "優先活動；車手經過 Republic 一帶後開始往 Wharf 移動。"
+          "title": "F1 Drivers’ Parade",
+          "desc": "18:00–18:30。坐 Republic 看 Hamilton / Ferrari 經過；車手車隊經過你這區後即可開始往 Wharf 移動。",
+          "chips": [
+            "MUST",
+            "Hamilton"
+          ]
         },
         {
           "type": "move",
@@ -476,13 +512,13 @@
           "from": "Republic Grandstand",
           "to": "Wharf Stage",
           "mode": "FAST WALK",
-          "desc": "依 Singapore GP App 場內地圖。"
+          "desc": "不要等 Parade 全部結束才走；看到 Hamilton / Ferrari 後就移動，避免錯過 Janet 太多。"
         },
         {
           "type": "event",
-          "time": "18:35",
+          "time": "18:25–19:05",
           "title": "Janet Jackson · Wharf Stage",
-          "desc": "看後半段。"
+          "desc": "官方 18:15–19:15。看約 40 分鐘；19:05 無論唱到哪都離開。"
         },
         {
           "type": "move",
@@ -490,31 +526,38 @@
           "from": "Wharf Stage",
           "to": "Republic Grandstand A1",
           "mode": "FAST WALK",
-          "desc": "回 Row 12 · Seat 5 / 6。"
+          "desc": "目標 19:25–19:30 回 Row 12 · Seats 5 / 6；19:44 國歌，20:00 正賽。"
+        },
+        {
+          "type": "event",
+          "time": "19:30",
+          "title": "正賽前準備",
+          "desc": "上廁所、補水、開 Live Timing、手機省電；最後 30 分鐘不要再離開座位。"
         },
         {
           "type": "event",
           "time": "20:00",
           "title": "Singapore GP 正賽",
-          "desc": "Republic A1 · Row 12 · Seats 5 / 6。",
+          "desc": "20:00–約 22:00｜Republic A1 · Row 12 · Seats 5 / 6。起跑、Safety Car restart、最後 10 圈以看賽道為主，少看手機。",
           "chips": [
             "F1",
-            "Republic A1"
+            "Republic A1",
+            "MUST"
           ]
         },
         {
           "type": "move",
-          "time": "22:00",
+          "time": "Race Finish",
           "from": "Republic Grandstand",
           "to": "Padang Stage",
           "mode": "FAST WALK",
-          "desc": "正賽結束立刻走。"
+          "desc": "比賽結束立即往 Padang；不要跟第一波人潮出場，直接把它變成 Lana 移動潮。"
         },
         {
           "type": "event",
           "time": "22:25",
           "title": "Lana Del Rey · Padang Stage",
-          "desc": "官方 22:25–23:55。想最順撤場可 23:40–23:45 提早離開；若要看完全場，23:55 結束後立即往 Gate 4。"
+          "desc": "官方 22:25–23:55。想最順撤場可 23:40–23:45 提早離開；要看完全場則 23:55 立即往 Gate 4。"
         },
         {
           "type": "move",
@@ -522,7 +565,7 @@
           "from": "Padang Stage",
           "to": "Gate 4 (Empress) / Clarke Quay MRT",
           "mode": "FAST WALK",
-          "desc": "首選撤場路線：Lana 最後 10–15 分鐘可提早離開，避開演唱會結束後第二波人潮；不要往 City Hall 主人流擠。"
+          "desc": "首選撤場：提早 10–15 分鐘離開 Lana，避開第二波散場潮；不要往 City Hall 主人流。"
         },
         {
           "type": "move",
@@ -530,7 +573,7 @@
           "from": "Clarke Quay MRT (NE5)",
           "to": "Havelock MRT (TE16)",
           "mode": "MRT",
-          "desc": "Clarke Quay → Outram Park（NEL）→ 轉 Thomson-East Coast Line 1 站到 Havelock，再步行回 Copthorne King's Hotel。F1 週日公共運輸延長營運。"
+          "desc": "Clarke Quay → Outram Park（NEL）→ 轉 TEL 1 站到 Havelock，再步行回飯店。"
         },
         {
           "type": "move",
@@ -540,17 +583,21 @@
           "mode": "WALK + GRAB",
           "destination": "Copthorne King's Hotel Singapore",
           "address": "403 Havelock Road, Singapore 169632",
-          "desc": "若 MRT 排隊過長，先走離賽道核心再叫 Grab。官方指定 private-hire pick-up 包含 Raffles City、Funan、South Beach；不要在 Padang 或場館門口直接叫車。"
+          "desc": "若 MRT 排隊太長，再走離核心去指定 private-hire pickup 叫 Grab；不要在 Padang 外直接叫。"
         }
       ],
       "alerts": [
         {
+          "title": "最高優先",
+          "text": "Singapore Flyer → Porsche（體驗座位）→ Drivers’ Parade → Janet → F1 正賽 → Lana。Mark Ronson 是可砍項目。"
+        },
+        {
           "title": "19:05 一定離開 Janet",
-          "text": "不管唱到哪都走；目標 19:25–19:35 回到 Republic A1。"
+          "text": "不管唱到哪都走；目標 19:25–19:30 回 Republic A1，避免錯過國歌與賽前氣氛。"
         },
         {
           "title": "散場策略",
-          "text": "正賽結束不要跟第一波人潮出場：立刻從 Republic 前往 Padang 看 Lana。回程優先 Gate 4 → Clarke Quay MRT → Outram Park → Havelock；若要更順，23:40–23:45 提早離開 Lana。"
+          "text": "正賽結束不要出場，直接去 Padang 看 Lana。23:40–23:45 提早離開，Gate 4 → Clarke Quay MRT → Outram Park → Havelock。"
         }
       ],
       "image": {
