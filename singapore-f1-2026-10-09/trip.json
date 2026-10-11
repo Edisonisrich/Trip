@@ -1101,7 +1101,7 @@
         "status": "confirmed",
         "twd": 39541,
         "foreign": "S$1,560.49",
-        "note": "3 晚住宿，原始金額 S$1,560.49；信用卡實際入帳 NT$39,541。",
+        "note": "3 晚住宿，原始金額 S$1,560.49；信用卡實際入帳 NT$39,541。 實際刷卡匯率約 25.3395 TWD/SGD。",
         "category": "lodging"
       },
       {
@@ -1124,7 +1124,7 @@
         "status": "confirmed",
         "twd": 8044,
         "foreign": "約 S$306.94 nett",
-        "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。",
+        "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。 依約 S$306.94 計算，參考匯率約 26.2071 TWD/SGD（原幣金額為約數）。",
         "category": "food"
       },
       {
@@ -1163,7 +1163,7 @@
         "status": "confirmed",
         "twd": 556,
         "foreign": "S$20.00",
-        "note": "10/10 購買／儲值；2 張，每張實際刷卡 NT$278，合計 NT$556。以實際台幣付款取代原先匯率估算。",
+        "note": "10/10 購買／儲值；2 張，每張實際刷卡 NT$278，合計 NT$556。以實際台幣付款取代原先匯率估算。 10/11 TRANSIT 各 NT$278，與兩張卡金額相符；原幣 S$20 合計，換算約 27.8000 TWD/SGD（仍需確認兩筆為同次儲值）。",
         "category": "transport"
       },
       {
@@ -1177,9 +1177,9 @@
       {
         "label": "Shake Shack｜奶昔＋薯條",
         "status": "confirmed",
-        "twd": 395,
+        "twd": 370,
         "foreign": "S$14.80",
-        "note": "10/09 Jewel Changi；實際消費 S$14.80。台幣僅按本次現金換匯成本 26.67 TWD/SGD 估算，付款方式未註記。",
+        "note": "10/09 Jewel Changi；S$14.80，信用卡未出帳明細 Shake Shack - Jewel Ch 顯示 NT$370；實際刷卡匯率約 25.0000 TWD/SGD。",
         "category": "food"
       },
       {
