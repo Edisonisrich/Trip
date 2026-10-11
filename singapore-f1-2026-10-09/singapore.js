@@ -36,7 +36,7 @@
     const included = entries.filter(x=>x.includeInTotal!==false);
     const total = included.reduce((s,x)=>s+Number(x.twd),0);
     const people = Number(budget.people)||1;
-    const groups = [['food','食｜餐飲'],['shopping','衣｜購物、伴手禮'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
+    const groups = [['food','食｜餐飲'],['shopping','衣｜購物'],['souvenirs','伴手禮｜紀念品'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
     const itemRow = x => {
       const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
       const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
@@ -72,7 +72,7 @@
 
   function renderCostSummary(budget){
     const items=(budget?.items||[]).filter(x=>x.includeInTotal!==false && x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
-    const groups=[['food','食','餐飲、飲料'],['shopping','衣','購物、伴手禮'],['lodging','住','飯店住宿'],['transport','行','機票、交通'],['entertainment','娛樂','F1、景點門票']];
+    const groups=[['food','食','餐飲、飲料'],['shopping','衣','服飾、購物'],['souvenirs','伴手禮','禮品、紀念品'],['lodging','住','飯店住宿'],['transport','行','機票、交通'],['entertainment','娛樂','F1、景點門票']];
     const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
     const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
     const cards=groups.map(([key,label,desc])=>'<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><small>'+label+'</small><strong>'+money(subtotal(key))+'</strong><span class="cost-summary-desc">'+desc+'</span></a>').join('');
@@ -182,7 +182,7 @@
     }));
   }
 
-  fetch('./trip.json?v=20261012-categories',{cache:'no-store'})
+  fetch('./trip.json?v=20261012-souvenirs',{cache:'no-store'})
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
