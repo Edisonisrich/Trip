@@ -1261,6 +1261,20 @@
         "foreign": "S$2.50",
         "twd": 67,
         "note": "10/11 Maxwell Food Centre 實際消費；S$2.50，台幣以 26.67 TWD/SGD 估算。"
+      },
+      {
+        "label": "炒粿條｜Maxwell Food Centre",
+        "status": "confirmed",
+        "foreign": "S$6.00",
+        "twd": 160,
+        "note": "10/11 Maxwell Food Centre 實際消費；S$6.00，台幣以 26.67 TWD/SGD 估算。"
+      },
+      {
+        "label": "天天海南雞飯｜Maxwell Food Centre",
+        "status": "confirmed",
+        "foreign": "S$23.00",
+        "twd": 613,
+        "note": "10/11 Maxwell Food Centre 實際消費；S$23.00，台幣以 26.67 TWD/SGD 估算。"
       }
     ],
     "notes": [
