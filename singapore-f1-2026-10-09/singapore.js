@@ -75,7 +75,8 @@
     const groups=[['food','食','餐飲、飲料'],['shopping','衣','服飾、購物'],['souvenirs','伴手禮','禮品、紀念品'],['lodging','住','飯店住宿'],['transport','行','機票、交通'],['entertainment','娛樂','F1、景點門票']];
     const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
     const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
-    const cards=groups.map(([key,label,desc])=>'<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><small>'+label+'</small><strong>'+money(subtotal(key))+'</strong><span class="cost-summary-desc">'+desc+'</span></a>').join('');
+    const icons={food:'🍜',shopping:'👗',lodging:'🏨',transport:'🚕',entertainment:'🏎️',souvenirs:'🎁'};
+    const cards=groups.map(([key,label,desc])=>'<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><span class="cost-summary-icon" aria-hidden="true">'+icons[key]+'</span><small>'+label+'</small><strong>'+money(subtotal(key))+'</strong><span class="cost-summary-desc">'+desc+'</span></a>').join('');
     const other=subtotal('other');
     return cards+'<div class="cost-summary-footer"><a href="?view=cost">旅費合計 <b>'+money(total)+'</b></a>'+(other?'<a href="?view=cost#cost-other">另含通訊、保險 '+money(other)+'</a>':'')+'</div>';
   }
