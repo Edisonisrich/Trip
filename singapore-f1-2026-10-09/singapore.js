@@ -45,7 +45,7 @@
     const rows = groups.map(([key,label])=>{
       const items=included.filter(x=>(x.category||'other')===key);
       const subtotal=items.reduce((s,x)=>s+Number(x.twd),0);
-      return '<div class="budgetgroup"><h3>'+esc(label)+' · '+money(subtotal)+'</h3>'+items.map(itemRow).join('')+'</div>';
+      return '<div class="budgetgroup" id="cost-'+key+'"><h3>'+esc(label)+' · '+money(subtotal)+'</h3>'+items.map(itemRow).join('')+'</div>';
     }).join('');
     const excluded=entries.filter(x=>x.includeInTotal===false);
     const exchange=excluded.length?'<div class="budgetgroup"><h3>換匯紀錄｜不計入旅費</h3>'+excluded.map(itemRow).join('')+'</div>':'';
@@ -68,6 +68,16 @@
       return '<a class="overview-day" href="?day='+(i+1)+'"><div class="overview-dayhead"><small>DAY '+String(i+1).padStart(2,'0')+' · '+esc(d.dow)+'</small><strong>'+esc(d.date)+'</strong><h3>'+esc(d.short||d.title)+'</h3></div><div class="overview-events">'+items+'</div><div class="overview-open">查看完整行程 →</div></a>';
     }).join('');
     return '<section class="trip-overview"><div class="overview-heading"><div><div class="kicker">TRIP AT A GLANCE</div><h2>四日行程總覽</h2></div><p>先看四天全程，再用上方日期 Tab 進入每天的詳細時間軸。</p></div><div class="overview-grid">'+dayCols+'</div></section>';
+  }
+
+  function renderCostSummary(budget){
+    const items=(budget?.items||[]).filter(x=>x.includeInTotal!==false && x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
+    const groups=[['food','食','餐飲、飲料'],['shopping','衣','購物、伴手禮'],['lodging','住','飯店住宿'],['transport','行','機票、交通'],['entertainment','娛樂','F1、景點門票']];
+    const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
+    const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
+    const cards=groups.map(([key,label,desc])=>'<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><small>'+label+'</small><strong>'+money(subtotal(key))+'</strong><span class="cost-summary-desc">'+desc+'</span></a>').join('');
+    const other=subtotal('other');
+    return cards+'<div class="cost-summary-footer"><a href="?view=cost">旅費合計 <b>'+money(total)+'</b></a>'+(other?'<a href="?view=cost#cost-other">另含通訊、保險 '+money(other)+'</a>':'')+'</div>';
   }
 
   function render(data){
@@ -94,11 +104,7 @@
       credit.textContent = data.coverImage.credit || 'Photo';
     }
 
-    $('#summary').innerHTML = (data.summary||[]).map(x=>{
-      const hasMore = (x.details&&x.details.length) || x.searchKeyword || x.note;
-      if(!hasMore) return '<div class="box"><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong></div>';
-      return '<details class="box info-card"><summary><div><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong><span class="tapmore">點開看完整資訊</span></div><span class="chevron">⌄</span></summary>'+bookingDetails(x)+'</details>';
-    }).join('');
+    $('#summary').innerHTML = renderCostSummary(data.budget);
 
     const params = new URLSearchParams(location.search);
     const view = params.get('view');
@@ -134,6 +140,7 @@
       if (view === 'cost') {
         budgetEl.style.display = 'block';
         budgetEl.innerHTML = renderBudget(data.budget);
+        if (/^#cost-[a-z]+$/.test(location.hash)) requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
       } else {
         budgetEl.style.display = 'none';
         budgetEl.innerHTML = '';
