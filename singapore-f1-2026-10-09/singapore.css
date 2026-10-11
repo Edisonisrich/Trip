@@ -429,3 +429,13 @@ main.shell{
   .cost-summary-card:nth-child(5){grid-column:1/-1}
   .cost-summary-footer{font-size:12px;padding-top:6px}
 }
+
+/* Responsive expense summary: prevent inherited carousel sizing and amount overflow */
+.summary-wrap .summary{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;overflow:visible!important;gap:10px!important;align-items:stretch}
+.summary-wrap .summary .cost-summary-card{box-sizing:border-box;min-width:0!important;width:auto!important;max-width:100%;min-height:108px;display:flex;flex-direction:column;justify-content:center;padding:14px 12px!important;overflow:hidden}
+.summary-wrap .cost-summary-card strong{font-size:clamp(14px,1.8vw,22px)!important;line-height:1.35;white-space:normal!important;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.summary-wrap .cost-summary-desc{line-height:1.4;overflow-wrap:anywhere}
+.summary-wrap .cost-summary-footer{min-width:0;align-items:center;line-height:1.6}
+@media(max-width:900px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:620px){.summary-wrap .summary{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.summary-wrap .summary .cost-summary-card{min-height:100px!important;padding:13px 11px!important}.summary-wrap .cost-summary-card strong{font-size:clamp(16px,4.5vw,21px)!important}.summary-wrap .cost-summary-card:nth-child(5){grid-column:auto}.summary-wrap .cost-summary-footer{grid-column:1/-1;display:block}.summary-wrap .cost-summary-footer a{display:block;margin:4px 0}.summary-wrap .cost-summary-footer b{font-size:18px}}
+@media(max-width:350px){.summary-wrap .summary{grid-template-columns:1fr!important}.summary-wrap .summary .cost-summary-card{min-height:84px!important}}
