@@ -1093,41 +1093,39 @@
         "label": "Scoot ScootPlus 來回機票｜2人",
         "status": "confirmed",
         "twd": 38755,
-        "note": "訂位 UY6D7M，實際付款"
+        "note": "訂位 UY6D7M，實際付款",
+        "category": "transport"
       },
       {
         "label": "Copthorne King's Hotel｜3晚",
         "status": "confirmed",
         "twd": 39541,
         "foreign": "S$1,560.49",
-        "note": "3 晚住宿，原始金額 S$1,560.49；信用卡實際入帳 NT$39,541。"
+        "note": "3 晚住宿，原始金額 S$1,560.49；信用卡實際入帳 NT$39,541。",
+        "category": "lodging"
       },
       {
         "label": "Singtel eSIM｜2張",
         "status": "confirmed",
         "twd": 284,
-        "note": "5天 / 500GB / 張"
+        "note": "5天 / 500GB / 張",
+        "category": "other"
       },
       {
         "label": "F1 Republic Grandstand｜2張",
         "status": "confirmed",
         "note": "Republic Grandstand 2 張，實際付款 US$1,064.56；信用卡實際入帳 NT$34,549。",
         "foreign": "US$1,064.56",
-        "twd": 34549
+        "twd": 34549,
+        "category": "entertainment"
       },
       {
         "label": "Colony Seafood Dinner｜2人",
         "status": "confirmed",
         "twd": 8044,
         "foreign": "約 S$306.94 nett",
-        "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。"
-      },
-      {
-        "label": "Po 午餐｜2人",
-        "status": "estimated",
-        "twd": 3989,
-        "foreign": "約 S$159.93 nett",
-        "note": "建議點法共 S$157++；以 F1 門票單點 15% off 粗估後，再加服務費與 GST；實際依當日點餐與餐廳條款"
+        "note": "10/10 Colony Seafood Dinner，2 人實際支出 NT$8,044。",
+        "category": "food"
       },
       {
         "label": "備用新幣現金",
@@ -1135,192 +1133,204 @@
         "twd": 2000,
         "foreign": "S$75",
         "includeInTotal": false,
-        "note": "實際換匯：NT$2,000（含 NT$100 手續費）→ S$75；換匯本金 NT$1,900，未含手續費匯率約 25.33；含手續費實際成本約 26.67 TWD/SGD。現金換匯不直接計入旅費總額，實際消費時再計。"
+        "note": "實際換匯：NT$2,000（含 NT$100 手續費）→ S$75；換匯本金 NT$1,900，未含手續費匯率約 25.33；含手續費實際成本約 26.67 TWD/SGD。現金換匯不直接計入旅費總額，實際消費時再計。",
+        "category": "exchange"
       },
       {
         "label": "計程車｜Jewel／機場 → 飯店",
         "status": "confirmed",
         "twd": 760,
-        "note": "10/09 晚間實際車資；由機場／Jewel 前往 Copthorne King's Hotel。"
+        "note": "10/09 晚間實際車資；由機場／Jewel 前往 Copthorne King's Hotel。",
+        "category": "transport"
       },
       {
         "label": "Grab Singapore Travel Pass",
         "status": "confirmed",
         "twd": 0,
         "foreign": "免費",
-        "note": "10/10 Klook 訂單贈送的新加坡 Grab Travel Pass；實際付款 NT$0。"
+        "note": "10/10 Klook 訂單贈送的新加坡 Grab Travel Pass；實際付款 NT$0。",
+        "category": "transport"
       },
       {
         "label": "Grab｜飯店 → Gardens by the Bay",
         "status": "confirmed",
         "twd": 395,
-        "note": "10/10 上午實際車資；Copthorne King's Hotel → Gardens by the Bay / Cloud Forest。"
+        "note": "10/10 上午實際車資；Copthorne King's Hotel → Gardens by the Bay / Cloud Forest。",
+        "category": "transport"
       },
       {
         "label": "捷運卡｜2張",
         "status": "confirmed",
         "twd": 556,
         "foreign": "S$20.00",
-        "note": "10/10 購買／儲值；2 張，每張實際刷卡 NT$278，合計 NT$556。以實際台幣付款取代原先匯率估算。"
+        "note": "10/10 購買／儲值；2 張，每張實際刷卡 NT$278，合計 NT$556。以實際台幣付款取代原先匯率估算。",
+        "category": "transport"
       },
       {
         "label": "Grab｜MBS → Ritz-Carlton",
         "status": "confirmed",
         "twd": 507,
         "foreign": "S$19.00",
-        "note": "10/10 Marina Bay Sands → The Ritz-Carlton, Millenia Singapore；實際 Grab 車資。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。"
-      },
-      {
-        "label": "Grab / MRT",
-        "status": "pending",
-        "note": "依實際搭乘次數與 F1 期間 surge 計價"
+        "note": "10/10 Marina Bay Sands → The Ritz-Carlton, Millenia Singapore；實際 Grab 車資。台幣以本次現金換匯成本約 26.67 TWD/SGD 估算。",
+        "category": "transport"
       },
       {
         "label": "Shake Shack｜奶昔＋薯條",
         "status": "confirmed",
         "twd": 395,
         "foreign": "S$14.80",
-        "note": "10/09 Jewel Changi；實際消費 S$14.80。台幣僅按本次現金換匯成本 26.67 TWD/SGD 估算，付款方式未註記。"
+        "note": "10/09 Jewel Changi；實際消費 S$14.80。台幣僅按本次現金換匯成本 26.67 TWD/SGD 估算，付款方式未註記。",
+        "category": "food"
       },
       {
         "label": "Lau Pa Sat｜沙嗲",
         "status": "confirmed",
         "twd": 832,
         "foreign": "S$31.20",
-        "note": "10/09 Lau Pa Sat / Satay Street 實際消費；台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/09 Lau Pa Sat / Satay Street 實際消費；台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "綠茶",
         "status": "confirmed",
         "twd": 80,
-        "note": "10/09 實際消費。"
+        "note": "10/09 實際消費。",
+        "category": "food"
       },
       {
         "label": "冰萊姆茶",
         "status": "confirmed",
         "twd": 61,
         "foreign": "S$2.30",
-        "note": "10/09 Lau Pa Sat 實際消費；台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/09 Lau Pa Sat 實際消費；台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "計程車｜Lau Pa Sat → 飯店",
         "status": "confirmed",
         "twd": 352,
-        "note": "10/09 深夜 Lau Pa Sat → Copthorne King's Hotel 實際車資。"
+        "note": "10/09 深夜 Lau Pa Sat → Copthorne King's Hotel 實際車資。",
+        "category": "transport"
       },
       {
         "label": "早餐｜10/10",
         "status": "confirmed",
         "twd": 360,
-        "note": "10/10 早餐實際消費。"
+        "note": "10/10 早餐實際消費。",
+        "category": "food"
       },
       {
         "label": "Gardens by the Bay 三館套票｜2人",
         "status": "confirmed",
         "twd": 2080,
-        "note": "10/10 Klook 實際付款；花穹 + 雲霧林（Jurassic World）+ 奇幻花園（Disney Garden of Wonder）+ 接駁服務，成人 ×2。"
+        "note": "10/10 Klook 實際付款；花穹 + 雲霧林（Jurassic World）+ 奇幻花園（Disney Garden of Wonder）+ 接駁服務，成人 ×2。",
+        "category": "entertainment"
       },
       {
         "label": "CHAGEE 霸王茶姬｜伯牙絕弦 2杯",
         "status": "confirmed",
         "twd": 298,
-        "note": "10/10 Suntec City 實際消費；伯牙絕弦 2 杯。"
+        "note": "10/10 Suntec City 實際消費；伯牙絕弦 2 杯。",
+        "category": "food"
       },
       {
         "label": "松發肉骨茶｜Suntec City",
         "status": "confirmed",
         "twd": 1098,
-        "note": "10/10 Suntec City 實際消費。"
+        "note": "10/10 Suntec City 實際消費。",
+        "category": "food"
       },
       {
         "label": "伴手禮｜老城昌",
         "status": "confirmed",
         "twd": 3725,
-        "note": "10/10 實際消費。"
+        "note": "10/10 實際消費。",
+        "category": "shopping"
       },
       {
         "label": "Grab｜Ritz-Carlton → 飯店",
         "status": "confirmed",
         "twd": 344,
-        "note": "10/10 晚間 The Ritz-Carlton, Millenia Singapore → Copthorne King's Hotel 實際 Grab 車資。"
-      },
-      {
-        "label": "景點門票與其他餐飲",
-        "status": "pending",
-        "note": "Cloud Forest、ArtScience、SkyPark、松發、Lau Pa Sat 等尚未全部補入實際付款"
+        "note": "10/10 晚間 The Ritz-Carlton, Millenia Singapore → Copthorne King's Hotel 實際 Grab 車資。",
+        "category": "transport"
       },
       {
         "label": "旅遊保險｜2人",
         "status": "confirmed",
         "twd": 2912,
-        "note": "總額 NT$2,912（NT$2,426 + NT$486），共 2 人。"
+        "note": "總額 NT$2,912（NT$2,426 + NT$486），共 2 人。",
+        "category": "other"
       },
       {
         "label": "甘蔗汁｜Maxwell Food Centre",
         "status": "confirmed",
         "foreign": "S$2.50",
         "twd": 67,
-        "note": "10/11 Maxwell Food Centre 實際消費；S$2.50，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 Maxwell Food Centre 實際消費；S$2.50，台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "炒粿條｜Maxwell Food Centre",
         "status": "confirmed",
         "foreign": "S$6.00",
         "twd": 160,
-        "note": "10/11 Maxwell Food Centre 實際消費；S$6.00，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 Maxwell Food Centre 實際消費；S$6.00，台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "天天海南雞飯｜Maxwell Food Centre",
         "status": "confirmed",
         "foreign": "S$23.00",
         "twd": 613,
-        "note": "10/11 Maxwell Food Centre 實際消費；S$23.00，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 Maxwell Food Centre 實際消費；S$23.00，台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "甘蔗檸檬汁｜Maxwell Food Centre",
         "status": "confirmed",
         "foreign": "S$2.80",
         "twd": 75,
-        "note": "10/11 Maxwell Food Centre 再加點 1 杯甘蔗檸檬汁；S$2.80，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 Maxwell Food Centre 再加點 1 杯甘蔗檸檬汁；S$2.80，台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "Kalarra Cafe｜抹茶拿鐵",
         "status": "confirmed",
         "twd": 263,
-        "note": "10/11 City Hall 附近 Kalarra Cafe 抹茶拿鐵；實際支出 NT$263。"
+        "note": "10/11 City Hall 附近 Kalarra Cafe 抹茶拿鐵；實際支出 NT$263。",
+        "category": "food"
       },
       {
         "label": "礦泉水｜10/11",
         "status": "confirmed",
         "foreign": "S$1.10",
         "twd": 29,
-        "note": "10/11 實際消費；礦泉水 S$1.10，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 實際消費；礦泉水 S$1.10，台幣以 26.67 TWD/SGD 估算。",
+        "category": "food"
       },
       {
         "label": "新加坡磁鐵紀念品",
         "status": "confirmed",
         "foreign": "S$6.00",
         "twd": 160,
-        "note": "10/11 實際消費；新加坡磁鐵紀念品 S$6.00，台幣以 26.67 TWD/SGD 估算。"
+        "note": "10/11 實際消費；新加坡磁鐵紀念品 S$6.00，台幣以 26.67 TWD/SGD 估算。",
+        "category": "shopping"
       },
       {
         "label": "張亮麻辣燙｜宵夜",
         "status": "confirmed",
         "twd": 762,
-        "note": "10/11 宵夜，Grab 張亮麻辣燙；實際支出 NT$762。"
+        "note": "10/11 宵夜，Grab 張亮麻辣燙；實際支出 NT$762。",
+        "category": "food"
       },
       {
         "label": "Grab｜飯店 → 樟宜機場 T1",
         "status": "confirmed",
         "twd": 1093,
-        "note": "10/12 早上 Copthorne King's Hotel → Changi Airport Terminal 1；使用者提供實際車資 NT$1,093。"
+        "note": "10/12 早上 Copthorne King's Hotel → Changi Airport Terminal 1；使用者提供實際車資 NT$1,093。",
+        "category": "transport"
       }
     ],
-    "notes": [
-      "Grab / MRT 實際交通費",
-      "Cloud Forest、ArtScience Museum、SkyPark 等景點票券（若尚未付款）",
-      "松發肉骨茶、Lau Pa Sat、飲料與其他零食",
-      "購物、伴手禮與信用卡海外交易手續費"
-    ]
+    "notes": []
   }
 }
