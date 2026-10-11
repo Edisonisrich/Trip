@@ -439,3 +439,7 @@ main.shell{
 @media(max-width:900px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:620px){.summary-wrap .summary{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.summary-wrap .summary .cost-summary-card{min-height:100px!important;padding:13px 11px!important}.summary-wrap .cost-summary-card strong{font-size:clamp(16px,4.5vw,21px)!important}.summary-wrap .cost-summary-card:nth-child(5){grid-column:auto}.summary-wrap .cost-summary-footer{grid-column:1/-1;display:block}.summary-wrap .cost-summary-footer a{display:block;margin:4px 0}.summary-wrap .cost-summary-footer b{font-size:18px}}
 @media(max-width:350px){.summary-wrap .summary{grid-template-columns:1fr!important}.summary-wrap .summary .cost-summary-card{min-height:84px!important}}
+
+/* Six expense categories: balanced grid */
+@media(min-width:901px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(min-width:621px) and (max-width:900px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
