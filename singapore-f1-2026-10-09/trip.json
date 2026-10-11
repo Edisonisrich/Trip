@@ -411,60 +411,79 @@
       "date": "10/11",
       "short": "F1",
       "title": "Po・F1・Janet・Lana",
-      "intro": "12:00 Po 午餐 → 15:00 入場；下午避曬避雨、優先 Flyer／室內區 → 18:00 Drivers’ Parade → Janet → 20:00 F1 正賽 → Lana。",
+      "intro": "上午 Maxwell＋Chinatown 輕鬆補完新加坡必吃 → 回飯店休息 → 14:05 搭 MRT 去 F1；下午避曬避雨，晚上主攻 Drivers’ Parade、正賽與 Lana。",
       "items": [
         {
-          "type": "event",
-          "time": "09:00",
-          "title": "起床＋超輕早餐",
-          "desc": "今天高溫又會待場內很久，早餐以補水、電解質為主。"
-        },
-        {
-          "type": "event",
-          "time": "10:00",
-          "title": "休息＋先收隔天行李",
-          "desc": "今晚回飯店很晚，10/12 又是早班機。"
-        },
-        {
           "type": "move",
-          "time": "11:40",
+          "time": "10:40",
           "from": "Hotel",
-          "to": "Po",
+          "to": "Havelock MRT (TE16)",
           "mode": "WALK",
-          "destination": "Po · The Warehouse Hotel",
-          "address": "320 Havelock Road, Singapore 169628",
-          "desc": "步行前往，12:00 已訂位。"
+          "desc": "現在出發，走約 4 分鐘到 Havelock MRT。"
+        },
+        {
+          "type": "move",
+          "time": "10:45",
+          "from": "Havelock MRT (TE16)",
+          "to": "Maxwell MRT (TE18)",
+          "mode": "MRT",
+          "desc": "TEL 直達 2 站，往 Maxwell／Marina Bay 方向，不用轉車。"
         },
         {
           "type": "event",
-          "time": "12:00",
-          "title": "Po 午餐｜已訂位",
-          "desc": "2 人；F1 ticket holder 單點餐飲 15% off。吃到約 7 分飽，13:15 左右結束。",
+          "time": "11:00",
+          "title": "Maxwell Food Centre｜早午餐",
+          "desc": "優先吃天天海南雞飯；今天週日營業。兩人可點半隻白雞＋雞油飯 x2，或各一份雞腿飯。",
           "chips": [
-            "已訂位",
-            "F1 15% off"
+            "必吃",
+            "早點去避排隊"
           ]
         },
         {
           "type": "event",
-          "time": "13:15–14:15",
-          "title": "回飯店／咖啡店休息＋補水",
-          "desc": "不要提早去場外曬。把防曬補好、雨衣放隨身包、行動電源充滿。",
+          "time": "11:40",
+          "title": "佛牙寺＋Chinatown 小逛",
+          "desc": "就在 Maxwell 旁邊，控制在 30–40 分鐘；今天午後預報雷陣雨，不拉太遠。",
           "chips": [
-            "避曬",
-            "補水",
-            "雨衣"
+            "輕鬆",
+            "近"
           ]
         },
         {
           "type": "move",
-          "time": "14:20",
+          "time": "12:20",
+          "from": "Maxwell MRT (TE18)",
+          "to": "Havelock MRT (TE16)",
+          "mode": "MRT",
+          "desc": "TEL 原路直達 2 站。"
+        },
+        {
+          "type": "event",
+          "time": "12:35–13:50",
+          "title": "回飯店休息＋沖澡＋補水",
+          "desc": "今天最高約 34°C，下午有雷陣雨；補防曬、雨衣、行動電源、水。"
+        },
+        {
+          "type": "move",
+          "time": "14:05",
           "from": "Hotel",
-          "to": "Gate 2 / Singapore GP Zone 1",
-          "mode": "GRAB",
-          "destination": "Suntec City",
-          "address": "3 Temasek Boulevard, Singapore 038983",
-          "desc": "目標 14:40 左右到附近，15:00 開門後進場。"
+          "to": "Havelock MRT (TE16)",
+          "mode": "WALK",
+          "desc": "出發去 F1。"
+        },
+        {
+          "type": "move",
+          "time": "14:10",
+          "from": "Havelock MRT (TE16)",
+          "to": "Promenade MRT (DT15)",
+          "mode": "MRT",
+          "desc": "Havelock → Stevens 轉 Downtown Line → Promenade；Exit C 前往 Gate 2。"
+        },
+        {
+          "type": "event",
+          "time": "14:40",
+          "title": "抵達 Gate 2 附近",
+          "desc": "先排隊／補水，15:00 開門後入場。"
         },
         {
           "type": "event",
