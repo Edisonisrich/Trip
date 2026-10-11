@@ -1352,6 +1352,17 @@
         "twd": 6133,
         "note": "實際購買金額 NT$6,133。",
         "category": "shopping"
+      },
+      {
+        "label": "翡翠拉麵小籠包｜免費兌換套餐",
+        "status": "paid",
+        "twd": 0,
+        "foreign": "約 S$69.54",
+        "note": "樟宜機場翡翠拉麵小籠包：牛腩拉麵、擔擔麵、普洱茶、冰豆漿、蝦餃2籠、水餃2份（每份S$5）。按估計菜價、10%服務費及9% GST，餐點參考價值約 S$69.54／NT$1,739（匯率25）；使用者確認免費兌換，實付 NT$0，參考價值不列入旅費。",
+        "category": "food",
+        "includeInTotal": true,
+        "paymentMethod": "reward_redemption",
+        "estimatedValueTwd": 1739
       }
     ],
     "notes": []
