@@ -1163,8 +1163,10 @@
         "status": "confirmed",
         "twd": 556,
         "foreign": "S$20.00",
-        "note": "10/10 購買／儲值；2 張，每張實際刷卡 NT$278，合計 NT$556。以實際台幣付款取代原先匯率估算。 10/11 TRANSIT 各 NT$278，與兩張卡金額相符；原幣 S$20 合計，換算約 27.8000 TWD/SGD（仍需確認兩筆為同次儲值）。",
-        "category": "transport"
+        "note": "使用者確認信用卡 10/11 TRANSIT 兩筆各 NT$278 對應兩張捷運卡，合計 NT$556；原記錄 S$20.00，平均有效匯率約 27.8000 TWD/SGD；已包含在原旅費，不重複計入。",
+        "category": "transport",
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       },
       {
         "label": "Grab｜MBS → Ritz-Carlton",
@@ -1216,8 +1218,10 @@
         "label": "早餐｜10/10",
         "status": "confirmed",
         "twd": 360,
-        "note": "10/10 早餐實際消費。",
-        "category": "food"
+        "note": "10/10 Grab 信用卡未出帳 NT$360，使用者確認為早餐；已包含在原旅費，不重複計入。",
+        "category": "food",
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       },
       {
         "label": "Gardens by the Bay 三館套票｜2人",
@@ -1328,8 +1332,10 @@
         "label": "張亮麻辣燙｜宵夜",
         "status": "confirmed",
         "twd": 762,
-        "note": "10/11 宵夜，Grab 張亮麻辣燙；實際支出 NT$762。",
-        "category": "food"
+        "note": "10/11 Grab 信用卡未出帳 NT$762，使用者確認為張亮麻辣燙宵夜外送；已包含在原旅費，不重複計入。",
+        "category": "food",
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       },
       {
         "label": "Grab｜飯店 → 樟宜機場 T1",
