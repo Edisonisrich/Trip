@@ -32,23 +32,24 @@
 
   function renderBudget(budget){
     if(!budget) return '<section class="budgetpage"><div class="budgetnotes">尚未建立費用資料。</div></section>';
-    const included = (budget.items||[]).filter(x=>x.includeInTotal!==false && Number.isFinite(Number(x.twd)));
+    const entries = (budget.items||[]).filter(x=>x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
+    const included = entries.filter(x=>x.includeInTotal!==false);
     const total = included.reduce((s,x)=>s+Number(x.twd),0);
     const people = Number(budget.people)||1;
-    const groups = ['confirmed','estimated','pending'];
-    const labels = {confirmed:'已付款／已確認',estimated:'預估費用',pending:'尚未計價'};
-    const rows = groups.map(group=>{
-      const items=(budget.items||[]).filter(x=>x.status===group);
-      if(!items.length) return '';
-      return '<div class="budgetgroup"><h3>'+labels[group]+'</h3>'+items.map(x=>{
-        const price = x.twd!=null ? money(x.twd) : '待確認';
-        const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
-        const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
-        return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+'<strong>'+price+'</strong>'+excluded+'</div></div>';
-      }).join('')+'</div>';
+    const groups = [['food','食｜餐飲'],['shopping','衣｜購物、伴手禮'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
+    const itemRow = x => {
+      const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
+      const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
+      return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+'<strong>'+money(x.twd)+'</strong>'+excluded+'</div></div>';
+    };
+    const rows = groups.map(([key,label])=>{
+      const items=included.filter(x=>(x.category||'other')===key);
+      const subtotal=items.reduce((s,x)=>s+Number(x.twd),0);
+      return '<div class="budgetgroup"><h3>'+esc(label)+' · '+money(subtotal)+'</h3>'+items.map(itemRow).join('')+'</div>';
     }).join('');
-    const notes=(budget.notes||[]).map(n=>'<li>'+esc(n)+'</li>').join('');
-    return '<section class="budgetpage"><div class="budgethero"><small>目前可計算總額</small><strong>'+money(total)+'</strong><div>兩人平均約 '+money(total/people)+'</div></div>'+rows+(notes?'<div class="budgetnotes"><b>還沒算進去</b><ul>'+notes+'</ul></div>':'')+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
+    const excluded=entries.filter(x=>x.includeInTotal===false);
+    const exchange=excluded.length?'<div class="budgetgroup"><h3>換匯紀錄｜不計入旅費</h3>'+excluded.map(itemRow).join('')+'</div>':'';
+    return '<section class="budgetpage"><div class="budgethero"><small>已記錄旅費總額</small><strong>'+money(total)+'</strong><div>'+people+' 人平均約 '+money(total/people)+'</div></div>'+rows+exchange+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
   }
 
   function renderOverview(data){
@@ -174,7 +175,7 @@
     }));
   }
 
-  fetch('./trip.json?v=20261002-1330',{cache:'no-store'})
+  fetch('./trip.json?v=20261012-categories',{cache:'no-store'})
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
