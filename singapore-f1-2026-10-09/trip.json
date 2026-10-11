@@ -1329,6 +1329,13 @@
         "twd": 1093,
         "note": "10/12 早上 Copthorne King's Hotel → Changi Airport Terminal 1；使用者提供實際車資 NT$1,093。",
         "category": "transport"
+      },
+      {
+        "label": "外套",
+        "status": "confirmed",
+        "twd": 6133,
+        "note": "實際購買金額 NT$6,133。",
+        "category": "shopping"
       }
     ],
     "notes": []
