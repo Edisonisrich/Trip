@@ -1154,9 +1154,11 @@
       {
         "label": "Grab｜飯店 → Gardens by the Bay",
         "status": "confirmed",
-        "twd": 395,
-        "note": "10/10 上午實際車資；Copthorne King's Hotel → Gardens by the Bay / Cloud Forest。",
-        "category": "transport"
+        "twd": 305,
+        "note": "10/10 Copthorne King's Hotel → Gardens by the Bay / Cloud Forest；使用者確認對應信用卡 Grab NT$305（原估 NT$395），已改為實際刷卡台幣金額。",
+        "category": "transport",
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       },
       {
         "label": "捷運卡｜2張",
