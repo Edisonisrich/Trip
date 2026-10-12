@@ -1250,7 +1250,7 @@
         "label": "伴手禮｜老城昌",
         "status": "confirmed",
         "twd": 3725,
-        "note": "10/10 實際消費。",
+        "note": "10/10 老城昌伴手禮原始消費 NT$3,725；10/12 於樟宜機場成功退稅 S$7，另列退稅抵減約 NT$175（暫以匯率25估算），原價保留避免混淆。",
         "category": "souvenirs"
       },
       {
@@ -1372,6 +1372,17 @@
         "category": "souvenirs",
         "includeInTotal": true,
         "paymentMethod": "card"
+      },
+      {
+        "label": "GST 退稅｜老城昌伴手禮",
+        "status": "paid",
+        "twd": -175,
+        "foreign": "-S$7.00",
+        "note": "10/12 樟宜機場老城昌伴手禮退稅 S$7，暫以 1 SGD = NT$25 換算抵減 NT$175；待實際入帳台幣金額確認後調整。",
+        "category": "souvenirs",
+        "includeInTotal": true,
+        "paymentMethod": "tax_refund",
+        "reconciliationStatus": "confirmed_foreign_estimated_twd"
       }
     ],
     "notes": []
