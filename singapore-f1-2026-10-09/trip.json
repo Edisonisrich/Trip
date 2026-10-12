@@ -1393,6 +1393,16 @@
         "includeInTotal": true,
         "paymentMethod": "card",
         "reconciliationStatus": "confirmed"
+      },
+      {
+        "label": "Toast Box｜10/11",
+        "status": "paid",
+        "twd": 636,
+        "note": "10/11 Toast Box 餐飲；使用者確認實際付款 NT$636，對應先前待對帳的 NT$636 交易。",
+        "category": "food",
+        "includeInTotal": true,
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       }
     ],
     "notes": []
