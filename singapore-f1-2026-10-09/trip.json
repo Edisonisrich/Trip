@@ -1413,6 +1413,15 @@
         "includeInTotal": true,
         "paymentMethod": "card",
         "reconciliationStatus": "confirmed"
+      },
+      {
+        "label": "F1 晚餐｜漢堡與熱狗",
+        "status": "confirmed",
+        "twd": 951,
+        "note": "10/11 F1 賽場漢堡與熱狗晚餐，實際刷卡 NT$951；對應 SMP_AKA ENTERPRISE。",
+        "category": "food",
+        "includeInTotal": true,
+        "paymentMethod": "card"
       }
     ],
     "notes": []
