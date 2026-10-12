@@ -1383,6 +1383,16 @@
         "includeInTotal": true,
         "paymentMethod": "tax_refund",
         "reconciliationStatus": "confirmed_foreign_estimated_twd"
+      },
+      {
+        "label": "Grab｜飯店 → Lau Pa Sat 夜市",
+        "status": "paid",
+        "twd": 279,
+        "note": "10/09 晚間 Copthorne King's Hotel → Lau Pa Sat / Satay Street 夜市；使用者確認信用卡 Grab 實際扣款 NT$279。與夜市 → 飯店 NT$352 為不同方向，分開記帳。",
+        "category": "transport",
+        "includeInTotal": true,
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
       }
     ],
     "notes": []
