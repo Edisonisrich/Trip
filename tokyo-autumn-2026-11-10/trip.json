@@ -477,7 +477,7 @@
       "date": "11/14",
       "short": "回程",
       "title": "築地・TeamLab Borderless・成田・JX805",
-      "intro": "10 小時 7 人座包車，最後前往成田第二航廈。",
+      "intro": "10 小時 7 人座包車；麻布台之丘後先到成田 T1 川豊使用 U.First，再前往 T2 搭乘 JX805。",
       "items": [
         {
           "type": "event",
@@ -530,20 +530,44 @@
         },
         {
           "type": "move",
-          "time": "之後",
+          "time": "約15:00–15:15",
           "from": "麻布台之丘",
-          "to": "成田機場 T2",
+          "to": "成田機場 T1",
           "mode": "CHARTER",
-          "desc": "車程約 1 小時。"
+          "desc": "包車前往成田；預留約 1 小時車程。"
         },
         {
           "type": "event",
-          "time": "機場",
-          "title": "NRT T2｜JAPAN FOOD HALL",
-          "desc": "出境後本館2樓；備選：銀座篝、四代目菊川。",
+          "time": "約16:20–17:10",
+          "title": "川豊 成田空港店｜U.First",
+          "desc": "T1 中央大樓 4F、安檢前；先吃 U.First 鰻魚餐。行李可留包車上。",
           "chips": [
-            "備選"
+            "U.First",
+            "回程晚餐"
           ]
+        },
+        {
+          "type": "move",
+          "time": "約17:10",
+          "from": "成田機場 T1",
+          "to": "成田機場 T2",
+          "mode": "CHARTER",
+          "desc": "同一台包車直接送往 T2；不需拖行李搭航廈接駁。"
+        },
+        {
+          "type": "event",
+          "time": "約17:40",
+          "title": "STARLUX JX805 報到・托運",
+          "desc": "抵達 T2 後辦理報到與托運，再進安檢／出境。",
+          "chips": [
+            "已安排"
+          ]
+        },
+        {
+          "type": "event",
+          "time": "18:00 後",
+          "title": "NRT T2｜免稅店／伴手禮",
+          "desc": "報到與出境後再採買；若還餓可看 JAPAN FOOD HALL。"
         },
         {
           "type": "event",
