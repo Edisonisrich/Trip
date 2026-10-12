@@ -32,77 +32,55 @@
 
   function renderBudget(budget){
     if(!budget) return '<section class="budgetpage"><div class="budgetnotes">尚未建立費用資料。</div></section>';
-    const included = (budget.items||[]).filter(x=>x.includeInTotal!==false && Number.isFinite(Number(x.twd)));
+    const entries = (budget.items||[]).filter(x=>x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
+    const included = entries.filter(x=>x.includeInTotal!==false);
     const total = included.reduce((s,x)=>s+Number(x.twd),0);
     const people = Number(budget.people)||1;
-    const groups = ['confirmed','estimated','pending'];
-    const labels = {confirmed:'已付款／已確認',estimated:'預估費用',pending:'尚未計價'};
-    const rows = groups.map(group=>{
-      const items=(budget.items||[]).filter(x=>x.status===group);
-      if(!items.length) return '';
-      return '<div class="budgetgroup"><h3>'+labels[group]+'</h3>'+items.map(x=>{
-        const price = x.twd!=null ? money(x.twd) : '待確認';
-        const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
-        const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
-        return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+'<strong>'+price+'</strong>'+excluded+'</div></div>';
-      }).join('')+'</div>';
+    const groups = [['food','食｜餐飲'],['shopping','衣｜購物'],['souvenirs','伴手禮｜紀念品'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
+    const itemRow = x => {
+      const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
+      const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
+      return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+'<strong>'+money(x.twd)+'</strong>'+excluded+'</div></div>';
+    };
+    const rows = groups.map(([key,label])=>{
+      const items=included.filter(x=>(x.category||'other')===key);
+      const subtotal=items.reduce((s,x)=>s+Number(x.twd),0);
+      return '<div class="budgetgroup" id="cost-'+key+'"><h3>'+esc(label)+' · '+money(subtotal)+'</h3>'+items.map(itemRow).join('')+'</div>';
     }).join('');
-    const notes=(budget.notes||[]).map(n=>'<li>'+esc(n)+'</li>').join('');
-    return '<section class="budgetpage"><div class="budgethero"><small>目前可計算總額</small><strong>'+money(total)+'</strong><div>兩人平均約 '+money(total/people)+'</div></div>'+rows+(notes?'<div class="budgetnotes"><b>還沒算進去</b><ul>'+notes+'</ul></div>':'')+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
+    const excluded=entries.filter(x=>x.includeInTotal===false);
+    const exchange=excluded.length?'<div class="budgetgroup"><h3>換匯紀錄｜不計入旅費</h3>'+excluded.map(itemRow).join('')+'</div>':'';
+    return '<section class="budgetpage"><div class="budgethero"><small>已記錄旅費總額</small><strong>'+money(total)+'</strong><div>'+people+' 人平均約 '+money(total/people)+'</div></div>'+rows+exchange+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
   }
 
   function renderOverview(data){
-    const parseHour=s=>{
-      const m=String(s||'').match(/(\d{1,2}):(\d{2})/);
-      return m ? Number(m[1])+Number(m[2])/60 : null;
+    const slotLabel = t => {
+      const s=String(t||'');
+      if (/出發前|通關後|白天|上午|09:30|11:00/.test(s)) return '上午';
+      if (/15:00|16:00|下午/.test(s)) return '下午';
+      if (/19:00|20:10|住宿|晚上|當日/.test(s)) return '晚上';
+      return '行程';
     };
-    const classify=x=>{
-      const t=(x.title||'')+' '+(x.desc||'')+' '+(x.mode||'');
-      if(/JX|STARLUX|航空|班機/.test(t)) return 'flight';
-      if(/Bistro|用餐|餐/.test(t)) return 'meal';
-      if(/租車|自駕|CHARTER|包車|→/.test(t)||x.type==='move') return 'move';
-      if(/住宿|Hotel|House|La Vista|Check-in|Check-out/.test(t)) return 'hotel';
-      return 'play';
-    };
-    const days=data.days||[];
-    const hours=[9,10,11,12,13,14,15,16,17,18,19,20,21,22];
-    const headers=days.map((d,i)=>
-      '<a class="cal-h" href="?day='+(i+1)+'" style="grid-column:'+(i+2)+';grid-row:1"><b>'+esc(d.date)+'</b><small>'+esc(d.dow)+' · '+esc(d.short||'')+'</small></a>'
-    ).join('');
-    let slots='';
-    hours.forEach((h,ri)=>{
-      const row=ri+2;
-      slots+='<div class="cal-t" style="grid-row:'+row+'">'+String(h).padStart(2,'0')+':00</div>';
-      days.forEach((_,di)=>slots+='<div class="cal-slot" style="grid-column:'+(di+2)+';grid-row:'+row+'"></div>');
-    });
-    const blocks=[];
-    days.forEach((d,di)=>{
-      (d.items||[]).forEach(x=>{
-        const h=parseHour(x.time);
-        if(h==null) return;
-        const cls=classify(x);
-        const title=x.type==='move' ? esc(x.from)+' → '+esc(x.to) : esc(x.title||'');
-        const row=Math.floor(Math.max(9,Math.min(22,h))-9)+2;
-        const span=cls==='flight'?2:1;
-        blocks.push('<a href="?day='+(di+1)+'" class="cal-b cb-'+cls+'" style="grid-column:'+(di+2)+';grid-row:'+row+' / span '+span+'"><b>'+title+'</b><span>'+esc(x.time||'')+'</span></a>');
-      });
-    });
-    const mobile=days.map((d,di)=>{
-      const rows=(d.items||[]).filter(x=>parseHour(x.time)!=null).map(x=>{
-        const cls=classify(x);
-        const title=x.type==='move' ? esc(x.from)+' → '+esc(x.to) : esc(x.title||'');
-        return '<a class="mrow" href="?day='+(di+1)+'"><div class="mtime">'+esc(x.time||'')+'</div><div class="cal-b cb-'+cls+'"><b>'+title+'</b></div></a>';
+    const dayCols=(data.days||[]).map((d,i)=>{
+      const items=(d.items||[]).map(x=>{
+        const title=x.type==='move' ? (esc(x.from)+' → '+esc(x.to)) : esc(x.title||'');
+        return '<div class="overview-event"><span>'+esc(x.time||slotLabel(x.time))+'</span><b>'+title+'</b>'+(x.mode?'<em>'+esc(x.mode)+'</em>':'')+'</div>';
       }).join('');
-      return '<section class="mcal-day"><a class="mcal-dh" href="?day='+(di+1)+'"><b>'+esc(d.date)+'</b><span>'+esc(d.dow)+' · '+esc(d.short||'')+'</span></a>'+rows+'</section>';
+      return '<a class="overview-day" href="?day='+(i+1)+'"><div class="overview-dayhead"><small>DAY '+String(i+1).padStart(2,'0')+' · '+esc(d.dow)+'</small><strong>'+esc(d.date)+'</strong><h3>'+esc(d.short||d.title)+'</h3></div><div class="overview-events">'+items+'</div><div class="overview-open">查看完整行程 →</div></a>';
     }).join('');
-
-    return '<section class="trip-overview">'+
-      '<div class="overview-heading"><div><div class="kicker">TRIP AT A GLANCE</div><h2>行程總表</h2></div><p>只顯示已確認時間；完整內容請用上方日期 Tab 查看。</p></div>'+
-      '<div class="cal-wrap"><div class="cal"><div class="cal-corner"></div>'+headers+slots+blocks.join('')+'</div></div>'+
-      '<div class="mcal">'+mobile+'</div>'+
-      '<div class="cal-legend"><span><i class="cb-flight"></i>班機</span><span><i class="cb-move"></i>交通</span><span><i class="cb-meal"></i>餐飲</span><span><i class="cb-hotel"></i>住宿</span></div>'+
-    '</section>';
+    return '<section class="trip-overview"><div class="overview-heading"><div><div class="kicker">TRIP AT A GLANCE</div><h2>五日行程總覽</h2></div><p>先看五天全程，再用上方日期 Tab 進入每天的詳細時間軸。</p></div><div class="overview-grid">'+dayCols+'</div></section>';
   }
+
+  function renderCostSummary(budget){
+    const items=(budget?.items||[]).filter(x=>x.includeInTotal!==false && x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
+    const groups=[['food','食','餐飲、飲料'],['shopping','衣','服飾、購物'],['souvenirs','伴手禮','禮品、紀念品'],['lodging','住','飯店住宿'],['transport','行','機票、交通'],['entertainment','娛樂','景點、門票']];
+    const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
+    const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
+    const icons={food:'🍜',shopping:'🛍️',lodging:'🏨',transport:'🚗',entertainment:'🎟️',souvenirs:'🎁'};
+    const cards=groups.map(([key,label,desc])=>'<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><span class="cost-summary-icon" aria-hidden="true">'+icons[key]+'</span><small>'+label+'</small><strong>'+money(subtotal(key))+'</strong><span class="cost-summary-desc">'+desc+'</span></a>').join('');
+    const other=subtotal('other');
+    return cards+'<div class="cost-summary-footer"><a href="?view=cost">旅費合計 <b>'+money(total)+'</b></a>'+(other?'<a href="?view=cost#cost-other">另含通訊、保險 '+money(other)+'</a>':'')+'</div>';
+  }
+
   function render(data){
     document.title = data.title + '｜Trip';
     $('#trip-title').textContent = data.title;
@@ -127,11 +105,7 @@
       credit.textContent = data.coverImage.credit || 'Photo';
     }
 
-    $('#summary').innerHTML = (data.summary||[]).map(x=>{
-      const hasMore = (x.details&&x.details.length) || x.searchKeyword || x.note;
-      if(!hasMore) return '<div class="box"><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong></div>';
-      return '<details class="box info-card"><summary><div><small>'+esc(x.label)+'</small><strong>'+esc(x.value)+'</strong><span class="tapmore">點開看完整資訊</span></div><span class="chevron">⌄</span></summary>'+bookingDetails(x)+'</details>';
-    }).join('');
+    $('#summary').innerHTML = renderCostSummary(data.budget);
 
     const params = new URLSearchParams(location.search);
     const view = params.get('view');
@@ -167,6 +141,7 @@
       if (view === 'cost') {
         budgetEl.style.display = 'block';
         budgetEl.innerHTML = renderBudget(data.budget);
+        if (/^#cost-[a-z]+$/.test(location.hash)) requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView({block:'start'}));
       } else {
         budgetEl.style.display = 'none';
         budgetEl.innerHTML = '';
@@ -208,7 +183,7 @@
     }));
   }
 
-  fetch('./trip.json?ts=20261004a')
+  fetch('./trip.json?v=20261012-tokyo-singapore-template',{cache:'no-store'})
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
