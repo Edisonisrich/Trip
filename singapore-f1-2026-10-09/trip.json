@@ -1422,6 +1422,14 @@
         "category": "food",
         "includeInTotal": true,
         "paymentMethod": "card"
+      },
+      {
+        "label": "機場接送｜桃園機場回家",
+        "status": "confirmed",
+        "twd": 1520,
+        "note": "2026/10/12 回台後桃園機場接送回家，使用者確認實付 NT$1,520。",
+        "category": "transport",
+        "includeInTotal": true
       }
     ],
     "notes": []
