@@ -629,62 +629,72 @@
         "label": "星宇機票｜ESG75P",
         "status": "confirmed",
         "twd": 42474,
-        "note": "3位旅客；信用卡付款"
+        "note": "3位旅客；信用卡付款",
+        "category": "transport"
       },
       {
         "label": "星宇機票｜ESCKFL",
         "status": "confirmed",
         "twd": 11498,
-        "note": "2位旅客；信用卡付款"
+        "note": "2位旅客；信用卡付款",
+        "category": "transport"
       },
       {
         "label": "Asakusa Tobu Hotel｜2間×1晚",
         "status": "confirmed",
         "twd": 10884,
-        "note": "Airpaz 1037054158；收據實付"
+        "note": "Airpaz 1037054158；收據實付",
+        "category": "lodging"
       },
       {
         "label": "PAUL HOUSE-上野館｜1晚",
         "status": "confirmed",
         "twd": 9389,
-        "note": "依你最新行程清單"
+        "note": "依你最新行程清單",
+        "category": "lodging"
       },
       {
         "label": "11/14 包車｜10小時7人座",
         "status": "confirmed",
         "twd": 8365,
-        "note": "依你最新行程清單；成田超區費另有 ¥5,000"
+        "note": "依你最新行程清單；成田超區費另有 ¥5,000",
+        "category": "transport"
       },
       {
         "label": "湖山亭產屋｜2晚",
         "status": "pending",
         "twd": null,
-        "note": "已確認住宿；金額尚未提供"
+        "note": "已確認住宿；金額尚未提供",
+        "category": "lodging"
       },
       {
         "label": "Relax Car Rental Tokyo｜11/11–11/13",
         "status": "pending",
         "twd": null,
-        "note": "訂單 USX936311；金額尚未提供"
+        "note": "訂單 USX936311；金額尚未提供",
+        "category": "transport"
       },
       {
         "label": "河口湖音樂森林美術館｜KKday",
         "status": "pending",
         "twd": null,
-        "note": "已確認；金額尚未提供"
+        "note": "已確認；金額尚未提供",
+        "category": "entertainment"
       },
       {
         "label": "teamLab Borderless｜Klook",
         "status": "pending",
         "twd": null,
-        "note": "已確認 11/14 12:30；金額尚未提供"
+        "note": "已確認 11/14 12:30；金額尚未提供",
+        "category": "entertainment"
       },
       {
         "label": "舊 La Vista Fuji Kawaguchiko 訂單",
         "status": "pending",
         "foreign": "¥321,462",
         "includeInTotal": false,
-        "note": "先前信箱曾確認；你最新行程已改為湖山亭產屋，取消／退款狀態待確認"
+        "note": "先前信箱曾確認；你最新行程已改為湖山亭產屋，取消／退款狀態待確認",
+        "category": "lodging"
       }
     ],
     "notes": [
