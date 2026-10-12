@@ -1,4 +1,4 @@
-/* Tokyo Autumn 2026 — editorial travel layout */
+/* Tokyo Autumn 2026 — Singapore-template editorial layout */
 :root{
   --tokyo-ink:#17211c;
   --tokyo-deep:#10231d;
@@ -30,7 +30,7 @@ body{
   margin:0;
 }
 .hero.hero-redesign .back{
-  background:rgba(16,35,29,.68)!important;
+  background:rgba(16,35,29,.70)!important;
   color:#fff!important;
   border:1px solid rgba(255,255,255,.24)!important;
   backdrop-filter:blur(12px);
@@ -44,8 +44,8 @@ body{
   border-radius:0!important;
   box-shadow:none!important;
   background:
-    linear-gradient(90deg,rgba(7,20,15,.70) 0%,rgba(7,20,15,.34) 43%,rgba(7,20,15,.08) 70%),
-    linear-gradient(180deg,rgba(0,0,0,.06) 35%,rgba(7,20,15,.70) 100%),
+    linear-gradient(90deg,rgba(16,35,29,.72) 0%,rgba(38,44,31,.34) 43%,rgba(70,36,28,.08) 70%),
+    linear-gradient(180deg,rgba(0,0,0,.04) 35%,rgba(16,35,29,.72) 100%),
     var(--hero-image) center 48%/cover no-repeat!important;
 }
 .hero-copy{
@@ -147,9 +147,9 @@ body{
 .daypill.active{
   background:transparent;
   color:#fff;
-  border-bottom-color:#d9a84d;
+  border-bottom-color:#c59a43;
 }
-.daypill.active .dow{color:#d9a84d}
+.daypill.active .dow{color:#c59a43}
 .daypill.active .date{color:#fff}
 
 /* Main */
@@ -213,7 +213,7 @@ main.shell{
   background:var(--tokyo-maple);
   border:3px solid var(--tokyo-paper);
 }
-.move .dot{background:#3b775d}
+.move .dot{background:#b83a2f}
 .card{
   border-radius:4px;
   border:1px solid var(--tokyo-line);
@@ -238,18 +238,18 @@ main.shell{
 }
 .mode{
   border-radius:2px;
-  background:#203f32;
+  background:#8e342b;
   letter-spacing:.08em;
 }
 .dest{
   border-radius:2px;
-  border-left:3px solid #3b775d;
+  border-left:3px solid #b83a2f;
 }
 
 /* Cost / tickets */
 .budgethero{
   border-radius:4px;
-  background:linear-gradient(135deg,#10231d,#244438);
+  background:linear-gradient(135deg,#090909,#244438);
   padding:28px;
 }
 .budgethero strong{font-size:52px}
@@ -345,9 +345,9 @@ main.shell{
   border-right:1px solid var(--tokyo-line);transition:background .2s ease,transform .2s ease;
 }
 .overview-day:last-child{border-right:0}
-.overview-day:hover{background:#fbf8f1}
+.overview-day:hover{background:#fff8f5}
 .overview-dayhead{
-  padding:17px 16px 15px;min-height:130px;background:#152a22;color:#fff;
+  padding:17px 16px 15px;min-height:130px;background:#111111;color:#fff;
   border-bottom:3px solid var(--tokyo-gold);
 }
 .overview-day:nth-child(2) .overview-dayhead,
@@ -355,7 +355,7 @@ main.shell{
 .overview-day:nth-child(4) .overview-dayhead{background:#3c3428}
 .overview-day:nth-child(5) .overview-dayhead{background:#522f29}
 .overview-dayhead small{
-  display:block;color:#d3b66d;font-size:9px;letter-spacing:.16em;font-weight:800;
+  display:block;color:#e2bd68;font-size:9px;letter-spacing:.16em;font-weight:800;
 }
 .overview-dayhead strong{
   display:block;margin-top:8px;font-size:24px;line-height:1;letter-spacing:-.03em;
@@ -411,237 +411,45 @@ main.shell{
   .overview-dayhead{min-height:116px}
 }
 
-
-/* v3 — friend-inspired calendar grid */
-.sched-title{display:flex;align-items:center;gap:14px;margin:4px 0 12px}
-.sched-title h3{margin:0;font-size:24px;letter-spacing:.06em}
-.sched-title .line{flex:1;height:1px;background:linear-gradient(90deg,var(--tokyo-maple),transparent)}
-
-.cal-wrap{
-  margin:0 0 16px;background:#fff;border:1px solid var(--tokyo-line);
-  box-shadow:0 6px 22px rgba(20,32,25,.06);overflow-x:auto;
-}
-.cal{
-  display:grid;
-  grid-template-columns:82px repeat(5,minmax(190px,1fr));
-  grid-auto-rows:60px;
-  min-width:1040px;
-  position:relative;
-}
-.cal-corner{
-  grid-column:1;grid-row:1;background:#14271f;position:sticky;left:0;top:0;z-index:5;
-}
-.cal-h{
-  background:#14271f;color:#fff;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;border-left:1px solid rgba(255,255,255,.12);
-  position:sticky;top:0;z-index:4;
-}
-.cal-h b{font-size:17px}
-.cal-h small{margin-top:3px;color:rgba(255,255,255,.66);font-size:11px}
-.cal-t{
-  grid-column:1;display:flex;justify-content:flex-end;align-items:flex-start;
-  padding:5px 10px 0 0;background:#f5f2ea;color:#69766f;font-size:12px;font-weight:800;
-  border-top:1px solid #e8e2d6;position:sticky;left:0;z-index:3;
-}
-.cal-slot{border-top:1px solid #eee9df;border-left:1px solid #eee9df}
-.cal-b{
-  margin:3px 4px;padding:8px 9px 8px 11px;border-radius:4px;border-left:4px solid;
-  z-index:2;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;
-}
-.cal-b b{font-size:13px;line-height:1.35}
-.cal-b span{font-size:11px;line-height:1.4;margin-top:3px;opacity:.82}
-.cb-flight{background:#e0eaf6;border-left-color:#3c6fa4;color:#244d75}
-.cb-move{background:#e9f0eb;border-left-color:#557f67;color:#365a45}
-.cb-meal{background:#f7eedb;border-left-color:#c38b2f;color:#775417}
-.cb-hotel{background:#e0efec;border-left-color:#3c8a7d;color:#235f56}
-.cb-play{background:#f3e7e2;border-left-color:#b75b4d;color:#773c33}
-
-.pending-wrap{margin:18px 0 0}
-.pending-title{
-  font-size:11px;font-weight:900;letter-spacing:.15em;color:#8a8174;margin-bottom:8px;
-}
-.pending-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
-.cal-pending{
-  background:#fff;border:1px dashed #cfc6b8;padding:10px 11px;min-height:76px;
-  display:flex;flex-direction:column;gap:2px;
-}
-.cal-pending small{font-size:9px;color:#948b7e;letter-spacing:.08em}
-.cal-pending b{font-size:12px;line-height:1.4}
-.cal-pending span{font-size:10px;color:#8b8174;margin-top:auto}
-.cp-flight{border-left:4px solid #3c6fa4}.cp-move{border-left:4px solid #557f67}
-.cp-meal{border-left:4px solid #c38b2f}.cp-hotel{border-left:4px solid #3c8a7d}
-.cp-play{border-left:4px solid #b75b4d}
-
-.cal-legend{
-  display:flex;flex-wrap:wrap;gap:10px 20px;margin:14px 0 0;
-  color:#536058;font-size:12px;font-weight:700;
-}
-.cal-legend span{display:flex;align-items:center;gap:6px}
-.cal-legend i{width:24px;height:14px;border-left:4px solid;display:inline-block}
-
-.mcal{display:none}
-@media(max-width:900px){
-  .cal-wrap{display:none}
-  .mcal{display:block}
-  .mcal-day{
-    background:#fff;border:1px solid var(--tokyo-line);margin-bottom:12px;overflow:hidden;
-  }
-  .mcal-dh{
-    display:flex;gap:8px;align-items:baseline;padding:11px 13px;background:#14271f;color:#fff;
-  }
-  .mcal-dh b{font-size:18px}
-  .mcal-dh span{font-size:11px;color:rgba(255,255,255,.66)}
-  .mrow{display:flex;gap:10px;padding:8px 10px 0}
-  .mrow:last-child{padding-bottom:10px}
-  .mtime{flex:0 0 58px;text-align:right;padding-top:8px;font-size:11px;font-weight:800;color:#65736b}
-  .mrow .cal-b{flex:1;margin:0;min-height:48px}
-  .pending-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
-  .pending-grid{grid-template-columns:1fr}
+/* Expense categories in the trip home summary */
+.summary-wrap .summary{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+.cost-summary-card{display:block;color:inherit;text-decoration:none}
+.summary-wrap .cost-summary-card small{font-size:15px;font-weight:800;color:#8e342b!important}
+.summary-wrap .cost-summary-card strong{font-family:inherit;font-size:23px!important;white-space:nowrap}
+.cost-summary-desc{display:block;margin-top:6px;color:#64748b;font-size:12px}
+.cost-summary-card:hover{outline:2px solid #c59a43}
+.cost-summary-card:focus-visible{outline:3px solid #c59a43;outline-offset:3px}
+.cost-summary-footer{grid-column:1/-1;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#fff;font-size:13px;padding:3px 2px}
+.cost-summary-footer a{color:inherit;text-decoration:none}
+.cost-summary-footer b{font-size:19px;margin-left:6px}
+.budgetgroup[id]{scroll-margin-top:110px}
+@media(max-width:760px){
+  .summary-wrap .summary{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;overflow:visible!important}
+  .summary-wrap .summary .cost-summary-card{min-width:0!important;min-height:94px!important}
+  .cost-summary-card:nth-child(5){grid-column:1/-1}
+  .cost-summary-footer{font-size:12px;padding-top:6px}
 }
 
+/* Responsive expense summary: prevent inherited carousel sizing and amount overflow */
+.summary-wrap .summary{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;overflow:visible!important;gap:10px!important;align-items:stretch}
+.summary-wrap .summary .cost-summary-card{box-sizing:border-box;min-width:0!important;width:auto!important;max-width:100%;min-height:108px;display:flex;flex-direction:column;justify-content:center;padding:14px 12px!important;overflow:hidden}
+.summary-wrap .cost-summary-card strong{font-size:clamp(14px,1.8vw,22px)!important;line-height:1.35;white-space:normal!important;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.summary-wrap .cost-summary-desc{line-height:1.4;overflow-wrap:anywhere}
+.summary-wrap .cost-summary-footer{min-width:0;align-items:center;line-height:1.6}
+@media(max-width:900px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:620px){.summary-wrap .summary{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.summary-wrap .summary .cost-summary-card{min-height:100px!important;padding:13px 11px!important}.summary-wrap .cost-summary-card strong{font-size:clamp(16px,4.5vw,21px)!important}.summary-wrap .cost-summary-card:nth-child(5){grid-column:auto}.summary-wrap .cost-summary-footer{grid-column:1/-1;display:block}.summary-wrap .cost-summary-footer a{display:block;margin:4px 0}.summary-wrap .cost-summary-footer b{font-size:18px}}
+@media(max-width:350px){.summary-wrap .summary{grid-template-columns:1fr!important}.summary-wrap .summary .cost-summary-card{min-height:84px!important}}
 
-/* v4 clean calendar — closer to friend's schedule */
-.trip-overview{padding-bottom:44px}
-.overview-heading{
-  display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
-  padding-bottom:14px;margin-bottom:16px;border-bottom:0;
-}
-.overview-heading h2{
-  margin:5px 0 0;font-size:42px;letter-spacing:-.04em;
-}
-.overview-heading p{max-width:360px;font-size:13px;color:#71808b}
+/* Six expense categories: balanced grid */
+@media(min-width:901px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(min-width:621px) and (max-width:900px){.summary-wrap .summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 
-.cal-wrap{
-  margin:0;background:#fff;border:0;border-radius:8px;
-  box-shadow:0 2px 14px rgba(18,35,51,.08);overflow-x:auto;
-}
-.cal{
-  display:grid;
-  grid-template-columns:76px repeat(5,minmax(170px,1fr));
-  grid-auto-rows:56px;
-  min-width:980px;
-}
-.cal-corner{
-  background:#16293a;position:sticky;left:0;top:0;z-index:6;
-}
-.cal-h{
-  background:#16293a;color:#fff;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  border-left:1px solid rgba(255,255,255,.12);
-  position:sticky;top:0;z-index:5;
-}
-.cal-h b{font-size:15px;line-height:1}
-.cal-h small{font-size:10px;color:rgba(255,255,255,.67);margin-top:4px;font-weight:500}
-.cal-t{
-  grid-column:1;background:#f6fafd;color:#52708a;
-  display:flex;justify-content:flex-end;align-items:flex-start;
-  padding:5px 9px 0 0;font-size:11px;font-weight:700;
-  border-top:1px solid #e3ecf4;
-  position:sticky;left:0;z-index:4;
-}
-.cal-slot{border-top:1px solid #edf3f8;border-left:1px solid #edf3f8}
-.cal-b{
-  margin:3px 4px;border-radius:6px;padding:7px 9px 7px 10px;
-  border-left:4px solid;z-index:2;overflow:hidden;
-  display:flex;flex-direction:column;justify-content:flex-start;
-  box-shadow:none;
-}
-.cal-b b{font-size:12px;line-height:1.35;font-weight:700}
-.cal-b span{font-size:10px;line-height:1.3;margin-top:3px;opacity:.82}
-.cb-flight{background:#dde9f8;border-left-color:#2563a8;color:#16406f}
-.cb-move{background:#eaf0f6;border-left-color:#7d95ad;color:#33495f}
-.cb-meal{background:#fdf1de;border-left-color:#d79a2e;color:#7a5312}
-.cb-hotel{background:#ddf0ee;border-left-color:#2f8f86;color:#175a53}
-.cb-play{background:#fbe6ef;border-left-color:#c1548a;color:#7d2b52}
-
-.cal-legend{
-  margin:10px 2px 0;display:flex;flex-wrap:wrap;gap:8px 18px;
-  font-size:11px;color:#536a7c;font-weight:600;
-}
-.cal-legend span{display:inline-flex;align-items:center;gap:6px}
-.cal-legend i{width:22px;height:13px;border-radius:3px;border-left:4px solid;display:inline-block}
-
-.mcal{display:none}
-@media(max-width:900px){
-  .overview-heading{display:block}
-  .overview-heading p{margin-top:8px}
-  .cal-wrap{display:none}
-  .mcal{display:block}
-  .mcal-day{
-    overflow:hidden;background:#fff;border-radius:8px;
-    box-shadow:0 2px 10px rgba(18,35,51,.07);margin-bottom:12px;
-  }
-  .mcal-dh{
-    display:flex;align-items:baseline;gap:8px;padding:10px 13px;
-    background:#16293a;color:#fff;
-  }
-  .mcal-dh b{font-size:17px}
-  .mcal-dh span{font-size:10px;color:rgba(255,255,255,.67)}
-  .mrow{display:flex;gap:9px;padding:8px 10px 0}
-  .mrow:last-child{padding-bottom:10px}
-  .mtime{
-    flex:0 0 54px;text-align:right;padding-top:7px;
-    font-size:11px;font-weight:700;color:#52708a;
-  }
-  .mrow .cal-b{flex:1;margin:0;min-height:42px}
-}
-
-
-/* v6 larger readable calendar */
-.cal{
-  grid-template-columns:92px repeat(5,minmax(220px,1fr))!important;
-  grid-auto-rows:72px!important;
-  min-width:1220px!important;
-}
-.cal-h b{font-size:18px!important}
-.cal-h small{font-size:12px!important;margin-top:5px!important}
-.cal-t{
-  font-size:13px!important;
-  padding:7px 12px 0 0!important;
-}
-.cal-b{
-  margin:4px 5px!important;
-  padding:10px 12px 10px 13px!important;
-  min-height:62px!important;
-  overflow:visible!important;
-  white-space:normal!important;
-}
-.cal-b b{
-  font-size:14px!important;
-  line-height:1.45!important;
-  white-space:normal!important;
-  overflow:visible!important;
-  text-overflow:clip!important;
-  word-break:break-word!important;
-}
-.cal-b span{
-  font-size:11.5px!important;
-  line-height:1.35!important;
-  margin-top:4px!important;
-}
-.cal-wrap{
-  border-radius:10px!important;
-}
-@media(max-width:900px){
-  .mcal-day{border-radius:10px!important}
-  .mcal-dh{padding:13px 15px!important}
-  .mcal-dh b{font-size:19px!important}
-  .mcal-dh span{font-size:12px!important}
-  .mrow{gap:11px!important;padding:10px 12px 0!important}
-  .mrow:last-child{padding-bottom:12px!important}
-  .mtime{
-    flex:0 0 62px!important;
-    font-size:12.5px!important;
-    padding-top:9px!important;
-  }
-  .mrow .cal-b{
-    min-height:56px!important;
-    padding:10px 12px!important;
-  }
-  .mrow .cal-b b{
-    font-size:14px!important;
-    line-height:1.45!important;
-  }
-}
+/* Friendly category illustrations */
+.summary-wrap .summary .cost-summary-card{position:relative;padding-right:54px!important}
+.summary-wrap .cost-summary-icon{position:absolute;right:12px;top:12px;width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:#f2eee3;font-size:23px;line-height:1;box-shadow:inset 0 0 0 1px rgba(192,76,45,.07)}
+.summary-wrap .cost-summary-card:nth-child(2) .cost-summary-icon{background:#f7ede9}
+.summary-wrap .cost-summary-card:nth-child(3) .cost-summary-icon{background:#eef3ef}
+.summary-wrap .cost-summary-card:nth-child(4) .cost-summary-icon{background:#edf3e8}
+.summary-wrap .cost-summary-card:nth-child(5) .cost-summary-icon{background:#f6efe2}
+.summary-wrap .cost-summary-card:nth-child(6) .cost-summary-icon{background:#f0ece8}
+@media(max-width:620px){.summary-wrap .summary .cost-summary-card{padding-right:46px!important}.summary-wrap .cost-summary-icon{right:9px;top:10px;width:32px;height:32px;font-size:20px}}
