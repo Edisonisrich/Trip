@@ -1363,6 +1363,15 @@
         "includeInTotal": true,
         "paymentMethod": "reward_redemption",
         "estimatedValueTwd": 1739
+      },
+      {
+        "label": "Bacha Coffee｜伴手禮咖啡 4盒",
+        "status": "paid",
+        "twd": 2940,
+        "note": "10/12 樟宜機場購買 Bacha Coffee 伴手禮咖啡 4 盒，實際支付 NT$2,940；平均每盒 NT$735。口味未指定。",
+        "category": "souvenirs",
+        "includeInTotal": true,
+        "paymentMethod": "card"
       }
     ],
     "notes": []
