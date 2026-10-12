@@ -1161,11 +1161,11 @@
         "reconciliationStatus": "confirmed"
       },
       {
-        "label": "捷運卡｜2張",
+        "label": "捷運卡｜首次購卡 2 張",
         "status": "confirmed",
         "twd": 556,
         "foreign": "S$20.00",
-        "note": "使用者確認信用卡 10/11 TRANSIT 兩筆各 NT$278 對應兩張捷運卡，合計 NT$556；原記錄 S$20.00，平均有效匯率約 27.8000 TWD/SGD；已包含在原旅費，不重複計入。",
+        "note": "首次購買兩張捷運卡，實際支付 NT$556。此筆為初次購卡，不是 10/11 TRANSIT 的兩次儲值；使用者明確確認兩者為不同消費。",
         "category": "transport",
         "paymentMethod": "card",
         "reconciliationStatus": "confirmed"
@@ -1400,6 +1400,16 @@
         "twd": 636,
         "note": "10/11 Toast Box 餐飲；使用者確認實際付款 NT$636，對應先前待對帳的 NT$636 交易。",
         "category": "food",
+        "includeInTotal": true,
+        "paymentMethod": "card",
+        "reconciliationStatus": "confirmed"
+      },
+      {
+        "label": "捷運卡｜後續儲值 2 次",
+        "status": "confirmed",
+        "twd": 556,
+        "note": "10/11 TRANSIT 兩筆儲值，每筆實際刷卡 NT$278，合計 NT$556；使用者確認這兩筆為首次購卡 NT$556 以外的額外支出。",
+        "category": "transport",
         "includeInTotal": true,
         "paymentMethod": "card",
         "reconciliationStatus": "confirmed"
