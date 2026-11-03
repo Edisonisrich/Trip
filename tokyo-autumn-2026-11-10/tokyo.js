@@ -24,10 +24,9 @@
 
   function bookingDetails(x, dark=false){
     const rows = detailRows(x.details);
-    const search = x.searchKeyword ? '<div class="searchhint"><small>Gmail 搜尋</small><code>'+esc(x.searchKeyword)+'</code></div>' : '';
     const note = x.note ? '<div class="detailnote">'+esc(x.note)+'</div>' : '';
     const cls = dark ? ' bookingdetail dark' : ' bookingdetail';
-    return (rows||search||note) ? '<div class="'+cls.trim()+'">'+rows+search+note+'</div>' : '';
+    return (rows||note) ? '<div class="'+cls.trim()+'">'+rows+note+'</div>' : '';
   }
 
   function renderBudget(budget){
@@ -151,7 +150,7 @@
     if (view === 'info') {
       $('#wallet').style.display = 'block';
       $('#wallet').innerHTML = '<h2>Tickets & Bookings</h2><div class="walletgrid">'+(data.wallet||[]).map(w=>{
-        const hasMore = (w.details&&w.details.length) || w.searchKeyword || w.note;
+        const hasMore = (w.details&&w.details.length) || w.note;
         if(!hasMore) return '<div class="ticket"><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div></div>';
         return '<details class="ticket ticket-expand"><summary><div><small>'+esc(w.type)+'</small><b>'+esc(w.title)+'</b><div class="meta">'+esc(w.meta)+'</div><span class="tapmore darktext">點開看完整資訊</span></div><span class="chevron light">⌄</span></summary>'+bookingDetails(w,true)+'</details>';
       }).join('')+'</div>';
@@ -183,7 +182,7 @@
     }));
   }
 
-  fetch('./trip.json?v=20261012-tokyo-lodging-fix',{cache:'no-store'})
+  fetch('./trip.json?v=20261103-ticket-hub',{cache:'no-store'})
     .then(r=>{if(!r.ok) throw new Error('HTTP '+r.status); return r.json();})
     .then(render)
     .catch(err=>{
