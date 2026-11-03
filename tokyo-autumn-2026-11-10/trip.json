@@ -28,7 +28,6 @@
           "value": "經濟艙"
         }
       ],
-      "searchKeyword": "ESG75P OR ESCKFL",
       "note": "已確認。"
     },
     {
@@ -56,7 +55,6 @@
           "value": "1037054158"
         }
       ],
-      "searchKeyword": "1037054158",
       "note": "已確認。"
     },
     {
@@ -130,7 +128,6 @@
           "value": "NT$9,389"
         }
       ],
-      "searchKeyword": "Paul House 11月13日至14日",
       "note": "已確認。"
     },
     {
@@ -150,7 +147,6 @@
           "value": "另有 ¥5,000 超區費（先前訂單資訊）"
         }
       ],
-      "searchKeyword": "26KK268324612",
       "note": "已確認。"
     }
   ],
@@ -594,56 +590,298 @@
     {
       "type": "FLIGHT",
       "title": "STARLUX JX804 / JX805",
-      "meta": "11/10–11/14 · 5人 · ESG75P / ESCKFL",
-      "searchKeyword": "ESG75P OR ESCKFL"
+      "meta": "11/10–11/14 · 5人 · 經濟艙",
+      "details": [
+        {
+          "label": "去程",
+          "value": "11/10 15:00｜JX804｜桃園 T1 → 成田 T2｜19:00 抵達"
+        },
+        {
+          "label": "回程",
+          "value": "11/14 20:10｜JX805｜成田 T2 → 桃園 T1｜23:20 抵達"
+        },
+        {
+          "label": "機型",
+          "value": "Airbus A330-900neo"
+        },
+        {
+          "label": "訂位代碼",
+          "value": "ESG75P / ESCKFL"
+        },
+        {
+          "label": "託運行李",
+          "value": "每位 1 件 × 23 kg；5 人共 5 件"
+        },
+        {
+          "label": "手提行李",
+          "value": "每位 7 kg；5 人合計額度 35 kg"
+        },
+        {
+          "label": "重要提醒",
+          "value": "託運採件數制；每件請控制在 23 kg 內"
+        }
+      ],
+      "note": "去回程行李額度相同。"
     },
     {
       "type": "HOTEL",
-      "title": "Asakusa Tobu Hotel",
-      "meta": "11/10–11/11 · Airpaz 1037054158",
-      "searchKeyword": "1037054158"
+      "title": "Asakusa Tobu Hotel｜淺草東武飯店",
+      "meta": "11/10–11/11 · 2間 Comfort Twin",
+      "details": [
+        {
+          "label": "Airpaz 訂單",
+          "value": "1037054158"
+        },
+        {
+          "label": "PIN Code",
+          "value": "54205"
+        },
+        {
+          "label": "Hotel Booking Code",
+          "value": "9094323471934"
+        },
+        {
+          "label": "入住",
+          "value": "11/10 14:00 後"
+        },
+        {
+          "label": "退房",
+          "value": "11/11 11:00 前"
+        },
+        {
+          "label": "房型",
+          "value": "Comfort Twin Room, Non Smoking × 2"
+        },
+        {
+          "label": "早餐",
+          "value": "不含早餐"
+        },
+        {
+          "label": "地址",
+          "value": "1-1-15 Asakusa, Tokyo 111-0032"
+        },
+        {
+          "label": "電話",
+          "value": "+81 3-3843-0111"
+        },
+        {
+          "label": "已付",
+          "value": "NT$10,884"
+        }
+      ],
+      "note": "入住時可直接出示 Airpaz 訂單號／PIN。"
     },
     {
       "type": "RENTAL CAR",
       "title": "Relax Car Rental Tokyo",
-      "meta": "11/11 11:30 → 11/13 19:30 · USX936311",
+      "meta": "11/11 11:30 → 11/13 19:30",
       "details": [
         {
-          "label": "取車",
+          "label": "訂單編號",
+          "value": "USX936311"
+        },
+        {
+          "label": "取車時間",
+          "value": "11/11 11:30"
+        },
+        {
+          "label": "取車地址",
           "value": "2-4-8 Kaminarimon, Taito-ku, Tokyo 111-0034"
         },
         {
-          "label": "還車",
+          "label": "還車時間",
+          "value": "11/13 19:30"
+        },
+        {
+          "label": "還車地址",
           "value": "〒110-0005 Ueno Station 7-1 Ueno, Taito-ku, Tokyo"
         }
-      ]
+      ],
+      "note": "取車與還車地址已直接放在這裡，不需另外找信件。"
     },
     {
       "type": "HOTEL",
       "title": "湖山亭產屋",
-      "meta": "11/11–11/13 · 2晚"
-    },
-    {
-      "type": "AIRBNB",
-      "title": "PAUL HOUSE-上野館",
-      "meta": "11/13–11/14 · NT$9,389",
-      "searchKeyword": "Paul House 11月13日至14日"
+      "meta": "11/11–11/13 · 2晚",
+      "details": [
+        {
+          "label": "入住",
+          "value": "11/11"
+        },
+        {
+          "label": "退房",
+          "value": "11/13"
+        },
+        {
+          "label": "晚數",
+          "value": "2晚"
+        },
+        {
+          "label": "訂單／確認碼",
+          "value": "目前資料未取得"
+        }
+      ],
+      "note": "住宿本身已列為確認；若後續取得確認碼可直接補進此頁。"
     },
     {
       "type": "TICKET",
       "title": "河口湖音樂森林美術館",
-      "meta": "11/12 · KKday"
+      "meta": "11/12 · KKday",
+      "details": [
+        {
+          "label": "平台",
+          "value": "KKday"
+        },
+        {
+          "label": "使用日",
+          "value": "11/12"
+        },
+        {
+          "label": "營業資訊",
+          "value": "你目前行程註記 10:00–17:30"
+        },
+        {
+          "label": "訂單編號",
+          "value": "目前資料未取得"
+        },
+        {
+          "label": "現場重點",
+          "value": "音樂時鐘廣場、風琴禮堂、音樂廳"
+        }
+      ],
+      "note": "表演時間仍待確認。"
+    },
+    {
+      "type": "AIRBNB",
+      "title": "PAUL HOUSE-上野館",
+      "meta": "11/13–11/14 · 4大1小",
+      "details": [
+        {
+          "label": "Airbnb 確認碼",
+          "value": "HMTS9R2C2Z"
+        },
+        {
+          "label": "入住",
+          "value": "11/13 16:00 後"
+        },
+        {
+          "label": "退房",
+          "value": "11/14 11:00 前"
+        },
+        {
+          "label": "地址",
+          "value": "110-0015 Tokyo, Taito City, Higashiueno 1-19-8"
+        },
+        {
+          "label": "人數",
+          "value": "4 名成人 + 1 名兒童"
+        },
+        {
+          "label": "入住方式",
+          "value": "智慧鎖；18:00 後為自助入住"
+        },
+        {
+          "label": "寄放行李",
+          "value": "09:00–18:00，可提前告知預計抵達時間"
+        },
+        {
+          "label": "總金額",
+          "value": "NT$9,389.08"
+        },
+        {
+          "label": "房東電話",
+          "value": "+81 80-9664-0427"
+        }
+      ],
+      "note": "房門與入口密碼會在入住當天通知。"
     },
     {
       "type": "TICKET",
       "title": "teamLab Borderless",
-      "meta": "11/14 12:30 · Klook · Google 帳號"
+      "meta": "11/14 12:30 · Klook",
+      "details": [
+        {
+          "label": "平台",
+          "value": "Klook"
+        },
+        {
+          "label": "帳號",
+          "value": "Google 帳號"
+        },
+        {
+          "label": "入場時間",
+          "value": "11/14 12:30"
+        },
+        {
+          "label": "位置",
+          "value": "麻布台之丘 Garden Plaza B B1"
+        },
+        {
+          "label": "訂單編號",
+          "value": "目前資料未取得"
+        },
+        {
+          "label": "穿著提醒",
+          "value": "建議穿淺色；避免全黑"
+        }
+      ],
+      "note": "當天直接從 Klook 帳號開啟憑證即可；這頁已保留時間與位置。"
     },
     {
       "type": "CHARTER",
-      "title": "11/14 東京包車",
-      "meta": "10小時 · 7人座 · NT$8,365",
-      "searchKeyword": "26KK268324612"
+      "title": "KKday 東京包車｜豪華 7 座",
+      "meta": "11/14 · 10小時 · 1輛",
+      "details": [
+        {
+          "label": "訂單編號",
+          "value": "26KK268324612"
+        },
+        {
+          "label": "方案",
+          "value": "東京市區／周邊包車一日游"
+        },
+        {
+          "label": "使用日",
+          "value": "11/14"
+        },
+        {
+          "label": "集合時間",
+          "value": "09:30（日本時間）"
+        },
+        {
+          "label": "集合地點",
+          "value": "PAUL HOUSE-上野館"
+        },
+        {
+          "label": "原下車地點",
+          "value": "成田機場第二航廈"
+        },
+        {
+          "label": "服務時間",
+          "value": "08:00–22:00 之間 10 小時"
+        },
+        {
+          "label": "車型／數量",
+          "value": "豪華 7 座 × 1 輛"
+        },
+        {
+          "label": "成田超區費",
+          "value": "¥5,000；當日交司機現金"
+        },
+        {
+          "label": "當地服務商",
+          "value": "樱华国际"
+        },
+        {
+          "label": "服務商電話",
+          "value": "+81 03-3653-8793"
+        },
+        {
+          "label": "出示方式",
+          "value": "現場出示 KKday 電子憑證，無須列印"
+        }
+      ],
+      "note": "你目前行程已安排途中先停成田 T1 川豊，再送往 T2 搭機。"
     }
   ],
   "budget": {
