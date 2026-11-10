@@ -453,3 +453,216 @@ main.shell{
 .summary-wrap .cost-summary-card:nth-child(5) .cost-summary-icon{background:#f6efe2}
 .summary-wrap .cost-summary-card:nth-child(6) .cost-summary-icon{background:#f0ece8}
 @media(max-width:620px){.summary-wrap .summary .cost-summary-card{padding-right:46px!important}.summary-wrap .cost-summary-icon{right:9px;top:10px;width:32px;height:32px;font-size:20px}}
+
+
+/* v11 — Tickets & Bookings responsive polish */
+.wallet{
+  width:100%;
+  max-width:1040px;
+  margin:0 auto;
+  padding:8px 0 48px;
+}
+.wallet h2{
+  margin:0 0 22px;
+  padding:0 4px;
+  font-size:clamp(38px,4.2vw,58px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+.walletgrid{
+  display:grid;
+  gap:18px;
+}
+.ticket,
+.ticket-expand{
+  box-sizing:border-box;
+  width:100%;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  background:#10231d;
+  box-shadow:0 8px 24px rgba(18,35,29,.08);
+}
+.ticket-expand{
+  padding:0!important;
+}
+.ticket-expand summary{
+  box-sizing:border-box;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:22px;
+  padding:22px 26px!important;
+}
+.ticket-expand summary>div{
+  min-width:0;
+  flex:1 1 auto;
+}
+.ticket-expand summary small{
+  display:block;
+  margin:0 0 8px;
+  font-size:11px;
+  letter-spacing:.12em;
+}
+.ticket-expand summary b{
+  display:block;
+  margin:0;
+  font-size:20px;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+}
+.ticket-expand summary .meta{
+  margin-top:8px;
+  font-size:14px;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+}
+.ticket-expand .tapmore{
+  margin-top:11px;
+  font-size:11px;
+}
+.ticket-expand .chevron{
+  flex:0 0 auto;
+  margin-top:18px;
+  margin-right:2px;
+}
+.bookingdetail.dark{
+  box-sizing:border-box;
+  margin:0!important;
+  padding:8px 26px 16px!important;
+  border-top:1px solid rgba(255,255,255,.10);
+  background:#17191d;
+}
+.bookingdetail.dark .detailrow{
+  display:grid;
+  grid-template-columns:minmax(130px,180px) minmax(0,1fr);
+  gap:22px;
+  align-items:start;
+  padding:15px 0;
+  border-bottom:1px dashed #30343a;
+}
+.bookingdetail.dark .detailrow:last-of-type{
+  border-bottom:0;
+}
+.bookingdetail.dark .detailrow span{
+  font-size:13px;
+  line-height:1.55;
+  color:#9aa5af;
+}
+.bookingdetail.dark .detailrow b{
+  min-width:0;
+  margin:0;
+  font-size:14px;
+  line-height:1.55;
+  text-align:right;
+  color:#fff;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.bookingdetail.dark .detailnote{
+  margin:8px 0 0;
+  padding:14px 16px;
+  border-radius:10px;
+  background:rgba(255,255,255,.045);
+  color:#bcc4ca;
+  font-size:12.5px;
+  line-height:1.65;
+}
+
+/* Medium screens / tablets */
+@media (max-width:900px){
+  .wallet{
+    max-width:760px;
+  }
+  .ticket-expand summary{
+    padding:20px 20px!important;
+  }
+  .bookingdetail.dark{
+    padding:6px 20px 14px!important;
+  }
+  .bookingdetail.dark .detailrow{
+    grid-template-columns:145px minmax(0,1fr);
+    gap:16px;
+  }
+}
+
+/* Mobile: stack labels over values; no edge-hugging content */
+@media (max-width:620px){
+  .wallet{
+    max-width:none;
+    padding:4px 0 38px;
+  }
+  .wallet h2{
+    margin-bottom:16px;
+    padding:0 2px;
+    font-size:34px;
+  }
+  .walletgrid{
+    gap:13px;
+  }
+  .ticket,
+  .ticket-expand{
+    border-radius:12px;
+  }
+  .ticket-expand summary{
+    gap:12px;
+    padding:18px 17px!important;
+  }
+  .ticket-expand summary small{
+    font-size:10px;
+    margin-bottom:6px;
+  }
+  .ticket-expand summary b{
+    font-size:18px;
+    line-height:1.4;
+  }
+  .ticket-expand summary .meta{
+    margin-top:7px;
+    font-size:13px;
+    line-height:1.5;
+  }
+  .ticket-expand .tapmore{
+    margin-top:9px;
+    font-size:10px;
+  }
+  .ticket-expand .chevron{
+    margin-top:15px;
+    font-size:20px;
+  }
+  .bookingdetail.dark{
+    padding:7px 17px 15px!important;
+  }
+  .bookingdetail.dark .detailrow{
+    display:block;
+    padding:13px 0;
+  }
+  .bookingdetail.dark .detailrow span{
+    display:block;
+    margin-bottom:5px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.02em;
+  }
+  .bookingdetail.dark .detailrow b{
+    display:block;
+    text-align:left;
+    font-size:14px;
+    line-height:1.55;
+  }
+  .bookingdetail.dark .detailnote{
+    margin-top:7px;
+    padding:12px 13px;
+    font-size:12px;
+  }
+}
+
+/* Very small phones */
+@media (max-width:360px){
+  .ticket-expand summary{
+    padding:16px 14px!important;
+  }
+  .bookingdetail.dark{
+    padding-left:14px!important;
+    padding-right:14px!important;
+  }
+}
