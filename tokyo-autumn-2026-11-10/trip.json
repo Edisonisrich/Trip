@@ -957,6 +957,15 @@
         "includeInTotal": false,
         "note": "先前信箱曾確認；你最新行程已改為湖山亭產屋，取消／退款狀態待確認",
         "category": "lodging"
+      },
+      {
+        "label": "嘔吐清潔費",
+        "status": "confirmed",
+        "foreign": "¥5,000",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "11/10 日本旅途中發生；原幣記帳，暫不換算台幣",
+        "category": "other"
       }
     ],
     "notes": [
