@@ -980,6 +980,13 @@
         "twd": 1195,
         "note": "宵夜實付",
         "category": "food"
+      },
+      {
+        "label": "11/10 7-Eleven",
+        "status": "confirmed",
+        "twd": 622,
+        "note": "兩筆：NT$38 + NT$584",
+        "category": "food"
       }
     ],
     "notes": [
