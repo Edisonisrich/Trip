@@ -973,6 +973,13 @@
         "twd": 3961,
         "note": "機場到飯店接送實付",
         "category": "transport"
+      },
+      {
+        "label": "11/10 鳥貴族宵夜",
+        "status": "confirmed",
+        "twd": 1195,
+        "note": "宵夜實付",
+        "category": "food"
       }
     ],
     "notes": [
