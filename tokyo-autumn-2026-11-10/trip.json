@@ -966,6 +966,13 @@
         "includeInTotal": false,
         "note": "11/10 日本旅途中發生；原幣記帳，暫不換算台幣",
         "category": "other"
+      },
+      {
+        "label": "11/10 成田機場 → 淺草東武飯店接送",
+        "status": "confirmed",
+        "twd": 3961,
+        "note": "機場到飯店接送實付",
+        "category": "transport"
       }
     ],
     "notes": [
