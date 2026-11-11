@@ -1058,6 +1058,13 @@
         "twd": 85,
         "note": "第二份午餐實付",
         "category": "food"
+      },
+      {
+        "label": "11/11 河口湖超市",
+        "status": "confirmed",
+        "twd": 2229,
+        "note": "超市採買實付",
+        "category": "shopping"
       }
     ],
     "notes": [
