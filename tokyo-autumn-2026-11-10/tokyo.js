@@ -31,26 +31,38 @@
 
   function renderBudget(budget){
     if(!budget) return '<section class="budgetpage"><div class="budgetnotes">尚未建立費用資料。</div></section>';
-    const entries = (budget.items||[]).filter(x=>x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
-    const included = entries.filter(x=>x.includeInTotal!==false);
-    const total = included.reduce((s,x)=>s+Number(x.twd),0);
-    const people = Number(budget.people)||1;
-    const groups = [['food','食｜餐飲'],['shopping','購物｜超市、採買'],['souvenir','伴手禮｜紀念品'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
-    const itemRow = x => {
-      const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
-      const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
-      return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+'<strong>'+money(x.twd)+'</strong>'+excluded+'</div></div>';
+    const all=(budget.items||[]).filter(x=>x.status!=='pending' && (x.twd!=null || x.foreign));
+    const twdEntries=all.filter(x=>x.twd!=null && Number.isFinite(Number(x.twd)) && x.includeInTotal!==false);
+    const total=twdEntries.reduce((s,x)=>s+Number(x.twd),0);
+    const people=Number(budget.people)||1;
+    const groups=[
+      ['food','餐飲'],
+      ['shopping','購物'],
+      ['souvenir','伴手禮'],
+      ['lodging','住宿'],
+      ['transport','交通'],
+      ['entertainment','娛樂'],
+      ['other','其他']
+    ];
+    const itemRow=x=>{
+      const foreign=x.foreign?'<span class="foreign">'+esc(x.foreign)+'</span>':'';
+      const twd=(x.twd!=null && Number.isFinite(Number(x.twd)))?'<strong>'+money(x.twd)+'</strong>':'';
+      const unconverted=(x.foreign && x.twd==null)?'<span class="notcounted">原幣記帳</span>':'';
+      return '<div class="budgetrow"><div><b>'+esc(x.label)+'</b>'+(x.note?'<small>'+esc(x.note)+'</small>':'')+'</div><div class="budgetprice">'+foreign+twd+unconverted+'</div></div>';
     };
-    const rows = groups.map(([key,label])=>{
-      const items=included.filter(x=>(x.category||'other')===key);
-      const subtotal=items.reduce((s,x)=>s+Number(x.twd),0);
-      return '<div class="budgetgroup" id="cost-'+key+'"><h3>'+esc(label)+' · '+money(subtotal)+'</h3>'+items.map(itemRow).join('')+'</div>';
+    const rows=groups.map(([key,label])=>{
+      const items=all.filter(x=>(x.category||'other')===key);
+      const subtotal=items.filter(x=>x.twd!=null && Number.isFinite(Number(x.twd)) && x.includeInTotal!==false).reduce((s,x)=>s+Number(x.twd),0);
+      const yen=items.filter(x=>typeof x.foreign==='string' && /¥/.test(x.foreign)).reduce((s,x)=>s+(Number(String(x.foreign).replace(/[^0-9.-]/g,''))||0),0);
+      const pending=(budget.items||[]).some(x=>(x.category||'other')===key && x.status==='pending');
+      const parts=[];
+      if(subtotal) parts.push(money(subtotal));
+      if(yen) parts.push('¥'+yen.toLocaleString('en-US'));
+      if(!parts.length) parts.push('—');
+      return '<div class="budgetgroup" id="cost-'+key+'"><h3>'+esc(label)+' · '+parts.join(' + ')+(pending?' + 待補':'')+'</h3>'+items.map(itemRow).join('')+'</div>';
     }).join('');
-    const excluded=entries.filter(x=>x.includeInTotal===false);
-    const exchange=excluded.length?'<div class="budgetgroup"><h3>換匯紀錄｜不計入旅費</h3>'+excluded.map(itemRow).join('')+'</div>':'';
-    return '<section class="budgetpage"><div class="budgethero"><small>已記錄旅費總額</small><strong>'+money(total)+'</strong><div>'+people+' 人平均約 '+money(total/people)+'</div></div>'+rows+exchange+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
+    return '<section class="budgetpage"><div class="budgethero"><small>已換算台幣旅費合計</small><strong>'+money(total)+'</strong><div>'+people+' 人平均約 '+money(total/people)+' · 日圓原幣支出另列</div></div>'+rows+(budget.fxNote?'<div class="fxnote">'+esc(budget.fxNote)+'</div>':'')+'</section>';
   }
-
   function renderOverview(data){
     const slotLabel = t => {
       const s=String(t||'');
@@ -70,16 +82,30 @@
   }
 
   function renderCostSummary(budget){
-    const items=(budget?.items||[]).filter(x=>x.includeInTotal!==false && x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
-    const groups=[['food','食','餐飲、飲料'],['shopping','購物','超市、採買'],['souvenir','伴手禮','禮品、紀念品'],['lodging','住','東武・湖山亭產屋・PAUL HOUSE'],['transport','行','機票、交通'],['entertainment','娛樂','景點、門票']];
-    const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
-    const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
-    const icons={food:'🍜',shopping:'🛍️',lodging:'🏨',transport:'🚗',entertainment:'🎟️',souvenirs:'🎁'};
-    const cards=groups.map(([key,label,desc])=>{ const pending=(budget?.items||[]).some(x=>x.category===key && x.status==='pending'); return '<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><span class="cost-summary-icon" aria-hidden="true">'+icons[key]+'</span><small>'+label+'</small><strong>'+money(subtotal(key))+(pending?' + 待補':'')+'</strong><span class="cost-summary-desc">'+desc+'</span></a>'; }).join('');
-    const other=subtotal('other');
-    return cards+'<div class="cost-summary-footer"><a href="?view=cost">旅費合計 <b>'+money(total)+'</b></a>'+(other?'<a href="?view=cost#cost-other">另含通訊、保險 '+money(other)+'</a>':'')+'</div>';
+    const all=(budget?.items||[]).filter(x=>x.status!=='pending' && (x.twd!=null || x.foreign));
+    const groups=[
+      ['food','餐飲','餐點、飲料','🍜'],
+      ['shopping','購物','超市、一般採買','🛍️'],
+      ['souvenir','伴手禮','禮品、紀念品','🎁'],
+      ['lodging','住宿','飯店、住宿','🏨'],
+      ['transport','交通','機票、接送、計程車','🚗'],
+      ['entertainment','娛樂','景點、門票','🎟️'],
+      ['other','其他','清潔費、其他支出','🧾']
+    ];
+    const twdSubtotal=key=>all.filter(x=>x.category===key && x.twd!=null && Number.isFinite(Number(x.twd)) && x.includeInTotal!==false).reduce((sum,x)=>sum+Number(x.twd),0);
+    const yenSubtotal=key=>all.filter(x=>x.category===key && typeof x.foreign==='string' && /¥/.test(x.foreign)).reduce((sum,x)=>sum+(Number(String(x.foreign).replace(/[^0-9.-]/g,''))||0),0);
+    const total=all.filter(x=>x.twd!=null && Number.isFinite(Number(x.twd)) && x.includeInTotal!==false).reduce((sum,x)=>sum+Number(x.twd),0);
+    const cards=groups.map(([key,label,desc,icon])=>{
+      const twd=twdSubtotal(key), yen=yenSubtotal(key);
+      const pending=(budget?.items||[]).some(x=>x.category===key && x.status==='pending');
+      const amounts=[];
+      if(twd) amounts.push(money(twd));
+      if(yen) amounts.push('¥'+yen.toLocaleString('en-US'));
+      if(!amounts.length) amounts.push('—');
+      return '<a class="box cost-summary-card" href="?view=cost#cost-'+key+'"><span class="cost-summary-icon" aria-hidden="true">'+icon+'</span><small>'+label+'</small><strong>'+amounts.join(' + ')+(pending?' + 待補':'')+'</strong><span class="cost-summary-desc">'+desc+'</span></a>';
+    }).join('');
+    return cards+'<div class="cost-summary-footer"><a href="?view=cost">已換算台幣合計 <b>'+money(total)+'</b></a><span>日圓原幣支出會直接顯示在各分類</span></div>';
   }
-
   function render(data){
     document.title = data.title + '｜Trip';
     $('#trip-title').textContent = data.title;
