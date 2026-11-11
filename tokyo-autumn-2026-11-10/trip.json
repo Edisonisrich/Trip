@@ -1065,6 +1065,15 @@
         "twd": 2229,
         "note": "超市採買實付",
         "category": "shopping"
+      },
+      {
+        "label": "11/11 楓葉迴廊停車費",
+        "status": "confirmed",
+        "foreign": "¥1,000",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "停車費；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
