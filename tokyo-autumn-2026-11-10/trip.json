@@ -1019,6 +1019,24 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "activity"
+      },
+      {
+        "label": "11/11 晴空塔 → 飯店 計程車",
+        "status": "confirmed",
+        "foreign": "¥1,100",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "計程車費；原幣記帳，暫不換算台幣",
+        "category": "transport"
+      },
+      {
+        "label": "11/11 晴空塔冰淇淋",
+        "status": "confirmed",
+        "foreign": "¥1,180",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣",
+        "category": "food"
       }
     ],
     "notes": [
