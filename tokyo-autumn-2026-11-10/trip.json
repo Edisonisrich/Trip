@@ -996,6 +996,13 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "food"
+      },
+      {
+        "label": "11/11 淺草寺 → 東京晴空塔 Uber",
+        "status": "confirmed",
+        "twd": 565,
+        "note": "Uber 實付",
+        "category": "transport"
       }
     ],
     "notes": [
