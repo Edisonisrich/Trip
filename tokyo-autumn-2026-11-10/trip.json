@@ -1017,8 +1017,8 @@
         "foreign": "¥10,200",
         "twd": null,
         "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
-        "category": "activity"
+        "note": "原幣記帳，暫不換算台幣；歸類為娛樂",
+        "category": "entertainment"
       },
       {
         "label": "11/11 晴空塔 → 飯店 計程車",
