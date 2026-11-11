@@ -1051,6 +1051,13 @@
         "twd": 303,
         "note": "老婆交通費實付",
         "category": "transport"
+      },
+      {
+        "label": "11/11 第二份便利商店午餐",
+        "status": "confirmed",
+        "twd": 85,
+        "note": "第二份午餐實付",
+        "category": "food"
       }
     ],
     "notes": [
