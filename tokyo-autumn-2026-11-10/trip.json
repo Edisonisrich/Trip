@@ -987,6 +987,15 @@
         "twd": 584,
         "note": "兩筆：NT$546 + NT$38",
         "category": "food"
+      },
+      {
+        "label": "11/11 淺草炸肉餅",
+        "status": "confirmed",
+        "foreign": "¥1,600",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣",
+        "category": "food"
       }
     ],
     "notes": [
