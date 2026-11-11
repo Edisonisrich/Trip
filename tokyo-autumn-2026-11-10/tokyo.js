@@ -35,7 +35,7 @@
     const included = entries.filter(x=>x.includeInTotal!==false);
     const total = included.reduce((s,x)=>s+Number(x.twd),0);
     const people = Number(budget.people)||1;
-    const groups = [['food','食｜餐飲'],['shopping','衣｜購物'],['souvenirs','伴手禮｜紀念品'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
+    const groups = [['food','食｜餐飲'],['shopping','購物｜超市、採買'],['souvenir','伴手禮｜紀念品'],['lodging','住｜住宿'],['transport','行｜機票、交通'],['entertainment','樂｜門票、娛樂'],['other','其他｜通訊、保險']];
     const itemRow = x => {
       const foreign = x.foreign ? '<span class="foreign">'+esc(x.foreign)+'</span>' : '';
       const excluded = x.includeInTotal===false ? '<span class="notcounted">不計入總額</span>' : '';
@@ -71,7 +71,7 @@
 
   function renderCostSummary(budget){
     const items=(budget?.items||[]).filter(x=>x.includeInTotal!==false && x.status!=='pending' && x.twd!=null && Number.isFinite(Number(x.twd)));
-    const groups=[['food','食','餐飲、飲料'],['shopping','衣','服飾、購物'],['souvenirs','伴手禮','禮品、紀念品'],['lodging','住','東武・湖山亭產屋・PAUL HOUSE'],['transport','行','機票、交通'],['entertainment','娛樂','景點、門票']];
+    const groups=[['food','食','餐飲、飲料'],['shopping','購物','超市、採買'],['souvenir','伴手禮','禮品、紀念品'],['lodging','住','東武・湖山亭產屋・PAUL HOUSE'],['transport','行','機票、交通'],['entertainment','娛樂','景點、門票']];
     const subtotal=key=>items.filter(x=>x.category===key).reduce((sum,x)=>sum+Number(x.twd),0);
     const total=items.reduce((sum,x)=>sum+Number(x.twd),0);
     const icons={food:'🍜',shopping:'🛍️',lodging:'🏨',transport:'🚗',entertainment:'🎟️',souvenirs:'🎁'};
