@@ -1003,6 +1003,22 @@
         "twd": 565,
         "note": "Uber 實付",
         "category": "transport"
+      },
+      {
+        "label": "11/11 吉伊卡哇紀念品（3個）",
+        "status": "confirmed",
+        "twd": 1038,
+        "note": "3個紀念品實付",
+        "category": "shopping"
+      },
+      {
+        "label": "11/11 東京晴空塔門票",
+        "status": "confirmed",
+        "foreign": "¥10,200",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣",
+        "category": "activity"
       }
     ],
     "notes": [
