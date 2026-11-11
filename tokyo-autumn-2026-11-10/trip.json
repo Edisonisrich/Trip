@@ -924,9 +924,9 @@
       },
       {
         "label": "湖山亭產屋｜2晚",
-        "status": "pending",
-        "twd": null,
-        "note": "已確認住宿；金額尚未提供",
+        "status": "confirmed",
+        "twd": 93576,
+        "note": "11/11–11/13，2晚；兩間房分別 NT$57,291、NT$36,285",
         "category": "lodging"
       },
       {
