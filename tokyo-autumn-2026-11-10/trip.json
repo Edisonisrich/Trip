@@ -1044,6 +1044,13 @@
         "twd": 119,
         "note": "午餐實付",
         "category": "food"
+      },
+      {
+        "label": "11/11 老婆 晴空塔 → 飯店",
+        "status": "confirmed",
+        "twd": 303,
+        "note": "老婆交通費實付",
+        "category": "transport"
       }
     ],
     "notes": [
