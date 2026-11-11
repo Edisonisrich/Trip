@@ -1037,6 +1037,13 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "food"
+      },
+      {
+        "label": "11/11 便利商店午餐",
+        "status": "confirmed",
+        "twd": 119,
+        "note": "午餐實付",
+        "category": "food"
       }
     ],
     "notes": [
