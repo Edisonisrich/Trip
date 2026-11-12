@@ -1122,8 +1122,8 @@
         "label": "11/12 天上宮纜車",
         "status": "confirmed",
         "twd": 812,
-        "note": "纜車實付",
-        "category": "entertainment"
+        "note": "纜車實付；歸類為交通",
+        "category": "transport"
       }
     ],
     "notes": [
