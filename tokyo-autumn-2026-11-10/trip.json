@@ -1101,6 +1101,15 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "entertainment"
+      },
+      {
+        "label": "11/12 兔子御守（2個）",
+        "status": "confirmed",
+        "foreign": "¥1,400",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "2個；原幣記帳，暫不換算台幣",
+        "category": "souvenir"
       }
     ],
     "notes": [
