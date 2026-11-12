@@ -1124,6 +1124,13 @@
         "twd": 812,
         "note": "纜車實付；歸類為交通",
         "category": "transport"
+      },
+      {
+        "label": "11/12 Lawson",
+        "status": "confirmed",
+        "twd": 619,
+        "note": "便利商店實付",
+        "category": "food"
       }
     ],
     "notes": [
