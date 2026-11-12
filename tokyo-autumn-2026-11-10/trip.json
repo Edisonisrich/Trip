@@ -1110,6 +1110,13 @@
         "includeInTotal": false,
         "note": "2個；原幣記帳，暫不換算台幣",
         "category": "souvenir"
+      },
+      {
+        "label": "11/12 天上宮伴手禮",
+        "status": "confirmed",
+        "twd": 4232,
+        "note": "伴手禮實付",
+        "category": "souvenir"
       }
     ],
     "notes": [
