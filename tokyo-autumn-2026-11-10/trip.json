@@ -1074,6 +1074,15 @@
         "includeInTotal": false,
         "note": "停車費；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/12 富士山相片",
+        "status": "confirmed",
+        "foreign": "¥6,000",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣；歸類為伴手禮／紀念品",
+        "category": "souvenir"
       }
     ],
     "notes": [
