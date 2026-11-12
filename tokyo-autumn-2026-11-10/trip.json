@@ -1117,6 +1117,13 @@
         "twd": 4232,
         "note": "伴手禮實付",
         "category": "souvenir"
+      },
+      {
+        "label": "11/12 天上宮纜車",
+        "status": "confirmed",
+        "twd": 812,
+        "note": "纜車實付",
+        "category": "entertainment"
       }
     ],
     "notes": [
