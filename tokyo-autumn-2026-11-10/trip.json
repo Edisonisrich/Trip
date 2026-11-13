@@ -1183,6 +1183,15 @@
         "includeInTotal": false,
         "note": "園區火車；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/13 昭和紀念公園草莓霜淇淋",
+        "status": "confirmed",
+        "foreign": "¥550",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣",
+        "category": "food"
       }
     ],
     "notes": [
