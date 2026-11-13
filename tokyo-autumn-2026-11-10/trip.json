@@ -1246,6 +1246,13 @@
         "includeInTotal": false,
         "note": "拉麵實付；原幣記帳，暫不換算台幣",
         "category": "food"
+      },
+      {
+        "label": "11/12 美術館門票",
+        "status": "confirmed",
+        "twd": 1200,
+        "note": "門票實付",
+        "category": "entertainment"
       }
     ],
     "notes": [
