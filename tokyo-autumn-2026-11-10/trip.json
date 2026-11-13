@@ -1237,6 +1237,15 @@
         "twd": 249,
         "note": "便利商店實付",
         "category": "food"
+      },
+      {
+        "label": "11/13 鴨to蔥拉麵",
+        "status": "confirmed",
+        "foreign": "¥1,580",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "拉麵實付；原幣記帳，暫不換算台幣",
+        "category": "food"
       }
     ],
     "notes": [
