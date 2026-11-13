@@ -1167,6 +1167,13 @@
         "includeInTotal": false,
         "note": "門票；原幣記帳，暫不換算台幣",
         "category": "entertainment"
+      },
+      {
+        "label": "11/13 昭和紀念公園午餐",
+        "status": "confirmed",
+        "twd": 642,
+        "note": "午餐實付",
+        "category": "food"
       }
     ],
     "notes": [
