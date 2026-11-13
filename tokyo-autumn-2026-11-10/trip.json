@@ -1189,6 +1189,15 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "food"
+      },
+      {
+        "label": "11/13 加油",
+        "status": "confirmed",
+        "foreign": "¥3,403",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "加油費；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
