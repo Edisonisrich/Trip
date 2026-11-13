@@ -1198,6 +1198,15 @@
         "includeInTotal": false,
         "note": "加油費；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/13 還車費用",
+        "status": "confirmed",
+        "foreign": "¥13,500",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "還車相關費用；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
