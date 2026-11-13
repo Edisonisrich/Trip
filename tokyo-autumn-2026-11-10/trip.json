@@ -1207,6 +1207,15 @@
         "includeInTotal": false,
         "note": "還車相關費用；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/13 飯店 → 上野車站 Uber",
+        "status": "confirmed",
+        "foreign": "¥1,300",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "Uber 實付；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
