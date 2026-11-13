@@ -1174,6 +1174,15 @@
         "twd": 642,
         "note": "午餐實付",
         "category": "food"
+      },
+      {
+        "label": "11/13 昭和紀念公園搭火車",
+        "status": "confirmed",
+        "foreign": "¥1,800",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "園區火車；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
