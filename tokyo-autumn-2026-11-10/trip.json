@@ -1230,6 +1230,13 @@
         "twd": 431,
         "note": "回飯店交通費實付",
         "category": "transport"
+      },
+      {
+        "label": "11/13 Lawson",
+        "status": "confirmed",
+        "twd": 249,
+        "note": "便利商店實付",
+        "category": "food"
       }
     ],
     "notes": [
