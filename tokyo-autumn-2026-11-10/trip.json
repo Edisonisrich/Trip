@@ -1149,6 +1149,15 @@
         "includeInTotal": false,
         "note": "原幣記帳，暫不換算台幣",
         "category": "food"
+      },
+      {
+        "label": "11/13 昭和紀念公園停車費",
+        "status": "confirmed",
+        "foreign": "¥900",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "停車費；原幣記帳，暫不換算台幣",
+        "category": "transport"
       }
     ],
     "notes": [
