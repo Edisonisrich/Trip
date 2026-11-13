@@ -1216,6 +1216,13 @@
         "includeInTotal": false,
         "note": "Uber 實付；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/13 晚餐｜根岸牛舌",
+        "status": "confirmed",
+        "twd": 1927,
+        "note": "晚餐實付",
+        "category": "food"
       }
     ],
     "notes": [
