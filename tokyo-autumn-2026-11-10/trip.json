@@ -1140,6 +1140,15 @@
         "includeInTotal": false,
         "note": "住宿相關稅費；原幣記帳，暫不換算台幣",
         "category": "lodging"
+      },
+      {
+        "label": "11/13 富士山葡萄",
+        "status": "confirmed",
+        "foreign": "¥1,700",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "原幣記帳，暫不換算台幣",
+        "category": "food"
       }
     ],
     "notes": [
