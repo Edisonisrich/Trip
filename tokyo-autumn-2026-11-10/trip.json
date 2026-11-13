@@ -1223,6 +1223,13 @@
         "twd": 1927,
         "note": "晚餐實付",
         "category": "food"
+      },
+      {
+        "label": "11/13 上野 → 飯店",
+        "status": "confirmed",
+        "twd": 431,
+        "note": "回飯店交通費實付",
+        "category": "transport"
       }
     ],
     "notes": [
