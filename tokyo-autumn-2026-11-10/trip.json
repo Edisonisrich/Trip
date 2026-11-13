@@ -959,9 +959,8 @@
         "label": "嘔吐清潔費",
         "status": "confirmed",
         "foreign": "¥5,000",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "11/10 日本旅途中發生；原幣記帳，暫不換算台幣",
+        "twd": 1042,
+        "note": "11/10 日本旅途中發生；依固定匯率 ¥4.8 = NT$1 換算為 NT$1,042",
         "category": "other"
       },
       {
@@ -989,9 +988,8 @@
         "label": "11/11 淺草炸肉餅",
         "status": "confirmed",
         "foreign": "¥1,600",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 333,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$333",
         "category": "food"
       },
       {
@@ -1012,27 +1010,24 @@
         "label": "11/11 東京晴空塔門票",
         "status": "confirmed",
         "foreign": "¥10,200",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣；歸類為娛樂",
+        "twd": 2125,
+        "note": "；歸類為娛樂；依固定匯率 ¥4.8 = NT$1 換算為 NT$2,125",
         "category": "entertainment"
       },
       {
         "label": "11/11 晴空塔 → 飯店 計程車",
         "status": "confirmed",
         "foreign": "¥1,100",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "計程車費；原幣記帳，暫不換算台幣",
+        "twd": 229,
+        "note": "計程車費；依固定匯率 ¥4.8 = NT$1 換算為 NT$229",
         "category": "transport"
       },
       {
         "label": "11/11 晴空塔冰淇淋",
         "status": "confirmed",
         "foreign": "¥1,180",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 246,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$246",
         "category": "food"
       },
       {
@@ -1067,45 +1062,40 @@
         "label": "11/11 楓葉迴廊停車費",
         "status": "confirmed",
         "foreign": "¥1,000",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "停車費；原幣記帳，暫不換算台幣",
+        "twd": 208,
+        "note": "停車費；依固定匯率 ¥4.8 = NT$1 換算為 NT$208",
         "category": "transport"
       },
       {
         "label": "11/12 富士山相片",
         "status": "confirmed",
         "foreign": "¥6,000",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣；歸類為伴手禮／紀念品",
+        "twd": 1250,
+        "note": "；歸類為伴手禮／紀念品；依固定匯率 ¥4.8 = NT$1 換算為 NT$1,250",
         "category": "souvenir"
       },
       {
         "label": "11/12 丟瓦片",
         "status": "confirmed",
         "foreign": "¥100",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 21,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$21",
         "category": "entertainment"
       },
       {
         "label": "11/12 望遠鏡",
         "status": "confirmed",
         "foreign": "¥100",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 21,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$21",
         "category": "entertainment"
       },
       {
         "label": "11/12 兔子御守（2個）",
         "status": "confirmed",
         "foreign": "¥1,400",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "2個；原幣記帳，暫不換算台幣",
+        "twd": 292,
+        "note": "2個；依固定匯率 ¥4.8 = NT$1 換算為 NT$292",
         "category": "souvenir"
       },
       {
@@ -1133,36 +1123,32 @@
         "label": "11/13 房間住宿稅",
         "status": "confirmed",
         "foreign": "¥1,200",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "住宿相關稅費；原幣記帳，暫不換算台幣",
+        "twd": 250,
+        "note": "住宿相關稅費；依固定匯率 ¥4.8 = NT$1 換算為 NT$250",
         "category": "lodging"
       },
       {
         "label": "11/13 富士山葡萄",
         "status": "confirmed",
         "foreign": "¥1,700",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 354,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$354",
         "category": "food"
       },
       {
         "label": "11/13 昭和紀念公園停車費",
         "status": "confirmed",
         "foreign": "¥900",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "停車費；原幣記帳，暫不換算台幣",
+        "twd": 188,
+        "note": "停車費；依固定匯率 ¥4.8 = NT$1 換算為 NT$188",
         "category": "transport"
       },
       {
         "label": "11/13 昭和紀念公園門票",
         "status": "confirmed",
         "foreign": "¥1,320",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "門票；原幣記帳，暫不換算台幣",
+        "twd": 275,
+        "note": "門票；依固定匯率 ¥4.8 = NT$1 換算為 NT$275",
         "category": "entertainment"
       },
       {
@@ -1176,45 +1162,40 @@
         "label": "11/13 昭和紀念公園搭火車",
         "status": "confirmed",
         "foreign": "¥1,800",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "園區火車；原幣記帳，暫不換算台幣",
+        "twd": 375,
+        "note": "園區火車；依固定匯率 ¥4.8 = NT$1 換算為 NT$375",
         "category": "transport"
       },
       {
         "label": "11/13 昭和紀念公園草莓霜淇淋",
         "status": "confirmed",
         "foreign": "¥550",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "原幣記帳，暫不換算台幣",
+        "twd": 115,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$115",
         "category": "food"
       },
       {
         "label": "11/13 加油",
         "status": "confirmed",
         "foreign": "¥3,403",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "加油費；原幣記帳，暫不換算台幣",
+        "twd": 709,
+        "note": "加油費；依固定匯率 ¥4.8 = NT$1 換算為 NT$709",
         "category": "transport"
       },
       {
         "label": "11/13 還車費用",
         "status": "confirmed",
         "foreign": "¥13,500",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "還車相關費用；原幣記帳，暫不換算台幣",
+        "twd": 2813,
+        "note": "還車相關費用；依固定匯率 ¥4.8 = NT$1 換算為 NT$2,813",
         "category": "transport"
       },
       {
         "label": "11/13 飯店 → 上野車站 Uber",
         "status": "confirmed",
         "foreign": "¥1,300",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "Uber 實付；原幣記帳，暫不換算台幣",
+        "twd": 271,
+        "note": "Uber 實付；依固定匯率 ¥4.8 = NT$1 換算為 NT$271",
         "category": "transport"
       },
       {
@@ -1242,9 +1223,8 @@
         "label": "11/13 鴨to蔥拉麵",
         "status": "confirmed",
         "foreign": "¥1,580",
-        "twd": null,
-        "includeInTotal": false,
-        "note": "拉麵實付；原幣記帳，暫不換算台幣",
+        "twd": 329,
+        "note": "拉麵實付；依固定匯率 ¥4.8 = NT$1 換算為 NT$329",
         "category": "food"
       },
       {
@@ -1257,7 +1237,8 @@
     ],
     "notes": [
       "eSIM、實體 SIM、機場接送、餐飲、購物與其他門票尚未提供金額。"
-    ]
+    ],
+    "fxNote": "日圓支出統一依固定匯率 ¥4.8 = NT$1 換算（TWD = JPY ÷ 4.8），四捨五入至整數台幣。"
   },
   "coverImage": {
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Kawaguchiko_and_Mount_Fuji_at_sunset_during_the_Momijigari_period.jpg?width=1800",
