@@ -1158,6 +1158,15 @@
         "includeInTotal": false,
         "note": "停車費；原幣記帳，暫不換算台幣",
         "category": "transport"
+      },
+      {
+        "label": "11/13 昭和紀念公園門票",
+        "status": "confirmed",
+        "foreign": "¥1,320",
+        "twd": null,
+        "includeInTotal": false,
+        "note": "門票；原幣記帳，暫不換算台幣",
+        "category": "entertainment"
       }
     ],
     "notes": [
