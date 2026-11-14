@@ -1240,6 +1240,14 @@
         "twd": 8470,
         "note": "築地吃蟹實付",
         "category": "food"
+      },
+      {
+        "label": "11/14 築地淡雪草莓",
+        "status": "confirmed",
+        "foreign": "¥2,000",
+        "twd": 417,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$417",
+        "category": "food"
       }
     ],
     "notes": [
