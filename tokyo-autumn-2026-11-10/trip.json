@@ -1281,6 +1281,14 @@
         "twd": 7298,
         "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$7,298",
         "category": "souvenir"
+      },
+      {
+        "label": "11/14 成田機場接送加價",
+        "status": "confirmed",
+        "foreign": "¥5,000",
+        "twd": 1042,
+        "note": "成田機場區域加價，已支付；依固定匯率 ¥4.8 = NT$1 換算為 NT$1,042",
+        "category": "transport"
       }
     ],
     "notes": [
