@@ -1256,6 +1256,14 @@
         "twd": 208,
         "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$208",
         "category": "food"
+      },
+      {
+        "label": "11/14 築地鯛魚燒",
+        "status": "confirmed",
+        "foreign": "¥350",
+        "twd": 73,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$73",
+        "category": "food"
       }
     ],
     "notes": [
