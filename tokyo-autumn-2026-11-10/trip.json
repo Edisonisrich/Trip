@@ -1273,6 +1273,14 @@
         "twd": 219,
         "note": "甜點實付",
         "category": "food"
+      },
+      {
+        "label": "11/14 成田機場伴手禮",
+        "status": "confirmed",
+        "foreign": "¥35,030",
+        "twd": 7298,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$7,298",
+        "category": "souvenir"
       }
     ],
     "notes": [
