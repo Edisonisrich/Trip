@@ -930,9 +930,9 @@
       },
       {
         "label": "Relax Car Rental Tokyo｜11/11–11/13",
-        "status": "pending",
-        "twd": null,
-        "note": "訂單 USX936311；金額尚未提供",
+        "status": "confirmed",
+        "twd": 5766,
+        "note": "訂單 USX936311；租車費實付",
         "category": "transport"
       },
       {
