@@ -1248,6 +1248,14 @@
         "twd": 417,
         "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$417",
         "category": "food"
+      },
+      {
+        "label": "11/14 丸武玉子燒",
+        "status": "confirmed",
+        "foreign": "¥1,000",
+        "twd": 208,
+        "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$208",
+        "category": "food"
       }
     ],
     "notes": [
