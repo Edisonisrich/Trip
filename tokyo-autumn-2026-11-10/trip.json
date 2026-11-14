@@ -944,10 +944,10 @@
       },
       {
         "label": "舊 La Vista Fuji Kawaguchiko 訂單",
-        "status": "pending",
+        "status": "excluded",
         "foreign": "¥321,462",
         "includeInTotal": false,
-        "note": "先前信箱曾確認；你最新行程已改為湖山亭產屋，取消／退款狀態待確認",
+        "note": "已退訂／不列入本次旅費；保留為歷史紀錄",
         "category": "lodging"
       },
       {
