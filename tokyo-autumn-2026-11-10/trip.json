@@ -1233,6 +1233,13 @@
         "twd": 1200,
         "note": "門票實付",
         "category": "entertainment"
+      },
+      {
+        "label": "11/14 築地吃蟹",
+        "status": "confirmed",
+        "twd": 8470,
+        "note": "築地吃蟹實付",
+        "category": "food"
       }
     ],
     "notes": [
