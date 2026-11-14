@@ -944,9 +944,9 @@
       },
       {
         "label": "teamLab Borderless｜Klook",
-        "status": "pending",
-        "twd": null,
-        "note": "已確認 11/14 12:30；金額尚未提供",
+        "status": "confirmed",
+        "twd": 4684,
+        "note": "門票實付",
         "category": "entertainment"
       },
       {
