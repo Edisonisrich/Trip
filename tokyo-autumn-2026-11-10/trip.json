@@ -936,13 +936,6 @@
         "category": "transport"
       },
       {
-        "label": "河口湖音樂森林美術館｜KKday",
-        "status": "pending",
-        "twd": null,
-        "note": "已確認；金額尚未提供",
-        "category": "entertainment"
-      },
-      {
         "label": "teamLab Borderless｜Klook",
         "status": "confirmed",
         "twd": 4684,
@@ -1233,7 +1226,7 @@
         "label": "11/12 美術館門票",
         "status": "confirmed",
         "twd": 1200,
-        "note": "門票實付",
+        "note": "11/12 河口湖音樂森林美術館門票實付",
         "category": "entertainment"
       },
       {
