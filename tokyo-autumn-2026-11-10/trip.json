@@ -1266,6 +1266,13 @@
         "twd": 73,
         "note": "依固定匯率 ¥4.8 = NT$1 換算為 NT$73",
         "category": "food"
+      },
+      {
+        "label": "11/14 HARBS 千層蛋糕",
+        "status": "confirmed",
+        "twd": 219,
+        "note": "甜點實付",
+        "category": "food"
       }
     ],
     "notes": [
